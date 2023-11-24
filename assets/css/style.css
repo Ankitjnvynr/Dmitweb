@@ -3,3 +3,13 @@
     display: flex;
     justify-content: space-between;
 } */
+.hro-sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imge-box{
+    border-radius: 50px 5px 50px 5px;
+    overflow: hidden;
+    margin-left:50px ;
+}
