@@ -1,4 +1,4 @@
-<header class="site-header  home-one-header top-0 w-full z-[999] rt-sticky">
+<header class="site-header  home-one-header top-0 w-full z-[999] rt-sticky pr-1">
     <div class="main-header py-6">
       <div class="container">
         <div class=" flex items-center justify-between">
@@ -7,19 +7,9 @@
           <div class="flex items-center flex-1">
             <div class="flex-1 main-menu relative mr-[74px]">
               <ul class="menu-active-classes">
-                <li class=" menu-item-has-children">
-                  <a href="#">Home</a>
-                  <ul class="sub-menu">
-                    <li>
-                      <a href="/">Home One</a>
-                    </li>
-                    <li>
-                      <a href="index2.html">Home Two</a>
-                    </li>
-                    <li>
-                      <a href="index3.html">Home Three</a>
-                    </li>
-                  </ul>
+                <li class=" menu-item">
+                  <a href="index.php">Home</a>
+                  
                 </li>
                 <li class="menu-item-has-children">
                   <a href="#">Pages</a>
@@ -50,6 +40,9 @@
                     </li>
                   </ul>
                 </li>
+                <li class=" menu-item">
+                  <a href="about.php">About_Us</a>
+                </li>
                 <li class="menu-item-has-children">
                   <a href="#">Courses</a>
                   <ul class="sub-menu">
@@ -61,6 +54,23 @@
                     </li>
                     <li>
                       <a href="single-course.html">Single-course</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item-has-children">
+                  <a href="#">Therapy</a>
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="nlp.php">Neuro-Linguistic Programming (NLP) </a>
+                    </li>
+                    <li>
+                      <a href="Hypnotherapy.php">Hypnotherapy</a>
+                    </li>
+                    <li>
+                      <a href="energy-chakra.php"> Energy/Chakra Healing</a>
+                    </li>
+                    <li>
+                      <a href="eft.php">EFT – Emotional Freedom Technique</a>
                     </li>
                   </ul>
                 </li>

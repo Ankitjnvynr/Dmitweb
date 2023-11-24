@@ -26,7 +26,7 @@
         z-[999]">
         <div class="flex justify-between px-6 flex-none">
             <a href="index.html" class="brand-logo flex-none mr-10 ">
-                <img src="assets/images/logo/logo.svg" alt="">
+                <img src="assets/images/logo/lgo.svg" alt="fgdfgdfgdfgd">
             </a>
             <span class=" text-3xl text-black cursor-pointer rt-mobile-menu-close">
                 <iconify-icon icon="fe:close"></iconify-icon>
@@ -141,12 +141,12 @@
     </div>
     <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
         <div class="container text-center">
-            <h2>Painting Contest 2022 </h2>
+            <h2> DMIT can do </h2>
             <nav>
                 <ol class="flex items-center justify-center space-x-3">
                     <li class="breadcrumb-item"><a href="index.html">Pages </a></li>
                     <li class="breadcrumb-item">-</li>
-                    <li class="text-primary">Events</li>
+                    <li class="text-primary">DMIT</li>
                 </ol>
             </nav>
         </div>
@@ -154,29 +154,74 @@
 
     <div class="nav-tab-wrapper tabs  section-padding">
         <div class="container">
-            <img src="assets/images/all-img/main-event.png" alt="" class=" lg:mb-10 mb-6 block w-full">
+            <img src="assets\images\all-img\dmit can do.jpg" alt="" class=" lg:mb-10 mb-6 block w-full">
             <div class="grid grid-cols-12 gap-[30px]">
                 <div class="lg:col-span-8 col-span-12">
                     <h3>
-                        Healthy relationships
+                        Improve Relationship
                     </h3>
+
                     <div class="lg:my-6 my-4">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
-                        by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of
-                        Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
-                        generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the
-                        Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to
-                        generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-                        injected humour.
+                        This can be used for married people or people in relationships.
                     </div>
-                    <div class="bg-secondary text-white p-10 rounded-md">
-                        <div id="timer" class="md:flex space-y-4 md:space-y-0 justify-between text-center "></div>
+                    <div class="lg:my-6 my-4">
+                        Most of us know and understand the importance of healthy relationships based on mutual respect,
+                        trust, equality of opportunities, and of course communication between partners.
+                        it is surprising, but a fact that it is hard to figure out why sometimes relationships have an
+                        unhealthy balance of power and control Y relationships turn into abusive relationships.
+                        Consideration. Emotional verbal support systems, the sensitive to the needs of your partner or
+                        some of the common issues faced in relationships and in marriages instead of going to
+                        astrologers, tarot card, readers, marriage counsellors or suffering emotionally these kind of
+                        test and there parameters hey Ji patterns how you think and respond to yourself and your partner
+                        in a relationship, it will help to foster healthy relationships among couples?
+
                     </div>
-                    <div class=" py-6">
-                        Among the major reasons why Python is “slow”, it really boils down to 2 — Python is interpreted as opposed to compiled,
-                        ultimately leading to slower execution times; and the fact that it is dynamically typed. Take, for example, TensorFlow,
-                        a Machine Learning library available in Python. These libraries were actually written in C++ and made available in
-                        Python, sort of forming a Python implementation. The same goes for Numpy and, to an extent, even Caer.
+
+                    <h3>Behavioural Assesment</h3>
+                    <div class="lg:my-6 my-4">
+                        This behavioural Assessment is a proven, practical and effective method to ensure your personal
+                        growth, in-depth understanding and confidence in decision making. We provide compassionate
+                        evidence-based psychological services that are responsive to the clients visa. This work is done
+                        on a one-to-one basis to create personal personalised calls. We intend to identify your
+                        strengths, interest, fears and shortcomings so that new ways can be adopted to approach
+                        challenges in situations that wishes on the journey of life all of us and hoping and seeking
+                        help to make a positive change. We like to connect with each client so that we can help put your
+                        personality in perspective and help you to build skills with a nonjudgemental perspective when
+                        we work with children and adults and we always interact with parents so that we can help them to
+                        address issues as they, both at home and at school.
+                    </div>
+                    <div class="lg:my-6 my-4">
+                        It is important for our emotions to make sense in the context of a nice. We should choose
+                        actions that get us through different situations. This process does not involve any
+                        psychotherapy any treatment or behave Oriel practises. This is simply a tangible Way to learn a
+                        skill component and how we can use them defectively to bring about positive changes in our lives
+                        and those of others around us
+
+                    </div>
+                    <h3>Carrer Counseling</h3>
+                    <div class="lg:my-6 my-4">
+                        It is important for our emotions to make sense in the context of a nice. We should choose
+                        actions that get us through different situations. This process does not involve any
+                        psychotherapy any treatment or behave Oriel practises. This is simply a tangible Way to learn a
+                        skill component and how we can use them defectively to bring about positive changes in our lives
+                        and those of others around us
+
+                    </div>
+                    <h3>Child Growth</h3>
+                    <div class="lg:my-6 my-4">
+                        All of us are aware and believe that we are doing the very best and providing the very best in a
+                        given situation and moment to help accomplish positive changes and create an atmosphere
+                        conducive to our child’s growth .
+
+                    </div>
+                    <div class="lg:my-6 my-4">
+                        Not every thing that is faced and understood can change, but nothing can change until it is
+                        faced . We help you to build and discover your needs, strength and potential so that you can
+                        shift your perspective according to your emotional mental natural abilities. Our team consisting
+                        of career consultants etc Will collaborate with you to create an intensive result sheet. Tell it
+                        to your personality.
+
+
                     </div>
                     <div class="flex justify-between border-y border-[#ECECEC] py-4 md:mt-12 mt-10">
                         <div class=" text-black font-semibold">Previous</div>
@@ -209,7 +254,7 @@
 
                     <div class="sidebarWrapper max-w-[90%] mx-auto space-y-[30px]">
                         <div class="wdiget custom-text space-y-5 ">
-                            <h4 class=" widget-title">Event Details</h4>
+                            <h4 class=" widget-title">Contact Now</h4>
                             <ul class="list space-y-6  ">
 
                                 <li class=" flex space-x-3 ">
@@ -258,7 +303,8 @@
                                 <li class=" flex space-x-4 border-[#ECECEC] ">
                                     <div class="flex-none ">
                                         <div class="h-20 w-20   rounded-full">
-                                            <img src="assets/images/all-img/rc-1.png" alt="" class=" w-full h-full object-cover rounded-full">
+                                            <img src="assets/images/all-img/rc-1.png" alt=""
+                                                class=" w-full h-full object-cover rounded-full">
                                         </div>
                                     </div>
                                     <div class="flex-1 ">
@@ -273,7 +319,8 @@
                                 <li class=" flex space-x-4 border-[#ECECEC] ">
                                     <div class="flex-none ">
                                         <div class="h-20 w-20   rounded-full">
-                                            <img src="assets/images/all-img/rc-2.png" alt="" class=" w-full h-full object-cover rounded-full">
+                                            <img src="assets/images/all-img/rc-2.png" alt=""
+                                                class=" w-full h-full object-cover rounded-full">
                                         </div>
                                     </div>
                                     <div class="flex-1 ">

@@ -236,7 +236,7 @@
           </ul>
           
           <div class="pt-8">
-            <a href="#" class=" btn btn-primary">Read More Us</a>
+            <a href="about-dmit.php" class=" btn btn-primary">Read More Us</a>
           </div>
         </div>
       </div>
