@@ -11,7 +11,7 @@
                   <a href="index.php">Home</a>
                   
                 </li>
-                <li class="menu-item-has-children">
+                <!-- <li class="menu-item-has-children">
                   <a href="#">Pages</a>
                   <ul class="sub-menu">
                     <li>
@@ -39,11 +39,11 @@
                       <a href="404.html">404</a>
                     </li>
                   </ul>
-                </li>
+                </li> -->
                 <li class=" menu-item">
                   <a href="about.php">About_Us</a>
                 </li>
-                <li class="menu-item-has-children">
+                <!-- <li class="menu-item-has-children">
                   <a href="#">Courses</a>
                   <ul class="sub-menu">
                     <li>
@@ -56,15 +56,18 @@
                       <a href="single-course.html">Single-course</a>
                     </li>
                   </ul>
-                </li>
+                </li> -->
                 <li class="menu-item-has-children">
-                  <a href="#">Therapy</a>
+                  <a href="#">Therapies</a>
                   <ul class="sub-menu">
                     <li>
                       <a href="nlp.php">Neuro-Linguistic Programming (NLP) </a>
                     </li>
                     <li>
                       <a href="Hypnotherapy.php">Hypnotherapy</a>
+                    </li>
+                    <li>
+                      <a href="micro-muscle-body-language.php">Micro muscle body language </a>
                     </li>
                     <li>
                       <a href="energy-chakra.php"> Energy/Chakra Healing</a>

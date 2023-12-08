@@ -210,89 +210,45 @@
               </h4>
               <ul class="list-disc marker:text-secondary space-y-4 mt-6">
                 <li class="">
-                  <b>Anchoring:</b>  Associating a specific stimulus with a particular emotional state to trigger that state at will.
+                  <b>Anchoring:</b> Associating a specific stimulus with a particular emotional state to trigger that
+                  state at will.
                 </li>
                 <li class="">
-                  <b>Reframing:</b> Changing the way an individual perceives a situation by altering the context or viewpoint.
+                  <b>Reframing:</b> Changing the way an individual perceives a situation by altering the context or
+                  viewpoint.
                 </li>
                 <li class="">
-                  <b>Modeling:</b> Studying and adopting the behaviors, strategies, and beliefs of successful individuals to achieve similar results.
+                  <b>Modeling:</b> Studying and adopting the behaviors, strategies, and beliefs of successful
+                  individuals to achieve similar results.
                 </li>
                 <li class="">
-                  <b>Meta-Modeling:</b> Identifying and challenging the limiting or distorted linguistic patterns in one's thinking.
+                  <b>Meta-Modeling:</b> Identifying and challenging the limiting or distorted linguistic patterns in
+                  one's thinking.
                 </li>
               </ul>
               <blockquote
                 class=" bg-secondary p-8 rounded-md bg-[url('../images/all-img/bb.png')] bg-cover bg-no-repeat bg-center my-8 text-white">
                 <img src="assets/images/svg/q.svg" alt="">
-                <h4 class="widget-title" >BENEFITS: </h4>
+                <h4 class="widget-title">BENEFITS: </h4>
                 <div class=" text-xl font-semibold my-6">
-                  “ NLP has been applied in various fields, including therapy, business, education, and personal development. ”
+                  “ NLP has been applied in various fields, including therapy, business, education, and personal
+                  development. ”
                 </div>
                 <div class=" flex items-center space-x-3">
                   <span class=" inline-flex h-[3px] w-12 bg-white"></span>
                   <span class=" text-xl font-semibold"></span>
                 </div>
               </blockquote>
-              
-              
-             
+
+
+
               <!-- related post  -->
-              
+
             </div>
           </div>
         </div>
         <div class="lg:col-span-4 col-span-12">
-          <div class="sidebarWrapper space-y-[30px]">
-            <div class="wdiget widget_catagory">
-              <h4 class="widget-title">Therapyies</h4>
-              <ul class=" list-item space-y-4">
-                <li class=" block">
-                  <a href="nlp.php" class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
-                        duration-150">
-                    <span>Neuro-Linguistic Programming</span>
-                    <span class=" text-2xl">
-                      <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
-                    </span>
-                  </a>
-                </li>
-                <li class=" block">
-                  <a href="Hypnotherapy.php" class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
-                        duration-150">
-                    <span>Hypnotherapy</span>
-                    <span class=" text-2xl">
-                      <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
-                    </span>
-                  </a>
-                </li>
-
-                <li class=" block">
-                  <a href="energy-chakra.php" class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
-                        duration-150">
-                    <span>Energy/Chakra Healing</span>
-                    <span class=" text-2xl">
-                      <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
-                    </span>
-                  </a>
-                </li>
-
-                <li class=" block">
-                  <a href="eft.php" class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all
-                        duration-150">
-                    <span>Emotional Freedom Technique</span>
-                    <span class=" text-2xl">
-                      <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
-                    </span>
-                  </a>
-                </li>
-
-
-
-              </ul>
-            </div>
-
-
-          </div>
+          <?php include 'partials/_sidebar.php'; ?>
         </div>
       </div>
     </div>

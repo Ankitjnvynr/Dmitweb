@@ -138,10 +138,10 @@
   </div>
   <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
     <div class="container text-center">
-      <h2>Energy/Chakra Healing</h2>
+      <h2>Micro muscle body language Study: </h2>
       <nav>
         <ol class="flex items-center justify-center space-x-3">
-          <li class="breadcrumb-item"><a href="energy-chakra.php">Therapy </a></li>
+          <li class="breadcrumb-item"><a href="eft.php">Therapy </a></li>
           <li class="breadcrumb-item">-</li>
           <li class="text-primary">Details</li>
         </ol>
@@ -154,7 +154,7 @@
       <div class="grid grid-cols-12 gap-[30px]">
         <div class="lg:col-span-8 col-span-12">
           <div class="bg-[#F8F8F8] rounded-md">
-            <img src="assets\images\all-img\energy chakra copy.jpg" alt="" class=" rounded-t-md mb-10">
+            <img src="assets\images\all-img\EFT copy.jpg" alt="" class=" rounded-t-md mb-10">
             <div class="px-10 pb-10">
               <div class="flex  flex-wrap  xl:space-x-10 space-x-5 mt-6 mb-6">
                 <a class=" flex items-center space-x-2" href="#">
@@ -175,90 +175,34 @@
                 </a>
               </div>
               <h3>
-                Energy/Chakra Healing:
+                Micro muscle body language Study:
               </h3>
 
               <p class="mt-6">
-                Energy /Chakra healing is a concept rooted in ancient Eastern spiritual traditions, particularly within
-                Hinduism The word "chakra" is derived from Sanskrit and translates to "wheel" or "disk." In the context
-                of chakra healing, it refers to energy centers in the subtle body.
+
+              <h5>1. Subtle Facial Expressions and Movements:</h5> It could refer to the small, subtle movements and
+              expressions of the facial muscles that convey non-verbal cues. In this sense, it might involve paying
+              attention to tiny facial movements, like slight eyebrow raises, lip twitches, or eye movements, eye
+              blinks, head positioning, shoulders positioning, rate of breathing, speed of walking etc.to gain insights
+              into a person's emotions or reactions,
+
               </p>
               <p class="mt-6">
-                According to traditional beliefs, the human body has several chakras, which are interconnected energy
-                centers aligned along the spine. Each chakra is associated with specific physical, emotional, and
-                spiritual aspects of an individual's well-being.
+              <h5>2. Fine Motor Movements:</h5>Another interpretation could be related to fine motor movements of the
+              body, beyond just the face. This might include small gestures or twitches in the hands, fingers, or other
+              body parts that can reveal underlying emotions or attitudes.
               </p>
 
-              <h4 class="text-2xl my-4">
-                The seven main chakras are typically described as follows:
-              </h4>
-              <ul class="list-disc marker:text-secondary space-y-4 mt-6">
-                <li class="">
-                  <b>Root Chakra (Muladhara):</b> Located at the base of the spine, it is associated with feelings of
-                  safety, security, and grounding.
-                </li>
-                <li class="">
-                  <b>Sacral Chakra (Svadhisthana): </b> Found in the lower abdomen, it is linked to creativity,
-                  sexuality, and emotional balance.
-                </li>
-                <li class="">
-                  <b>Solar Plexus Chakra (Manipura): </b> Situated in the upper abdomen, it is related to personal
-                  power, confidence, and self-esteem.
-                </li>
-                <li class="">
-                  <b> Heart Chakra (Anahata): </b> Located in the center of the chest, it is associated with love,
-                  compassion, and emotional healing.
-                <li class="">
-                  <b> Throat Chakra (Vishuddha): </b> Situated at the throat, it is linked to communication,
-                  self-expression, and truth.
 
-                </li>
-                <li class="">
-                  <b> Third Eye Chakra (Ajna): </b> Found between the eyebrows, it is associated with intuition,
-                  perception, and spiritual awareness.
-
-                </li>
-                <li class="">
-                  <b> Third Eye Chakra (Ajna): </b> Found between the eyebrows, it is associated with intuition,
-                  perception, and spiritual awareness.
-
-                </li>
-
-                <blockquote
-                  class=" bg-secondary p-8 rounded-md bg-[url('../images/all-img/bb.png')] bg-cover bg-no-repeat bg-center my-8 text-white">
-                  <img src="assets/images/svg/q.svg" alt="">
-                  <h4 class="widget-title">BENEFITS: </h4>
-                  <div class=" text-xl font-semibold my-6">
-                    “ Chakra healing involves the idea that imbalances or blockages in these energy centers can lead to
-                    physical, emotional, or spiritual issues. Various practices aim to restore balance and promote
-                    well-being, including meditation, visualization, yoga, and energy healing techniques. Practitioners
-                    may use different colors, sounds, and affirmations associated with each chakra to facilitate
-                    healing.
-                    <br>
-                    It's important to note that while chakra healing has roots in spiritual and esoteric traditions, it
-                    is not universally accepted within the scientific or medical communities. People who engage in
-                    chakra healing often do so as a complementary practice alongside conventional medical care.
-                    ”
-                  </div>
-                  <div class=" flex items-center space-x-3">
-                    <span class=" inline-flex h-[3px] w-12 bg-white"></span>
-                    <span class=" text-xl font-semibold"></span>
-                  </div>
-                </blockquote>
-                
-                
-                
-                
-                
-                
+              <!-- related post  -->
+              <div class="grid xl:grid-cols-2 grid-cols-1  gap-[30px] md:mt-14 mt-8">
+              </div>
             </div>
           </div>
-          <!-- comments start -->
-          
-          
         </div>
         <div class="lg:col-span-4 col-span-12">
-        <?php include 'partials/_sidebar.php'; ?>
+          <?php include 'partials/_sidebar.php'; ?>
+
         </div>
       </div>
     </div>
