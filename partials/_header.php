@@ -8,7 +8,7 @@
             <div class="flex-1 main-menu relative mr-[74px]">
               <ul class="menu-active-classes">
                 <li class=" menu-item">
-                  <a href="index.php">Home</a>
+                  <a href="index.php">Homewert</a>
                   
                 </li>
                 <!-- <li class="menu-item-has-children">
