@@ -154,7 +154,7 @@
     <div class="container">
       <div class="grid grid-cols-12 gap-10">
         <div class="xl:col-span-7 lg:col-span-6 col-span-12">
-          <img src="assets/images/all-img/about3.png" alt="" />
+          <img src="assets\images\all-img\what dmit.png" alt="" />
         </div>
         <div class="xl:col-span-5 lg:col-span-6 col-span-12">
           <div class="mini-title">About DMIT Test</div>
