@@ -95,7 +95,7 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="contact.html">Contacts</a>
+                  <a href="contact.html">Contact Us</a>
                 </li>
               </ul>
             </div>
