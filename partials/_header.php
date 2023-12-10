@@ -58,7 +58,7 @@
                   </ul>
                 </li> -->
                 <li class="menu-item-has-children">
-                  <a href="#">Therapies</a>
+                  <a href="nlp.php">Therapies</a>
                   <ul class="sub-menu">
                     <li>
                       <a href="nlp.php">Neuro-Linguistic Programming (NLP) </a>
