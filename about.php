@@ -226,7 +226,7 @@
                   <thead class="border-b text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 rounded-lg">
                     <tr>
                       <th scope="col" class="px-6 py-3">
-                       Week
+                        Week
                       </th>
                       <th scope="col" class="px-6 py-3">
                         Process
@@ -236,42 +236,42 @@
                   <tbody>
                     <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                      6 to 8
+                        6 to 8
                       </th>
                       <td class="px-6 py-4">
-                      Formation of Limbs 
+                        Formation of Limbs
                       </td>
                     </tr>
                     <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                      10 to 12
+                        10 to 12
                       </th>
                       <td class="px-6 py-4">
-                      Limbs are fully developed 
+                        Limbs are fully developed
                       </td>
                     </tr>
                     <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                      13
+                        13
                       </th>
                       <td class="px-6 py-4">
-                      Start of Dermatoglyphs Formation
+                        Start of Dermatoglyphs Formation
                       </td>
                     </tr>
                     <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                      14
+                        14
                       </th>
                       <td class="px-6 py-4">
-                      Brain including Cerebral Cortex starts 
+                        Brain including Cerebral Cortex starts
                       </td>
                     </tr>
                     <tr class=" border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                      21
+                        21
                       </th>
                       <td class="px-6 py-4">
-                      Fully developed fingerprints 
+                        Fully developed fingerprints
                       </td>
                     </tr>
                   </tbody>
@@ -356,11 +356,11 @@
     </div>
   </div>
   <!-- ==========================scientist section ========================== -->
-  <div class=" section-padding  bg-white bg-[url('../images/all-img/section-bg-14.png')] bg-center  bg-no-repeat">
+  <!-- <div class=" section-padding  bg-white bg-[url('../images/all-img/section-bg-14.png')] bg-center  bg-no-repeat">
     <div class="container">
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-7">
         <div class="bg-[url('../images/all-img/bg-ins-1.png')] bg-cover bg-no-repeat p-10  rounded-md ">
-          <!-- <img height="100%" src="assets\images\all-img\drfrancis.png" alt="" class="absolute"> -->
+          <img height="100%" src="assets\images\all-img\drfrancis.png" alt="" class="absolute"> 
           <div class="max-w-[337px]">
             <div class="mini-title">Build Your Career</div>
             <div class=" text-[34px] text-black leading-[51px]">
@@ -389,7 +389,7 @@
       </div>
     </div>
   </div>
-
+ -->
 
 
   <!-- ==========================scientist section end========================== -->
@@ -442,7 +442,7 @@
           <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Personalized Guidance:</h4>
           <div class="transition duration-150 group-hover:text-white">DMIT offers tailored insights, serving as a roadmap for personal and professional development. It highlights strengths and suggests strategies for improvement.
 
-</div>
+          </div>
         </div>
         <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
           <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
@@ -464,6 +464,8 @@
       </div>
     </div>
   </div>
+  <!-- Feture section end -->
+
   <!-- Couter section start -->
   <div class=" section-padding">
     <div class="container">
@@ -535,7 +537,7 @@
         <div class="xl:col-span-5 lg:col-span-6 col-span-12 flex flex-col justify-center ">
           <div class="mini-title">Testimonial</div>
           <h4 class="column-title ">
-            What Says 
+            What Says
             <span class="shape-bg">
               People</span>
             About Us
@@ -560,7 +562,7 @@
       <div class="text-center">
         <div class="mini-title">Team Member</div>
         <div class="column-title ">
-          Our 
+          Our
           <span class="shape-bg">Experts</span>
         </div>
       </div>
