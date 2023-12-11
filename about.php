@@ -150,12 +150,42 @@
   </div>
 
 
+  <!-- DMIT Centre start -->
+  <div class="bg-[url('../images/all-img/section-bg-2.png')] bg-cover bg-no-repeat bg-center section-padding">
+    <div class="container">
+      <div class="lg:grid grid-cols-12 gap-[30px]">
+        <div class="xl:col-span-7 lg:col-span-7 col-span-12">
+         
+          <h4 class="column-title ">
+          DMIT 
+            <span class="shape-bg">
+            Centre</span>
+            
+          </h4>
+          <div class="mb-6">
+          We Are the  fingerprint analysis Centre in Haryana the purpose of setting up the Centre is to help analyse what each and every single tells us about our intelligence, emotions, interest, hobbies, linguistic abilities, emotional intelligence, motor skills to name a few.
+          </div>
+          <div class="mb-6">
+          Our hands reflect various zones like action zone, Thought zone, visual zone, auditory, zone, Kinesthectic zone, 
+          </div>
+         
+          <div class="pt-8">
+            <a href="#" class=" btn btn-primary">Explore </a>
+          </div>
+        </div>
+        <div class="xl:col-span-5 lg:col-span-5 col-span-12 lg:pt-0 md:pt-10 pt-6">
+          <img style="mix-blend-mode:multiply" src="assets\images\all-img\dmit center image.jpg" alt="" class=" mx-auto block w-full" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DMIT Centre end -->
   <!-- history start -->
   <div class="about-area section-padding-top pb-12">
     <div class="container">
       <div class="grid grid-cols-12 gap-10">
         <div class="xl:col-span-4 lg:col-span-4 col-span-12">
-          <img width="100%" class="rounded rounded:xl" src="assets\images\icon\Dr. Francis Galton.png" alt="" />
+        <img src="assets\images\all-img\Dr. Francis Galton.png" alt="" class=" mx-auto block w-full" style=" mix-blend-mode: multiply ">
         </div>
         <div class="xl:col-span-8 lg:col-span-8 col-span-12 flex flex-col justify-center">
           <div class="mini-title">History</div>
