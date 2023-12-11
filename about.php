@@ -242,7 +242,7 @@
               Dermatoglyphics is a <span class="mini-title">SCIENCE.</span>
             </li>
             <li class="">
-              Dermatoglyphics is the <span class="mini-title">study of ridge patterns </span> of the skin. It is well established that the ridge patterns of the fingerprints are  and help in personal identification.
+              Dermatoglyphics is the <span class="mini-title">study of ridge patterns </span> of the skin. It is well established that the ridge patterns of the fingerprints are unique  and help in personal identification.
             </li>
             <li class="">
               Its reveals the congenital(by birth) links between our fingers and our inborn abilities (talents).
@@ -338,7 +338,7 @@
               DMIT</span>
           </h4>
           <div class=" mb-2">
-            DMIT is a application (or test) in which
+            DMIT is an application (or test) in which
             we are using Dermatoglyphics science
             given by Dr. Harold Cummins and
             multiple intelligence theory given by
@@ -351,6 +351,7 @@
           <span class="mini-title">limitation</span> and
           <span class="mini-title">behaviour.</span>
           </div>
+          <div class="mb-4">It helps</div>
           <div class="space-y-8">
             <div class="progressbar-group">
               <div class="flex justify-between" data-width="90%">
