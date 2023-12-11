@@ -150,12 +150,42 @@
   </div>
 
 
+  <!-- DMIT Centre start -->
+  <div class="bg-[url('../images/all-img/section-bg-2.png')] bg-cover bg-no-repeat bg-center section-padding">
+    <div class="container">
+      <div class="lg:grid grid-cols-12 gap-[30px]">
+        <div class="xl:col-span-7 lg:col-span-7 col-span-12">
+         
+          <h4 class="column-title ">
+          DMIT 
+            <span class="shape-bg">
+            Centre</span>
+            
+          </h4>
+          <div class="mb-6">
+          We Are the  fingerprint analysis Centre in Haryana the purpose of setting up the Centre is to help analyse what each and every single tells us about our intelligence, emotions, interest, hobbies, linguistic abilities, emotional intelligence, motor skills to name a few.
+          </div>
+          <div class="mb-6">
+          Our hands reflect various zones like action zone, Thought zone, visual zone, auditory, zone, Kinesthectic zone, 
+          </div>
+         
+          <div class="pt-8">
+            <a href="#" class=" btn btn-primary">Explore </a>
+          </div>
+        </div>
+        <div class="xl:col-span-5 lg:col-span-5 col-span-12 lg:pt-0 md:pt-10 pt-6">
+          <img style="mix-blend-mode:multiply" src="assets\images\all-img\dmit center image.jpg" alt="" class=" mx-auto block w-full" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- DMIT Centre end -->
   <!-- history start -->
   <div class="about-area section-padding-top pb-12">
     <div class="container">
       <div class="grid grid-cols-12 gap-10">
         <div class="xl:col-span-4 lg:col-span-4 col-span-12">
-          <img width="100%" class="rounded rounded:xl" src="assets\images\icon\Dr. Francis Galton.png" alt="" />
+        <img src="assets\images\all-img\Dr. Francis Galton.png" alt="" class=" mx-auto block w-full" style=" mix-blend-mode: multiply ">
         </div>
         <div class="xl:col-span-8 lg:col-span-8 col-span-12 flex flex-col justify-center">
           <div class="mini-title">History</div>
@@ -179,7 +209,7 @@
               When lots of data was gather Dr Francis Galton thought what to do ?
             </li>
             <li class="">
-              Dermatoglyphics = Derma <span class="mini-title">[Skin]</span> + Glyphic <span class="mini-title">[Lines on Skin]</span>
+              Dermatoglyphics = Derma <span class="mini-title">[Skin]</span> + Glyphic <span class="mini-title">[carving]</span>
             </li>
             <li class="">
               <span class="mini-title"> Dr. Harold Cummins</span> published a thesis “Fingerprints, Palms and Soles” and started a branch of science called “Dermatoglyphics” .
@@ -212,7 +242,7 @@
               Dermatoglyphics is a <span class="mini-title">SCIENCE.</span>
             </li>
             <li class="">
-              Dermatoglyphics is the <span class="mini-title">study of ridge patterns </span> of the skin. It is well established that the ridge patterns of the are unique and help in personal identification.
+              Dermatoglyphics is the <span class="mini-title">study of ridge patterns </span> of the skin. It is well established that the ridge patterns of the fingerprints are unique  and help in personal identification.
             </li>
             <li class="">
               Its reveals the congenital(by birth) links between our fingers and our inborn abilities (talents).
@@ -281,6 +311,10 @@
             </li>
 
           </ul>
+          
+          <div>
+            <img style="mix-blend-mode:multiply" src="assets\images\all-img\proof.png" alt="proof of dmit">
+          </div>
         </div>
         <div class="xl:col-span-4 lg:col-span-4 col-span-12 flex justify-center">
           <img width="100%" style="mix-blend-mode: multiply;" class="rounded rounded:xl" src="assets\images\icon\Fingerprint-and-Brain-Connection.jpg" alt="" />
@@ -303,14 +337,21 @@
             <span class="shape-bg">
               DMIT</span>
           </h4>
-          <div class=" mb-8">
-            DMIT is a application (or test) in which
+          <div class=" mb-2">
+            DMIT is an application (or test) in which
             we are using Dermatoglyphics science
             given by Dr. Harold Cummins and
             multiple intelligence theory given by
             Dr. Howard Gardner.
 
           </div>
+          <div class=" mb-4">
+          we can find out individual innate
+          <span class="mini-title">strengths</span>,
+          <span class="mini-title">limitation</span> and
+          <span class="mini-title">behaviour.</span>
+          </div>
+          <div class="mb-4">It helps</div>
           <div class="space-y-8">
             <div class="progressbar-group">
               <div class="flex justify-between" data-width="90%">
