@@ -179,7 +179,7 @@
               When lots of data was gather Dr Francis Galton thought what to do ?
             </li>
             <li class="">
-              Dermatoglyphics = Derma <span class="mini-title">[Skin]</span> + Glyphic <span class="mini-title">[Lines on Skin]</span>
+              Dermatoglyphics = Derma <span class="mini-title">[Skin]</span> + Glyphic <span class="mini-title">[carving]</span>
             </li>
             <li class="">
               <span class="mini-title"> Dr. Harold Cummins</span> published a thesis “Fingerprints, Palms and Soles” and started a branch of science called “Dermatoglyphics” .
@@ -212,7 +212,7 @@
               Dermatoglyphics is a <span class="mini-title">SCIENCE.</span>
             </li>
             <li class="">
-              Dermatoglyphics is the <span class="mini-title">study of ridge patterns </span> of the skin. It is well established that the ridge patterns of the are unique and help in personal identification.
+              Dermatoglyphics is the <span class="mini-title">study of ridge patterns </span> of the skin. It is well established that the ridge patterns of the fingerprints are  and help in personal identification.
             </li>
             <li class="">
               Its reveals the congenital(by birth) links between our fingers and our inborn abilities (talents).
@@ -281,6 +281,10 @@
             </li>
 
           </ul>
+          
+          <div>
+            <img style="mix-blend-mode:multiply" src="assets\images\all-img\proof.png" alt="proof of dmit">
+          </div>
         </div>
         <div class="xl:col-span-4 lg:col-span-4 col-span-12 flex justify-center">
           <img width="100%" style="mix-blend-mode: multiply;" class="rounded rounded:xl" src="assets\images\icon\Fingerprint-and-Brain-Connection.jpg" alt="" />
@@ -303,13 +307,19 @@
             <span class="shape-bg">
               DMIT</span>
           </h4>
-          <div class=" mb-8">
+          <div class=" mb-2">
             DMIT is a application (or test) in which
             we are using Dermatoglyphics science
             given by Dr. Harold Cummins and
             multiple intelligence theory given by
             Dr. Howard Gardner.
 
+          </div>
+          <div class=" mb-4">
+          we can find out individual innate
+          <span class="mini-title">strengths</span>,
+          <span class="mini-title">limitation</span> and
+          <span class="mini-title">behaviour.</span>
           </div>
           <div class="space-y-8">
             <div class="progressbar-group">

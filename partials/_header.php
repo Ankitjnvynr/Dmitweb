@@ -101,7 +101,7 @@
             </div>
             <div class="flex-none flex space-x-[18px]">
               <div class=" hidden lg:block">
-                <a href="#" class="btn btn-primary py-[15px] px-8">Start Free Trial</a>
+                <a href="#" class="btn btn-primary py-[15px] px-8">Book an Appointment</a>
               </div>
               <div class=" block   lg:hidden">
                 <button type="button" class=" text-3xl md:w-[56px] h-10 w-10 md:h-[56px] rounded bg-[#F8F8F8] flex flex-col items-center justify-center
