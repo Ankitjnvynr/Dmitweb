@@ -180,7 +180,7 @@
         <div class="column-title ">
           The Place Where You Can
           <span class="shape-bg">Achieve</span>
-          
+
         </div>
       </div>
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-10 place-items-center place-items-center">
@@ -358,7 +358,7 @@
       <div class="text-center">
         <div class="mini-title">Who can choose </div>
         <div class="column-title ">
-          Who can take 
+          Who can take
           <span class="shape-bg">DMIT</span> Test ?
         </div>
       </div>
@@ -373,7 +373,7 @@
           <div class="course-content p-8">
             <div class="text-secondary  font-bold text-2xl mb-3">Dmit Test For Children</div>
             <p class="">Know your child Inborn Talent. Identify best learning style for your child. Select Activities based upon their innate potential. Identify your child Multiple Intelligence. Improve relationship between parents and children.</p>
-            
+
           </div>
         </a>
 
@@ -385,8 +385,8 @@
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">Dmit Test For Students</div>
             <p>
-            Know your Personal Quotients, IQ-EQ-AQ-CQ-SQ. Know you’re analytical and creative Skills. Understand your intrinsic potential. Get your Preferred Learning Style based on Visual, Auditory, and Kinesthetic.
-            </p>            
+              Know your Personal Quotients, IQ-EQ-AQ-CQ-SQ. Know you’re analytical and creative Skills. Understand your intrinsic potential. Get your Preferred Learning Style based on Visual, Auditory, and Kinesthetic.
+            </p>
           </div>
         </a>
 
@@ -398,7 +398,7 @@
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">Dmit for Career Guidance</div>
             <p>
-            Know Your Personality Types. Develop your core competencies. Recognize your Multiple Intelligence. Know your Strength and weakness based on MI Theory. Find the most suitable learning and leadership Qualities
+              Know Your Personality Types. Develop your core competencies. Recognize your Multiple Intelligence. Know your Strength and weakness based on MI Theory. Find the most suitable learning and leadership Qualities
             </p>
           </div>
         </a>
@@ -411,7 +411,7 @@
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">Dmit Test For Adults</div>
             <p>
-            Know your hidden talents. Improve your relationships with loved ones. Develop your understanding through better communications. Understand your Values and Characteristics .Improve your family relationships
+              Know your hidden talents. Improve your relationships with loved ones. Develop your understanding through better communications. Understand your Values and Characteristics .Improve your family relationships
             </p>
           </div>
         </a>
@@ -424,7 +424,7 @@
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">Dmit Test For Employees</div>
             <p>
-            Find the right Employee for the right job. Pre-Employments Screening. Know your employee Personal potentials IQ-AQ-EQ-SQ-CQ. Discover Leadership, Planning and execution Qualities.
+              Find the right Employee for the right job. Pre-Employments Screening. Know your employee Personal potentials IQ-AQ-EQ-SQ-CQ. Discover Leadership, Planning and execution Qualities.
             </p>
           </div>
         </a>
@@ -437,7 +437,7 @@
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">DMIT Training Course</div>
             <p>
-            Identify your student inborn talents and weaknesses. Understand student natural character behaviors, Design multi-modality teaching methods. Meet your student learning different styles and academic needs
+              Identify your student inborn talents and weaknesses. Understand student natural character behaviors, Design multi-modality teaching methods. Meet your student learning different styles and academic needs
             </p>
           </div>
         </a>
@@ -449,7 +449,7 @@
     </div>
   </div>
   <!-- platform start -->
-  <div class="bg-[url('../images/all-img/section-bg-2.png')] bg-cover bg-no-repeat bg-center section-padding">
+  <!-- <div class="bg-[url('../images/all-img/section-bg-2.png')] bg-cover bg-no-repeat bg-center section-padding">
     <div class="container">
       <div class="lg:grid grid-cols-12 gap-[30px]">
         <div class="xl:col-span-5 lg:col-span-6 col-span-12">
@@ -504,7 +504,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- cta start -->
   <div class="bg-[url('../images/all-img/section-bg-3.png')] bg-cover bg-no-repeat bg-center py-20">
     <div class="container">
@@ -540,14 +540,14 @@
   <div class=" section-padding">
     <div class="container">
       <div class="text-center">
-        <div class="mini-title">Start Learning From Today</div>
+        <div class="mini-title">Know About 10 Intelligence</div>
         <div class="column-title ">
-          Popular
-          <span class="shape-bg">Topics</span>
-          To Learn
+          10
+          <span class="shape-bg pb-4">Intelligence</span>
+
         </div>
       </div>
-      <div class="grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-[30px] pt-10">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-[30px] pt-10 place-items-center">
 
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
@@ -556,8 +556,8 @@
             <img src="assets/images/icon/t1.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
-            <h4 class=" text-2xl  mb-2 font-bold">Data Science</h4>
-            <p>68 Courses</p>
+            <h4 class=" text-2xl  mb-2 font-bold">Interpersonal Intelligence</h4>
+            <p> Individuals with high interpersonal intelligence excel in understanding and interacting effectively with others, showcasing strong social skills and empathy.</p>
           </div>
         </a>
 
@@ -567,8 +567,8 @@
             <img src="assets/images/icon/t2.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
-            <h4 class=" text-2xl  mb-2 font-bold">UI/UX Design</h4>
-            <p>UI/UX Design</p>
+            <h4 class=" text-2xl  mb-2 font-bold">Visual 3D Intelligence</h4>
+            <p>This intelligence involves the ability to think in three-dimensional space, enabling individuals to visualize and manipulate objects mentally with ease.</p>
           </div>
         </a>
 
@@ -578,8 +578,8 @@
             <img src="assets/images/icon/t3.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
-            <h4 class=" text-2xl  mb-2 font-bold">Modern Physics</h4>
-            <p>68 Courses</p>
+            <h4 class=" text-2xl  mb-2 font-bold">Kinesthetic GMS (Gross Motor Skills)</h4>
+            <p>Those with strong kinesthetic gross motor skills exhibit proficiency in activities requiring large muscle movements, such as running or jumping.</p>
           </div>
         </a>
 
@@ -589,8 +589,8 @@
             <img src="assets/images/icon/t4.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
-            <h4 class=" text-2xl  mb-2 font-bold">Music Production</h4>
-            <p>68 Courses</p>
+            <h4 class=" text-2xl  mb-2 font-bold">Musical Intelligence</h4>
+            <p>Individuals with musical intelligence possess a heightened sensitivity to rhythm, melody, and tone, often excelling in areas related to music composition and appreciation.</p>
           </div>
         </a>
 
@@ -600,8 +600,8 @@
             <img src="assets/images/icon/t5.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
-            <h4 class=" text-2xl  mb-2 font-bold">Data Science</h4>
-            <p>45 Courses</p>
+            <h4 class=" text-2xl  mb-2 font-bold">Visual 2D Intelligence</h4>
+            <p>This intelligence involves a proficiency in understanding and interpreting two-dimensional visual information, such as graphs, charts, and images.</p>
           </div>
         </a>
 
@@ -611,8 +611,8 @@
             <img src="assets/images/icon/t6.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
-            <h4 class=" text-2xl  mb-2 font-bold">Finances</h4>
-            <p>68 Courses</p>
+            <h4 class=" text-2xl  mb-2 font-bold">Intrapersonal Intelligence</h4>
+            <p>Individuals with intrapersonal intelligence have a deep understanding of themselves, their emotions, and motivations, contributing to self-awareness and personal growth.</p>
           </div>
         </a>
 
@@ -622,8 +622,8 @@
             <img src="assets/images/icon/t7.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
-            <h4 class=" text-2xl  mb-2 font-bold">Global Science</h4>
-            <p>75 Courses</p>
+            <h4 class=" text-2xl  mb-2 font-bold">Logical Intelligence</h4>
+            <p>This type of intelligence involves strong analytical and problem-solving skills, allowing individuals to excel in tasks that require reasoning and critical thinking.</p>
           </div>
         </a>
 
@@ -633,8 +633,29 @@
             <img src="assets/images/icon/t8.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
-            <h4 class=" text-2xl  mb-2 font-bold">Game Design</h4>
-            <p>12 Courses</p>
+            <h4 class=" text-2xl  mb-2 font-bold">Kinesthetic FMS (Fine Motor Skills)</h4>
+            <p>Those with high kinesthetic fine motor skills display precision in tasks requiring dexterity, such as handwriting or intricate hand movements.</p>
+          </div>
+        </a>
+        <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
+            py-[65px] hover:-translate-y-2" href="#">
+          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
+            <img src="assets/images/icon/t1.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl  mb-2 font-bold">Linguistic Intelligence</h4>
+            <p> Linguistically intelligent individuals excel in language-related activities, demonstrating a strong command of words, grammar, and effective communication.</p>
+          </div>
+        </a>
+
+        <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E8F5FF]  text-center px-6
+            py-[65px] hover:-translate-y-2" href="#">
+          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
+            <img src="assets/images/icon/t3.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
+          </div>
+          <div class="course-content">
+            <h4 class=" text-2xl  mb-2 font-bold">Naturalistic Intelligence</h4>
+            <p> People with naturalistic intelligence have a heightened awareness and appreciation for the natural world, showing an affinity for understanding and categorizing living organisms and their environments. </p>
           </div>
         </a>
 

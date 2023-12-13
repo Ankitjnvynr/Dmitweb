@@ -3,12 +3,12 @@
       <div class="items-center space-x-4 space-y-5 text-center lg:flex lg:space-y-0 lg:text-left">
         <div class="flex-1">
           <div class="max-w-[590px] text-3xl font-bold text-white md:text-3xl lg:text-[44px] lg:leading-[61px]">
-            Education Is About Creating Leaders For Tomorrow
+          DMIT test can help you to choose right way of success!
           </div>
         </div>
         <div class="flex-none">
           <button class="btn bg-white font-bold text-black">
-            Register Today
+            Get An Appointment
           </button>
         </div>
       </div>
