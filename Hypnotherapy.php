@@ -200,24 +200,7 @@
                 hypnotherapist if considering this approach, as proper training and ethical considerations are crucial
                 for the effective and responsible use of hypnotherapy techniques.
               </p>
-              <h4 class="text-2xl mb-4">
-                Micro muscle body language Study:
-              </h4>
-              <ul class="list-disc marker:text-secondary space-y-4 mt-6">
-                <li class="">
-                  <b>Subtle Facial Expressions and Movements: </b> It could refer to the small, subtle movements and
-                  expressions of the facial muscles that convey non-verbal cues. In this sense, it might involve paying
-                  attention to tiny facial movements, like slight eyebrow raises, lip twitches, or eye movements, eye
-                  blinks, head positioning, shoulders positioning, rate of breathing, speed of walking etc.to gain
-                  insights into a person's emotions or reactions,
-                </li>
-                <li class="">
-                  <b>Fine Motor Movements:</b> Another interpretation could be related to fine motor movements of the
-                  body, beyond just the face. This might include small gestures or twitches in the hands, fingers, or
-                  other body parts that can reveal underlying emotions or attitudes.
-                </li>
-
-              </ul>
+              
 
               <blockquote
                 class=" bg-secondary p-8 rounded-md bg-[url('../images/all-img/bb.png')] bg-cover bg-no-repeat bg-center my-8 text-white">
