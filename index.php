@@ -547,7 +547,7 @@
 
         </div>
       </div>
-      <div class="grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-[30px] pt-10 place-items-center">
+      <div class="grid lg:grid-cols-5 md:grid-cols-2  grid-cols-1 gap-[30px] pt-10 place-items-center">
 
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
