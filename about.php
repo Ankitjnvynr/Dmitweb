@@ -148,7 +148,26 @@
       </nav>
     </div>
   </div>
+<!-- history of dmit start -->
+  <div class="container my-8">
+    <div class="flex  gap-10">
+      <div class="flex-initial w-64">
+        <img  src="assets\images\all-img\Dr Francis Galton.png" alt="Dr. Francis Galton.">
+      </div>
+      <div class="flex-auto">
+      <h4 class="column-title ">History of <span class="shape-bg">DMIT</span></h4>
+      <div class=" mb-8">
+            DMIT is a application (or test) in which
+            we are using Dermatoglyphics science
+            given by Dr. Harold Cummins and
+            multiple intelligence theory given by
+            Dr. Howard Gardner.
 
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- history of dmit end -->
   <!-- about area start -->
   <div class="about-area section-padding-top pb-12">
     <div class="container">
