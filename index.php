@@ -451,12 +451,12 @@
   <!-- platform start -->
   <div class="bg-[url('../images/all-img/section-bg-2.png')] bg-cover bg-no-repeat bg-center section-padding">
     <div class="container">
-    <div class="mini-title text-center">Appointment</div>
-          <h4 class="column-title text-center pb-8">
-            Get an
-            <span class="shape-bg pb-4"> Appointment</span>
-          </h4>
-          
+      <div class="mini-title text-center">Appointment</div>
+      <h4 class="column-title text-center pb-8">
+        Get an
+        <span class="shape-bg pb-4"> Appointment</span>
+      </h4>
+
       <div class="lg:grid grid-cols-12 gap-[30px]">
         <div class="xl:col-span-5 lg:col-span-6 col-span-12">
           <p class="text-center  mb-2">Fill the detail below to get an Appointment</p>
@@ -465,7 +465,7 @@
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-8 md:mb-0">
                   <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full Name">
-                  
+
                 </div>
                 <div class="w-full md:w-1/2 px-3 mt-4">
                   <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" placeholder="Email">
@@ -473,7 +473,8 @@
               </div>
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="Phone Number"></div>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="Phone Number">
+                </div>
               </div>
               <div class="flex flex-wrap -mx-3 mb-2">
                 <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
@@ -485,7 +486,7 @@
               </div>
             </form>
           </div>
-          
+
         </div>
         <div class="xl:col-span-7 lg:col-span-6 col-span-12 lg:pt-0 md:pt-10 pt-6">
           <img style="mix-blend-mode: multiply;" src="assets\images\all-img\Dmit-Software_GIF_DMIT-Report-Genration-Software-2.webp" alt="" class=" mx-auto block w-full" />
@@ -711,14 +712,111 @@
       </div>
     </div>
   </div>
-  <!-- team start -->
-  <div class=" section-padding">
+<!-- blog section start -->
+  <div class=" section-padding bg-[url('../images/all-img/section-bg-5.png')] bg-cover bg-no-repeat bg-center">
+    <div class="container">
+      <div class="lg:flex justify-between items-center ">
+        <div class="mb-3">
+          <div class="mini-title">Team Member</div>
+          <div class="column-title ">
+            Our Latest
+            <span class="shape-bg">Blogs</span>
+          </div>
+        </div>
+        <div class="mb-3">
+          <a href="#" class=" btn btn-primary">Read All Blogs</a>
+        </div>
+      </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] pt-7">
+
+
+        <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
+          <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
+            <img src="assets/images/all-img/blog-1.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
+          </div>
+          <div class="course-content p-8">
+            <div class="flex   lg:space-x-10 space-x-5 mb-5">
+              <a class=" flex items-center space-x-2" href="blog-single.html">
+                <img src="assets/images/svg/admin.svg" alt="">
+                <span>Admin</span>
+              </a>
+              <a class=" flex items-center space-x-2" href="blog-single.html">
+                <img src="assets/images/svg/calender.svg" alt="">
+                <span>Jan 29, 2022</span>
+              </a>
+            </div>
+            <h4 class=" text-xl mb-5 font-bold">
+              <a href="blog-single.html" class=" hover:text-primary transition duration-150">
+                Professional Mobile Painting and Sculpting
+              </a>
+            </h4>
+            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
+          <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
+            <img src="assets/images/all-img/blog-2.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
+          </div>
+          <div class="course-content p-8">
+            <div class="flex   lg:space-x-10 space-x-5 mb-5">
+              <a class=" flex items-center space-x-2" href="blog-single.html">
+                <img src="assets/images/svg/admin.svg" alt="">
+                <span>Admin</span>
+              </a>
+              <a class=" flex items-center space-x-2" href="blog-single.html">
+                <img src="assets/images/svg/calender.svg" alt="">
+                <span>Jan 29, 2022</span>
+              </a>
+            </div>
+            <h4 class=" text-xl mb-5 font-bold">
+              <a href="blog-single.html" class=" hover:text-primary transition duration-150">
+                Professional Ceramic Moulding for Beginners
+              </a>
+            </h4>
+            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
+          </div>
+        </div>
+
+        <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
+          <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
+            <img src="assets/images/all-img/blog-3.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
+          </div>
+          <div class="course-content p-8">
+            <div class="flex   lg:space-x-10 space-x-5 mb-5">
+              <a class=" flex items-center space-x-2" href="blog-single.html">
+                <img src="assets/images/svg/admin.svg" alt="">
+                <span>Admin</span>
+              </a>
+              <a class=" flex items-center space-x-2" href="blog-single.html">
+                <img src="assets/images/svg/calender.svg" alt="">
+                <span>Jan 29, 2022</span>
+              </a>
+            </div>
+            <h4 class=" text-xl mb-5 font-bold">
+              <a href="blog-single.html" class=" hover:text-primary transition duration-150">
+                Education Is About Create Leaders For Tomorrow
+              </a>
+            </h4>
+            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- blog section end -->
+    <!-- team start -->
+    <div class=" section-padding">
     <div class="container">
       <div class="text-center">
         <div class="mini-title">Team Member</div>
         <div class="column-title ">
-          Our Expert
-          <span class="shape-bg">Instructors</span>
+          Our 
+          <span class="shape-bg">Experts</span>
         </div>
       </div>
       <div class="grid xl:grid-cols-4 lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-[30px] pt-10">
@@ -851,101 +949,73 @@
       </div>
     </div>
   </div>
-  <div class=" section-padding bg-[url('../images/all-img/section-bg-5.png')] bg-cover bg-no-repeat bg-center">
+  <!-- our expret end -->
+  <!-- accrodain start -->
+  <div class="section-padding  bg-white bg-[url('../images/all-img/section-bg-15.png')] bg-bottom  bg-cover bg-no-repeat">
     <div class="container">
-      <div class="lg:flex justify-between items-center ">
-        <div class="mb-3">
-          <div class="mini-title">Team Member</div>
+      <div class="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
+        <div>
+          <div class="mini-title">Frequently Asked Question</div>
           <div class="column-title ">
-            Our Latest
-            <span class="shape-bg">Blogs</span>
+            General
+            <span class="shape-bg">Questions</span>
           </div>
+          <ul class="list accrodains space-y-[30px] lg:max-w-[470px]">
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>What does it take excellent author?</span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a
+                certificate for every
+                learning program that you complete at no additional cost.
+              </div>
+            </li>
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>Who will view my content?
+                </span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a
+                certificate for every
+                learning program that you complete at no additional cost.
+              </div>
+            </li>
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>What does it take become an author?
+                </span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a
+                certificate for every
+                learning program that you complete at no additional cost.
+              </div>
+            </li>
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>How to Change my Password easily?</span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a
+                certificate for every
+                learning program that you complete at no additional cost.
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="mb-3">
-          <a href="#" class=" btn btn-primary">Read All Blogs</a>
+        <div>
+          <img style="mix-blend-mode: multiply;" src="assets\images\all-img\faq.jpg" alt="" class=" mx-auto">
         </div>
-      </div>
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] pt-7">
-
-
-        <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
-          <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
-            <img src="assets/images/all-img/blog-1.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
-          </div>
-          <div class="course-content p-8">
-            <div class="flex   lg:space-x-10 space-x-5 mb-5">
-              <a class=" flex items-center space-x-2" href="blog-single.html">
-                <img src="assets/images/svg/admin.svg" alt="">
-                <span>Admin</span>
-              </a>
-              <a class=" flex items-center space-x-2" href="blog-single.html">
-                <img src="assets/images/svg/calender.svg" alt="">
-                <span>Jan 29, 2022</span>
-              </a>
-            </div>
-            <h4 class=" text-xl mb-5 font-bold">
-              <a href="blog-single.html" class=" hover:text-primary transition duration-150">
-                Professional Mobile Painting and Sculpting
-              </a>
-            </h4>
-            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
-          </div>
-        </div>
-
-        <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
-          <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
-            <img src="assets/images/all-img/blog-2.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
-          </div>
-          <div class="course-content p-8">
-            <div class="flex   lg:space-x-10 space-x-5 mb-5">
-              <a class=" flex items-center space-x-2" href="blog-single.html">
-                <img src="assets/images/svg/admin.svg" alt="">
-                <span>Admin</span>
-              </a>
-              <a class=" flex items-center space-x-2" href="blog-single.html">
-                <img src="assets/images/svg/calender.svg" alt="">
-                <span>Jan 29, 2022</span>
-              </a>
-            </div>
-            <h4 class=" text-xl mb-5 font-bold">
-              <a href="blog-single.html" class=" hover:text-primary transition duration-150">
-                Professional Ceramic Moulding for Beginners
-              </a>
-            </h4>
-            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
-          </div>
-        </div>
-
-        <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
-          <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
-            <img src="assets/images/all-img/blog-3.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
-          </div>
-          <div class="course-content p-8">
-            <div class="flex   lg:space-x-10 space-x-5 mb-5">
-              <a class=" flex items-center space-x-2" href="blog-single.html">
-                <img src="assets/images/svg/admin.svg" alt="">
-                <span>Admin</span>
-              </a>
-              <a class=" flex items-center space-x-2" href="blog-single.html">
-                <img src="assets/images/svg/calender.svg" alt="">
-                <span>Jan 29, 2022</span>
-              </a>
-            </div>
-            <h4 class=" text-xl mb-5 font-bold">
-              <a href="blog-single.html" class=" hover:text-primary transition duration-150">
-                Education Is About Create Leaders For Tomorrow
-              </a>
-            </h4>
-            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
+
   <?php include 'partials/_footer.php'; ?>
 
   <div class="rt-mobile-menu-overlay"></div>
