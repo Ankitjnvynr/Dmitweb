@@ -6,7 +6,7 @@
           <img src="assets/images/logo/logo.svg" alt=""></a>
         <div class="flex items-center flex-1">
           <div class="flex-1 main-menu relative mr-[74px]">
-            <ul class="menu-active-classes">
+            <ul class="menu-active-classes flex ">
               <li class=" menu-item">
                 <a href="index.php">Home</a>
 
@@ -41,7 +41,7 @@
                   </ul>
                 </li> -->
               <li class=" menu-item">
-                <a href="about.php">About_Us</a>
+                <a href="about.php">About Us</a>
               </li>
               <!-- <li class="menu-item-has-children">
                   <a href="#">Courses</a>
@@ -77,9 +77,9 @@
                     </li>
                   </ul>
                 </li>
-                <li class="menu-item-has-children">
-                  <a href="#">Blog</a>
-                  <ul class="sub-menu">
+                <li class="menu-item">
+                  <a href="#">DMIT ?</a>
+                  <!-- <ul class="sub-menu">
                     <li>
                       <a href="blog.html">Blog</a>
                     </li>
@@ -92,7 +92,7 @@
                     <li>
                       <a href="blog-single.html">Single Blog</a>
                     </li>
-                  </ul>
+                  </ul> -->
                 </li>
                 <li>
                   <a href="contact.php">Contact Us</a>

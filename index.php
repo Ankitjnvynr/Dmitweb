@@ -449,62 +449,50 @@
     </div>
   </div>
   <!-- platform start -->
-  <!-- <div class="bg-[url('../images/all-img/section-bg-2.png')] bg-cover bg-no-repeat bg-center section-padding">
+  <div class="bg-[url('../images/all-img/section-bg-2.png')] bg-cover bg-no-repeat bg-center section-padding">
     <div class="container">
+    <div class="mini-title text-center">Appointment</div>
+          <h4 class="column-title text-center pb-8">
+            Get an
+            <span class="shape-bg pb-4"> Appointment</span>
+          </h4>
+          
       <div class="lg:grid grid-cols-12 gap-[30px]">
         <div class="xl:col-span-5 lg:col-span-6 col-span-12">
-          <div class="mini-title">Best Online Learning Platform</div>
-          <h4 class="column-title ">
-            One Platfrom & Many
-            <span class="shape-bg">
-              Courses</span>
-            For You
-          </h4>
-          <div>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+          <p class="text-center  mb-2">Fill the detail below to get an Appointment</p>
+          <div class="form">
+            <form class="w-full max-w-lg">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-8 md:mb-0">
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full Name">
+                  
+                </div>
+                <div class="w-full md:w-1/2 px-3 mt-4">
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-4">
+                <div class="w-full px-3">
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="Phone Number"></div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Address">
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <input class="btn btn-primary mt-4 " id="grid-zip" type="submit" placeholder="90210">
+                </div>
+              </div>
+            </form>
           </div>
-          <ul class=" space-y-2 pt-8">
-            <li class="flex flex-wrap">
-              <div class="flex-none mr-3">
-                <div class="">
-                  <img src="assets/images/svg/ok.svg" alt="" />
-                </div>
-              </div>
-              <div class="flex-1">
-                <h4 class=" text-lg mb-1 font-semibold">9/10 Average Satisfaction Rate</h4>
-              </div>
-            </li>
-            <li class="flex flex-wrap">
-              <div class="flex-none mr-3">
-                <div class="">
-                  <img src="assets/images/svg/ok.svg" alt="" />
-                </div>
-              </div>
-              <div class="flex-1">
-                <h4 class=" text-lg mb-1 font-semibold">96% Completitation Rate</h4>
-              </div>
-            </li>
-            <li class="flex flex-wrap">
-              <div class="flex-none mr-3">
-                <div class="">
-                  <img src="assets/images/svg/ok.svg" alt="" />
-                </div>
-              </div>
-              <div class="flex-1">
-                <h4 class=" text-lg mb-1 font-semibold">Friendly Environment & Expert Teacher</h4>
-              </div>
-            </li>
-          </ul>
-          <div class="pt-8">
-            <a href="#" class=" btn btn-primary">Explore Our Courses</a>
-          </div>
+          
         </div>
         <div class="xl:col-span-7 lg:col-span-6 col-span-12 lg:pt-0 md:pt-10 pt-6">
-          <img src="assets/images/all-img/about2.png" alt="" class=" mx-auto block w-full" />
+          <img style="mix-blend-mode: multiply;" src="assets\images\all-img\Dmit-Software_GIF_DMIT-Report-Genration-Software-2.webp" alt="" class=" mx-auto block w-full" />
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <!-- cta start -->
   <div class="bg-[url('../images/all-img/section-bg-3.png')] bg-cover bg-no-repeat bg-center py-20">
     <div class="container">
