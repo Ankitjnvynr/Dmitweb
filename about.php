@@ -517,7 +517,7 @@
           <span class="shape-bg">Achievement</span>
         </div>
       </div>
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] pt-10">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-[30px] pt-10">
 
 
         <div class="bg-white shadow-box7 text-center pt-[64px] pb-8 px-[50px]  rounded-[8px] relative my-4">
@@ -825,7 +825,7 @@
           </ul>
         </div>
         <div>
-          <img src="assets/images/all-img/faq.png" alt="" class=" mx-auto">
+          <img style="mix-blend-mode: multiply;" src="assets\images\all-img\faq.jpg" alt="" class=" mx-auto">
         </div>
       </div>
     </div>
