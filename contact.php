@@ -18,7 +18,7 @@
         your experience and security.
     </p> <![endif] -->
 
-	<?php include 'partials\_header.php' ?>
+    <?php include 'partials/_header.php'; ?>
   <div class="openmobile-menu fixed top-0 h-screen pt-10 pb-6 bg-white shadow-box2 w-[320px] overflow-y-auto flex flex-col
         z-[999]">
     <div class="flex justify-between px-6 flex-none">
@@ -227,7 +227,7 @@
       </div>
     </div>
   </div>
- <?php include 'partials\_footer.php' ?>
+  <?php include 'partials/_footer.php'; ?>
 
   <div class="rt-mobile-menu-overlay"></div>
   <!-- scripts -->
