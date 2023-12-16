@@ -23,7 +23,7 @@
   <div class="openmobile-menu fixed top-0 h-screen pt-10 pb-6 bg-white shadow-box2 w-[320px] overflow-y-auto flex flex-col
         z-[999]">
     <div class="flex justify-between px-6 flex-none">
-      <a href="index.html" class="brand-logo flex-none mr-10 ">
+      <a href="index.php" class="brand-logo flex-none mr-10 ">
         <img src="assets/images/logo/logo.svg" alt="">
       </a>
       <span class=" text-3xl text-black cursor-pointer rt-mobile-menu-close">
@@ -34,58 +34,27 @@
       <ul class="menu-active-classes">
         <li class=" menu-item-has-children">
           <a href="#">Home</a>
-          <ul class="sub-menu">
-            <li>
-              <a href="index.html">Home One</a>
-            </li>
-            <li>
-              <a href="index2.html">Home Two</a>
-            </li>
-            <li>
-              <a href="index3.html">Home Three</a>
-            </li>
-          </ul>
         </li>
         <li class="menu-item-has-children">
-          <a href="#">Pages</a>
-          <ul class="sub-menu">
-            <li>
-              <a href="about.html">About 1</a>
-            </li>
-            <li>
-              <a href="about2.html">About 2</a>
-            </li>
-            <li>
-              <a href="instructor.html">instructor 1</a>
-            </li>
-            <li>
-              <a href="instructor2.html">instructor 2</a>
-            </li>
-            <li>
-              <a href="instructor-details.html">instructor Single</a>
-            </li>
-            <li>
-              <a href="event.html">Event</a>
-            </li>
-            <li>
-              <a href="event-single.html">Event single</a>
-            </li>
-            <li>
-              <a href="404.html">404</a>
-            </li>
-          </ul>
+          <a href="about.php">About Us</a>
         </li>
         <li class="menu-item-has-children">
-          <a href="#">Courses</a>
+          <a href="nlp.php">Therapies</a>
           <ul class="sub-menu">
             <li>
-              <a href="courses.html">courses</a>
+              <a href="nlp.php">Neuro-Linguistic Programming (NLP) </a>
             </li>
             <li>
-              <a href="courses-sidebar.html">courses Sidebar</a>
+              <a href="Hypnotherapy.php">Hypnotherapy</a>
             </li>
             <li>
-              <a href="single-course.html">Single-course</a>
+              <a href="micro-muscle-body-language.php">Micro muscle body language </a>
+            </li>
+            <li>
+              <a href="energy-chakra.php"> Energy/Chakra Healing</a>
+            </li>
+            <li>
+              <a href="eft.php">EFT – Emotional Freedom Technique</a>
             </li>
           </ul>
         </li>
@@ -137,7 +106,8 @@
       </ul>
     </div>
   </div>
-  <section class=" xl:min-h-screen bg-[url('../images/banner/1.png')] bg-cover bg-no-repeat bg-center overflow-hidden a-flex">
+  <section
+    class=" xl:min-h-screen bg-[url('../images/banner/1.png')] bg-cover bg-no-repeat bg-center overflow-hidden a-flex">
     <div class="container relative hro-sec">
       <div class="max-w-[570px] xl:pt-[297px] md:pt-20 md:pb-20 pt-28 pb-14 xl:pb-40 space-y-8">
 
@@ -149,9 +119,11 @@
           For The Future
         </h1>
         <div class=" plain-text text-gray leading-[30px]">
-          The tools we have adopted can be defined as a process for documenting the intelligence, skill sets, attitudes and beliefs of an individual.
+          The tools we have adopted can be defined as a process for documenting the intelligence, skill sets, attitudes
+          and beliefs of an individual.
         </div>
-        <div class="bg-white md:flex  rounded-md shadow-e1 items-center py-[10px] relative lg:pr-[10px] lg:pl-[38px] pl-4 pr-4">
+        <div
+          class="bg-white md:flex  rounded-md shadow-e1 items-center py-[10px] relative lg:pr-[10px] lg:pl-[38px] pl-4 pr-4">
           <div class="flex-1 flex items-center lg:mb-0 mb-2">
             <div class="flex-none">
               <span class=" ">
@@ -194,45 +166,53 @@
             <li class="flex">
               <div class="flex-none mr-6">
                 <div class="h-[72px] w-[72px] rounded-full">
-                  <img src="assets/images/svg/light.svg" alt="" class=" w-full h-full object-cover rounded-full block" />
+                  <img src="assets/images/svg/light.svg" alt=""
+                    class=" w-full h-full object-cover rounded-full block" />
                 </div>
               </div>
               <div class="flex-1">
                 <h4 class=" text-xl mb-1">Improve Relationship</h4>
-                <div>Most of us know and understand the importance of healthy relationships based on mutual respect, trust, equality of opportunities.</div>
+                <div>Most of us know and understand the importance of healthy relationships based on mutual respect,
+                  trust, equality of opportunities.</div>
               </div>
             </li>
             <li class="flex">
               <div class="flex-none mr-6">
                 <div class="h-[72px] w-[72px] rounded-full">
-                  <img src="assets/images/svg/target.svg" alt="" class=" w-full h-full object-cover rounded-full block" />
+                  <img src="assets/images/svg/target.svg" alt=""
+                    class=" w-full h-full object-cover rounded-full block" />
                 </div>
               </div>
               <div class="flex-1">
                 <h4 class=" text-xl mb-1">Behavioural Assesment</h4>
-                <div>This behavioural Assessment is a proven, practical and effective method to ensure your personal growth, in-depth understanding and confidence in decision making.</div>
+                <div>This behavioural Assessment is a proven, practical and effective method to ensure your personal
+                  growth, in-depth understanding and confidence in decision making.</div>
               </div>
             </li>
             <li class="flex">
               <div class="flex-none mr-6">
                 <div class="h-[72px] w-[72px] rounded-full">
-                  <img src="assets/images/svg/target.svg" alt="" class=" w-full h-full object-cover rounded-full block" />
+                  <img src="assets/images/svg/target.svg" alt=""
+                    class=" w-full h-full object-cover rounded-full block" />
                 </div>
               </div>
               <div class="flex-1">
                 <h4 class=" text-xl mb-1">Carrer Counseling</h4>
-                <div>Our team consisting of career consultants etc Will collaborate with you to create an intensive result sheet. Tell it to your personality. </div>
+                <div>Our team consisting of career consultants etc Will collaborate with you to create an intensive
+                  result sheet. Tell it to your personality. </div>
               </div>
             </li>
             <li class="flex">
               <div class="flex-none mr-6">
                 <div class="h-[72px] w-[72px] rounded-full">
-                  <img src="assets/images/svg/target.svg" alt="" class=" w-full h-full object-cover rounded-full block" />
+                  <img src="assets/images/svg/target.svg" alt=""
+                    class=" w-full h-full object-cover rounded-full block" />
                 </div>
               </div>
               <div class="flex-1">
                 <h4 class=" text-xl mb-1">Child Growth</h4>
-                <div>Our team consisting of career consultants etc Will collaborate with you to create an intensive result sheet. Tell it to your personality. </div>
+                <div>Our team consisting of career consultants etc Will collaborate with you to create an intensive
+                  result sheet. Tell it to your personality. </div>
               </div>
             </li>
           </ul>
@@ -281,7 +261,8 @@
     </div>
   </div> -->
   <!-- Feture section start -->
-  <div class="feature-area bg-[url('../images/all-img/section-bg-1.png')] bg-cover bg-no-repeat bg-center section-padding">
+  <div
+    class="feature-area bg-[url('../images/all-img/section-bg-1.png')] bg-cover bg-no-repeat bg-center section-padding">
     <div class="container">
       <div class="text-center">
         <div class="mini-title">Core Features</div>
@@ -294,57 +275,84 @@
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pt-10">
 
 
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="codicon:globe"></iconify-icon>
           </div>
-          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Scientific Foundation:</h4>
-          <div class="transition duration-150 group-hover:text-white">DMIT is based on fingerprint science, ensuring accurate and reliable results. This scientific approach makes DMIT a trustworthy tool for understanding individual potential.</div>
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">
+            Scientific Foundation:</h4>
+          <div class="transition duration-150 group-hover:text-white">DMIT is based on fingerprint science, ensuring
+            accurate and reliable results. This scientific approach makes DMIT a trustworthy tool for understanding
+            individual potential.</div>
         </div>
 
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="healthicons:i-training-class-outline"></iconify-icon>
           </div>
-          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white"> Holistic Analysis:</h4>
-          <div class="transition duration-150 group-hover:text-white">DMIT assesses multiple intelligences, including cognitive, emotional, social, and creative aspects. This provides a complete understanding of strengths and areas for improvement.</div>
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">
+            Holistic Analysis:</h4>
+          <div class="transition duration-150 group-hover:text-white">DMIT assesses multiple intelligences, including
+            cognitive, emotional, social, and creative aspects. This provides a complete understanding of strengths and
+            areas for improvement.</div>
         </div>
 
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
           </div>
-          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Early Talent Identification:</h4>
-          <div class="transition duration-150 group-hover:text-white">DMIT excels at spotting innate talents from an early age, enabling effective nurturing for a fulfilling life journey.</div>
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Early
+            Talent Identification:</h4>
+          <div class="transition duration-150 group-hover:text-white">DMIT excels at spotting innate talents from an
+            early age, enabling effective nurturing for a fulfilling life journey.</div>
         </div>
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
           </div>
-          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Personalized Guidance:</h4>
-          <div class="transition duration-150 group-hover:text-white">DMIT offers tailored insights, serving as a roadmap for personal and professional development. It highlights strengths and suggests strategies for improvement.
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">
+            Personalized Guidance:</h4>
+          <div class="transition duration-150 group-hover:text-white">DMIT offers tailored insights, serving as a
+            roadmap for personal and professional development. It highlights strengths and suggests strategies for
+            improvement.
 
           </div>
         </div>
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
           </div>
-          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Career Direction:</h4>
-          <div class="transition duration-150 group-hover:text-white">DMIT is a valuable tool for career guidance, helping individuals make informed decisions based on natural abilities and inclinations.</div>
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">Career
+            Direction:</h4>
+          <div class="transition duration-150 group-hover:text-white">DMIT is a valuable tool for career guidance,
+            helping individuals make informed decisions based on natural abilities and inclinations.</div>
         </div>
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
           </div>
-          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white"> Lifelong Growth:</h4>
-          <div class="transition duration-150 group-hover:text-white">Beyond a one-time assessment, DMIT supports continuous growth. Periodic reassessment ensures relevance and effectiveness as individuals evolve.</div>
+          <h4 class=" lg:text-2xl text-[22px] leading-[30px] mb-4 transition duration-150 group-hover:text-white">
+            Lifelong Growth:</h4>
+          <div class="transition duration-150 group-hover:text-white">Beyond a one-time assessment, DMIT supports
+            continuous growth. Periodic reassessment ensures relevance and effectiveness as individuals evolve.</div>
         </div>
 
       </div>
@@ -368,11 +376,14 @@
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
             <img src="assets\images\icon\children dmit.jpg" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age group 3 to 10 years</span>
+            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age
+              group 3 to 10 years</span>
           </div>
           <div class="course-content p-8">
             <div class="text-secondary  font-bold text-2xl mb-3">Dmit Test For Children</div>
-            <p class="">Know your child Inborn Talent. Identify best learning style for your child. Select Activities based upon their innate potential. Identify your child Multiple Intelligence. Improve relationship between parents and children.</p>
+            <p class="">Know your child Inborn Talent. Identify best learning style for your child. Select Activities
+              based upon their innate potential. Identify your child Multiple Intelligence. Improve relationship between
+              parents and children.</p>
 
           </div>
         </a>
@@ -380,64 +391,79 @@
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
             <img src="assets\images\icon\students dmit.jpg" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age Group 11 to 17 years</span>
+            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age
+              Group 11 to 17 years</span>
           </div>
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">Dmit Test For Students</div>
             <p>
-              Know your Personal Quotients, IQ-EQ-AQ-CQ-SQ. Know you’re analytical and creative Skills. Understand your intrinsic potential. Get your Preferred Learning Style based on Visual, Auditory, and Kinesthetic.
+              Know your Personal Quotients, IQ-EQ-AQ-CQ-SQ. Know you’re analytical and creative Skills. Understand your
+              intrinsic potential. Get your Preferred Learning Style based on Visual, Auditory, and Kinesthetic.
             </p>
           </div>
         </a>
 
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
-            <img src="assets\images\all-img\college students.jpg" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age group 16 years and above</span>
+            <img src="assets\images\all-img\college students.jpg" alt=""
+              class=" w-full h-full object-cover rounded-t-[8px]">
+            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age
+              group 16 years and above</span>
           </div>
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">Dmit for Career Guidance</div>
             <p>
-              Know Your Personality Types. Develop your core competencies. Recognize your Multiple Intelligence. Know your Strength and weakness based on MI Theory. Find the most suitable learning and leadership Qualities
+              Know Your Personality Types. Develop your core competencies. Recognize your Multiple Intelligence. Know
+              your Strength and weakness based on MI Theory. Find the most suitable learning and leadership Qualities
             </p>
           </div>
         </a>
 
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
-            <img src="assets\images\all-img\carrer finding.jpg" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age 25 years and above</span>
+            <img src="assets\images\all-img\carrer finding.jpg" alt=""
+              class=" w-full h-full object-cover rounded-t-[8px]">
+            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age 25
+              years and above</span>
           </div>
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">Dmit Test For Adults</div>
             <p>
-              Know your hidden talents. Improve your relationships with loved ones. Develop your understanding through better communications. Understand your Values and Characteristics .Improve your family relationships
+              Know your hidden talents. Improve your relationships with loved ones. Develop your understanding through
+              better communications. Understand your Values and Characteristics .Improve your family relationships
             </p>
           </div>
         </a>
 
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
-            <img src="assets\images\all-img\employees dmit test.webp" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Corporates Human Resource</span>
+            <img src="assets\images\all-img\employees dmit test.webp" alt=""
+              class=" w-full h-full object-cover rounded-t-[8px]">
+            <span
+              class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Corporates
+              Human Resource</span>
           </div>
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">Dmit Test For Employees</div>
             <p>
-              Find the right Employee for the right job. Pre-Employments Screening. Know your employee Personal potentials IQ-AQ-EQ-SQ-CQ. Discover Leadership, Planning and execution Qualities.
+              Find the right Employee for the right job. Pre-Employments Screening. Know your employee Personal
+              potentials IQ-AQ-EQ-SQ-CQ. Discover Leadership, Planning and execution Qualities.
             </p>
           </div>
         </a>
 
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
-            <img src="assets\images\all-img\dmit traning.webp" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">School, College and Institutions</span>
+            <img src="assets\images\all-img\dmit traning.webp" alt=""
+              class=" w-full h-full object-cover rounded-t-[8px]">
+            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">School,
+              College and Institutions</span>
           </div>
           <div class="course-content p-8">
             <div class="text-secondary font-bold text-2xl mb-3">DMIT Training Course</div>
             <p>
-              Identify your student inborn talents and weaknesses. Understand student natural character behaviors, Design multi-modality teaching methods. Meet your student learning different styles and academic needs
+              Identify your student inborn talents and weaknesses. Understand student natural character behaviors,
+              Design multi-modality teaching methods. Meet your student learning different styles and academic needs
             </p>
           </div>
         </a>
@@ -464,21 +490,29 @@
             <form class="w-full max-w-lg">
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-8 md:mb-0">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full Name">
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name" type="text" placeholder="Full Name">
 
                 </div>
                 <div class="w-full md:w-1/2 px-3 mt-4">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" placeholder="Email">
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-last-name" type="email" placeholder="Email">
                 </div>
               </div>
               <div class="flex flex-wrap -mx-3 mb-4">
                 <div class="w-full px-3">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="Phone Number">
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-password" type="text" placeholder="Phone Number">
                 </div>
               </div>
               <div class="flex flex-wrap -mx-3 mb-2">
                 <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Address">
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-city" type="text" placeholder="Address">
                 </div>
                 <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
                   <input class="btn btn-primary mt-4 " id="grid-zip" type="submit" placeholder="90210">
@@ -489,7 +523,9 @@
 
         </div>
         <div class="xl:col-span-7 lg:col-span-6 col-span-12 lg:pt-0 md:pt-10 pt-6">
-          <img style="mix-blend-mode: multiply;" src="assets\images\all-img\Dmit-Software_GIF_DMIT-Report-Genration-Software-2.webp" alt="" class=" mx-auto block w-full" />
+          <img style="mix-blend-mode: multiply;"
+            src="assets\images\all-img\Dmit-Software_GIF_DMIT-Report-Genration-Software-2.webp" alt=""
+            class=" mx-auto block w-full" />
         </div>
       </div>
     </div>
@@ -514,7 +550,8 @@
               <span class=" absolute left-0 top-1/2 -translate-y-1/2 ">
                 <img src="assets/images/icon/mail-white.svg" alt="">
               </span>
-              <input type="text" placeholder="Enter your mail address" class=" border-b border-t-0 border-l-0 border-r-0 border-[#B2E2DF] ring-0 focus:ring-0 bg-transparent text-white
+              <input type="text" placeholder="Enter your mail address"
+                class=" border-b border-t-0 border-l-0 border-r-0 border-[#B2E2DF] ring-0 focus:ring-0 bg-transparent text-white
                                 placeholder:text-[#B2E2DF] focus:outline-0 focus:border-[#B2E2DF] transition pl-8 text-lg">
             </div>
             <div class="flex-none">
@@ -541,110 +578,131 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
             <img src="assets/images/icon/t1.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Interpersonal Intelligence</h4>
-            <p> Individuals with high interpersonal intelligence excel in understanding and interacting effectively with others, showcasing strong social skills and empathy.</p>
+            <p> Individuals with high interpersonal intelligence excel in understanding and interacting effectively with
+              others, showcasing strong social skills and empathy.</p>
           </div>
         </a>
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-green-paste  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-green-paste">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-green-paste">
             <img src="assets/images/icon/t2.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Visual 3D Intelligence</h4>
-            <p>This intelligence involves the ability to think in three-dimensional space, enabling individuals to visualize and manipulate objects mentally with ease.</p>
+            <p>This intelligence involves the ability to think in three-dimensional space, enabling individuals to
+              visualize and manipulate objects mentally with ease.</p>
           </div>
         </a>
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E8F5FF]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
             <img src="assets/images/icon/t3.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Kinesthetic GMS (Gross Motor Skills)</h4>
-            <p>Those with strong kinesthetic gross motor skills exhibit proficiency in activities requiring large muscle movements, such as running or jumping.</p>
+            <p>Those with strong kinesthetic gross motor skills exhibit proficiency in activities requiring large muscle
+              movements, such as running or jumping.</p>
           </div>
         </a>
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E3F9F6]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E3F9F6]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E3F9F6]">
             <img src="assets/images/icon/t4.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Musical Intelligence</h4>
-            <p>Individuals with musical intelligence possess a heightened sensitivity to rhythm, melody, and tone, often excelling in areas related to music composition and appreciation.</p>
+            <p>Individuals with musical intelligence possess a heightened sensitivity to rhythm, melody, and tone, often
+              excelling in areas related to music composition and appreciation.</p>
           </div>
         </a>
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#EEE8FF]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#EEE8FF]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#EEE8FF]">
             <img src="assets/images/icon/t5.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Visual 2D Intelligence</h4>
-            <p>This intelligence involves a proficiency in understanding and interpreting two-dimensional visual information, such as graphs, charts, and images.</p>
+            <p>This intelligence involves a proficiency in understanding and interpreting two-dimensional visual
+              information, such as graphs, charts, and images.</p>
           </div>
         </a>
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFF6EB]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFF6EB]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFF6EB]">
             <img src="assets/images/icon/t6.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Intrapersonal Intelligence</h4>
-            <p>Individuals with intrapersonal intelligence have a deep understanding of themselves, their emotions, and motivations, contributing to self-awareness and personal growth.</p>
+            <p>Individuals with intrapersonal intelligence have a deep understanding of themselves, their emotions, and
+              motivations, contributing to self-awareness and personal growth.</p>
           </div>
         </a>
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E8FFEA]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8FFEA]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8FFEA]">
             <img src="assets/images/icon/t7.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Logical Intelligence</h4>
-            <p>This type of intelligence involves strong analytical and problem-solving skills, allowing individuals to excel in tasks that require reasoning and critical thinking.</p>
+            <p>This type of intelligence involves strong analytical and problem-solving skills, allowing individuals to
+              excel in tasks that require reasoning and critical thinking.</p>
           </div>
         </a>
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
             <img src="assets/images/icon/t8.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Kinesthetic FMS (Fine Motor Skills)</h4>
-            <p>Those with high kinesthetic fine motor skills display precision in tasks requiring dexterity, such as handwriting or intricate hand movements.</p>
+            <p>Those with high kinesthetic fine motor skills display precision in tasks requiring dexterity, such as
+              handwriting or intricate hand movements.</p>
           </div>
         </a>
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
             <img src="assets/images/icon/t1.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Linguistic Intelligence</h4>
-            <p> Linguistically intelligent individuals excel in language-related activities, demonstrating a strong command of words, grammar, and effective communication.</p>
+            <p> Linguistically intelligent individuals excel in language-related activities, demonstrating a strong
+              command of words, grammar, and effective communication.</p>
           </div>
         </a>
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E8F5FF]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
             <img src="assets/images/icon/t3.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
             <h4 class=" text-2xl  mb-2 font-bold">Naturalistic Intelligence</h4>
-            <p> People with naturalistic intelligence have a heightened awareness and appreciation for the natural world, showing an affinity for understanding and categorizing living organisms and their environments. </p>
+            <p> People with naturalistic intelligence have a heightened awareness and appreciation for the natural
+              world, showing an affinity for understanding and categorizing living organisms and their environments.
+            </p>
           </div>
         </a>
 
@@ -701,8 +759,10 @@
             About Us
           </h4>
           <div>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered. There are many
-            variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered. There are
+            many
+            variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by
+            injected
             humour.
           </div>
           <div class="mt-12">
@@ -712,7 +772,7 @@
       </div>
     </div>
   </div>
-<!-- blog section start -->
+  <!-- blog section start -->
   <div class=" section-padding bg-[url('../images/all-img/section-bg-5.png')] bg-cover bg-no-repeat bg-center">
     <div class="container">
       <div class="lg:flex justify-between items-center ">
@@ -733,7 +793,8 @@
         <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
           <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
             <img src="assets/images/all-img/blog-1.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
+            <span
+              class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
           </div>
           <div class="course-content p-8">
             <div class="flex   lg:space-x-10 space-x-5 mb-5">
@@ -751,14 +812,16 @@
                 Professional Mobile Painting and Sculpting
               </a>
             </h4>
-            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
+            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read
+              More</a>
           </div>
         </div>
 
         <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
           <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
             <img src="assets/images/all-img/blog-2.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
+            <span
+              class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
           </div>
           <div class="course-content p-8">
             <div class="flex   lg:space-x-10 space-x-5 mb-5">
@@ -776,14 +839,16 @@
                 Professional Ceramic Moulding for Beginners
               </a>
             </h4>
-            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
+            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read
+              More</a>
           </div>
         </div>
 
         <div class=" bg-white shadow-box5 rounded-[8px] transition duration-100 hover:shadow-box3">
           <div class="course-thumb h-[260px] rounded-t-[8px]  relative">
             <img src="assets/images/all-img/blog-3.png" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
+            <span
+              class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Education</span>
           </div>
           <div class="course-content p-8">
             <div class="flex   lg:space-x-10 space-x-5 mb-5">
@@ -801,7 +866,8 @@
                 Education Is About Create Leaders For Tomorrow
               </a>
             </h4>
-            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read More</a>
+            <a href="blog-single.html" class=" text-black font-semibold hover:underline transition duration-150">Read
+              More</a>
           </div>
         </div>
 
@@ -809,13 +875,13 @@
     </div>
   </div>
   <!-- blog section end -->
-    <!-- team start -->
-    <div class=" section-padding">
+  <!-- team start -->
+  <div class=" section-padding">
     <div class="container">
       <div class="text-center">
         <div class="mini-title">Team Member</div>
         <div class="column-title ">
-          Our 
+          Our
           <span class="shape-bg">Experts</span>
         </div>
       </div>
@@ -951,7 +1017,8 @@
   </div>
   <!-- our expret end -->
   <!-- accrodain start -->
-  <div class="section-padding  bg-white bg-[url('../images/all-img/section-bg-15.png')] bg-bottom  bg-cover bg-no-repeat">
+  <div
+    class="section-padding  bg-white bg-[url('../images/all-img/section-bg-15.png')] bg-bottom  bg-cover bg-no-repeat">
     <div class="container">
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
         <div>
