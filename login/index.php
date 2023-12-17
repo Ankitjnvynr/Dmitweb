@@ -95,9 +95,9 @@
         }
     }
     ?>
-    <div class="container mt-20">
+    <div class="container">
         <section>
-            <div class="grid grid-cols-12 gap-[30px]">
+            <div class="grid grid-cols-12 gap-[30px] mt-4" >
                 <div class="sidebar lg:col-span-4 col-span-12 shadow rounded p-4">
                     <ul class=" list-item space-y-4">
                         <li class=" block">
@@ -123,7 +123,7 @@
                     <div>
                         <form class="form" name="enq" enctype="multipart/form-data" method="post" action="">
                             <?php echo $status; ?>
-                            <div class="grid grid-1 gap-[20px] mt-6 ">
+                            <div class="grid grid-1 gap-[20px] ">
                                 <div class="md:col-span-2 col-span-1">
                                     <label for="title"> Title</label>
                                     <input type="text" name="title" id="title" class=" from-control" placeholder="Enter your title here" required>
@@ -159,6 +159,7 @@
             td {
                 min-width: 150px;
                 padding: 20px 5px;
+                text-align: center;
             }
         </style>
         <section>
