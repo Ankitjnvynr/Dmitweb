@@ -51,7 +51,7 @@
                 if (move_uploaded_file($_FILES["featured-img"]["tmp_name"], $fimgname)) {
                     // echo "img done";
                     // $fimg = $_FILES["featured-img"]["tmp_name"];
-                    $sql = "INSERT INTO `blogs`( `title`, `category`, `description`, `featured_img`) VALUES ('$title','$category','$desc','$newName')";
+                    $sql = "INSERT INTO `blogs`( `title`, `category`, `description`, `featured_img`,`dt`) VALUES ('$title','$category','$desc','$newName',NOW())";
 
                     $result = mysqli_query($conn, $sql);
                     if ($result) {
