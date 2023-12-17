@@ -11,13 +11,35 @@
     <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        .ck-powered-by {
-            display: none;
-        }
+        
 
         .ck {
             max-width: 100%;
         }
+
+        .ck {
+            display: block;
+            width: 100%;
+            border-radius: 0.25rem;
+            border-style: none;
+            --tw-bg-opacity: 1;
+            background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            padding-top: 17px;
+            padding-bottom: 17px;
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+        }
+        .ck-editor__editable_inline{
+            background: transparent !important;
+            min-height: 200px;
+        }
+        .ck-powered-by {
+            display: none;
+        }
+
     </style>
 </head>
 
@@ -45,7 +67,7 @@
                 // echo "File is an image - " . $check["mime"] . ".";
                 $uploadOk = 1;
                 // $sql = "INSERT INTO `blogs`( `title`, `category`, `description`, `featured_img`) VALUES ('$title','$category','$desc','$fimgname')";
-                $newName = date("Ymds"). $_FILES["featured-img"]["name"];
+                $newName = date("Ymds") . $_FILES["featured-img"]["name"];
                 // echo $newName;
                 $fimgname = $target_dir . $newName;
                 if (move_uploaded_file($_FILES["featured-img"]["tmp_name"], $fimgname)) {
@@ -97,14 +119,14 @@
                     <div>
                         <form class="form" name="enq" enctype="multipart/form-data" method="post" action="">
                             <?php echo $status; ?>
-                            <div class="grid grid-1 gap-[30px] mt-6 ">
+                            <div class="grid grid-1 gap-[20px] mt-6 ">
                                 <div class="md:col-span-2 col-span-1">
                                     <label for="title"> Title</label>
-                                    <input type="text" name="title" id="title" class=" from-control" placeholder="" required>
+                                    <input type="text" name="title" id="title" class=" from-control" placeholder="Enter your title here" required>
                                 </div>
                                 <div class="md:col-span-2 col-span-1">
                                     <label for="category"> Category</label>
-                                    <input type="text" name="category" id="category" class=" from-control" placeholder="" required>
+                                    <input type="text" name="category" id="category" class=" from-control" placeholder=" Enter the category of your blog" required>
                                 </div>
 
                                 <div class="md:col-span-2 col-span-1">
