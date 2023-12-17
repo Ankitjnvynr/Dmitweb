@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        
-
         .ck {
             max-width: 100%;
         }
@@ -32,14 +30,15 @@
             --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
             box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
         }
-        .ck-editor__editable_inline{
+
+        .ck-editor__editable_inline {
             background: transparent !important;
             min-height: 200px;
         }
+
         .ck-powered-by {
             display: none;
         }
-
     </style>
 </head>
 
@@ -148,6 +147,68 @@
             </div>
         </section>
     </div>
+    <div class="container mt-20 mb-20">
+        <!-- all blogs start -->
+        <style>
+            th,
+            td {
+                min-width: 150px;
+                padding: 20px 5px;
+            }
+        </style>
+        <section>
+            <table class="table-flexed my-10 ">
+                <thead>
+                    <tr>
+                        <th width="50px !important" >sr</th>
+                        <th>Featured Image</th>
+                        <th>Title</th>
+                        <th>Desccription</th>
+                        <th>Catrgory</th>
+                        <th>Published Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    $sr = 0;
+                    $sql = "SELECT * FROM `blogs` ORDER BY 'dt' DESC ";
+                    $result = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $sr++;
+                        $title = $row['title'];
+                        $category = $row['category'];
+                        $description = substr(htmlspecialchars_decode($row['description']),0,100);
+                        $dt = $row['dt'];
+                        $fimage = "../assets/images/blogImgs/" . $row['featured_img'];
+                        echo '
+                        <tr>
+                            <td width="50px !important" >'.$sr.'</td>
+                            <td>
+                                <img width="150px" src="'.$fimage.'" alt="jshk">
+                            </td>
+                            <td>'.$title.'</td>
+                            <td>'.$description.'</td>
+                            <td>'.$category.'</td>
+                            <td>'.$dt.'</td>
+                            <td>
+                                <button class="btn">Update</button>
+                                <button class="btn">Delete</button>
+                            </td>
+                        </tr>
+                        ';
+                    }
+                    ?>
+                    
+                    
+                </tbody>
+            </table>
+        </section>
+        <!-- all blogs end -->
+    </div>
+
+
+
     <script src="editor\build\ckeditor.js"></script>
     <script>
         ClassicEditor
