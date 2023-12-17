@@ -43,8 +43,13 @@
 </head>
 
 <body class=" font-gilroy font-medium text-gray text-lg leading-[27px]">
-
-
+    <?php include '_header.php'; ?>
+    <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
+        <div class="container text-center">
+            <h2>Welcome Admin</h2>
+            
+        </div>
+    </div>
     <?php
     $status = null;
     require_once("../partials/_db.php");
@@ -147,7 +152,7 @@
             </div>
         </section>
     </div>
-    <div class="container mt-20 mb-20">
+    <div class="container shadow-lg mt-20 mb-20">
         <!-- all blogs start -->
         <style>
             th,
@@ -160,7 +165,7 @@
             <table class="table-flexed my-10 ">
                 <thead>
                     <tr>
-                        <th width="50px !important" >sr</th>
+                        <th width="50px !important">sr</th>
                         <th>Featured Image</th>
                         <th>Title</th>
                         <th>Desccription</th>
@@ -178,29 +183,30 @@
                         $sr++;
                         $title = $row['title'];
                         $category = $row['category'];
-                        $description = substr(htmlspecialchars_decode($row['description']),0,100);
+                        $description = substr(htmlspecialchars_decode($row['description']), 0, 100);
                         $dt = $row['dt'];
                         $fimage = "../assets/images/blogImgs/" . $row['featured_img'];
                         echo '
                         <tr>
-                            <td width="50px !important" >'.$sr.'</td>
+                            <td width="50px !important" >' . $sr . '</td>
                             <td>
-                                <img width="150px" src="'.$fimage.'" alt="jshk">
+                                <img width="150px" src="' . $fimage . '" alt="jshk">
                             </td>
-                            <td>'.$title.'</td>
-                            <td>'.$description.'</td>
-                            <td>'.$category.'</td>
-                            <td>'.$dt.'</td>
+                            <td>' . $title . '</td>
+                            <td>' . $description . '</td>
+                            <td>' . $category . '</td>
+                            <td>' . $dt . '</td>
                             <td>
                                 <button class="btn">Update</button>
                                 <button class="btn">Delete</button>
                             </td>
+                            
                         </tr>
                         ';
                     }
                     ?>
-                    
-                    
+
+
                 </tbody>
             </table>
         </section>
