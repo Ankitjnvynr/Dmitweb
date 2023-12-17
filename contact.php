@@ -18,8 +18,8 @@
         your experience and security.
     </p> <![endif] -->
 
-    <?php include 'partials/_header.php'; ?>
- 
+  <?php include 'partials/_header.php'; ?>
+
   <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
     <div class="container text-center">
       <h2>Contact Us</h2>
@@ -41,7 +41,7 @@
           <h4 class="column-title ">
             Get In Touch
             <span class="shape-bg">
-                            Today</span>
+              Today</span>
           </h4>
           <div>
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
@@ -85,27 +85,27 @@
         <div class="xl:col-span-7 lg:col-span-6 col-span-12">
           <div class="bg-white shadow-box7 p-8 rounded-md">
             <form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
-				<div class=" md:grid-cols-2 grid grid-cols-1 gap-[30px] mt-6 ">
-				  <div>
-					<input type="text" name="name" class=" from-control" placeholder="Name*">
-				  </div>
-				  <div>
-					<input type="email" name="email" class=" from-control" placeholder="Email*">
-				  </div>
-				  <div>
-					<input type="text" name="subject" class=" from-control" placeholder="Subject *">
-				  </div>
-				  <div>
-					<input type="text" name="phone" class=" from-control" placeholder="Phone Number">
-				  </div>
-				  <div class="md:col-span-2 col-span-1">
-					<textarea class=" from-control" name="message" placeholder="Your Message*" rows="5"></textarea>
-				  </div>
-				</div>
-            <button class="btn btn-primary mt-[30px]" type="submit" name="submit">
-              Send Message
-            </button>
-			</form>
+              <div class=" md:grid-cols-2 grid grid-cols-1 gap-[30px] mt-6 ">
+                <div>
+                  <input type="text" name="name" class=" from-control" placeholder="Name*">
+                </div>
+                <div>
+                  <input type="email" name="email" class=" from-control" placeholder="Email*">
+                </div>
+                <div>
+                  <input type="text" name="subject" class=" from-control" placeholder="Subject *">
+                </div>
+                <div>
+                  <input type="text" name="phone" class=" from-control" placeholder="Phone Number">
+                </div>
+                <div class="md:col-span-2 col-span-1">
+                  <textarea class=" from-control" name="message" placeholder="Your Message*" rows="5"></textarea>
+                </div>
+              </div>
+              <button class="btn btn-primary mt-[30px]" type="submit" name="submit">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -122,4 +122,5 @@
   <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
+
 </html>
