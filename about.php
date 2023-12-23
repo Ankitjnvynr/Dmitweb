@@ -662,48 +662,51 @@
           <ul class="list accrodains space-y-[30px] lg:max-w-[470px]">
             <li>
               <button type="button" class="accrodain-button">
-                <span>What does it take excellent author?</span>
+                <span>Q1: What is DMIT?</span>
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a
-                certificate for every
-                learning program that you complete at no additional cost.
+              Dermatoglyphics Multiple Intelligence Test (DMIT) is a scientific analysis that examines fingerprint patterns to provide insights into an individual's unique intelligence, talents, and potential. It combines principles from genetics, embryology, dermatoglyphics, psychology, and neuroscience.
+
+
               </div>
             </li>
             <li>
               <button type="button" class="accrodain-button">
-                <span>Who will view my content?
+                <span>Q2: How does DMIT work?
                 </span>
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a
-                certificate for every
-                learning program that you complete at no additional cost.
+              DMIT analyzes the ridge patterns on the skin's surface, especially on fingers, palms, toes, and soles. These patterns are formed during fetal development and remain unchanged throughout life. By correlating specific fingerprint patterns with different types of intelligence, DMIT offers a comprehensive understanding of an individual's cognitive strengths.
               </div>
             </li>
             <li>
               <button type="button" class="accrodain-button">
-                <span>What does it take become an author?
+                <span>Q3: What information does DMIT reveal?
                 </span>
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a
-                certificate for every
-                learning program that you complete at no additional cost.
+              DMIT reveals information about an individual's dominant intelligence types, learning styles, and inherent strengths. It provides guidance on personal development, education, and career choices based on these insights.
               </div>
             </li>
             <li>
               <button type="button" class="accrodain-button">
-                <span>How to Change my Password easily?</span>
+                <span>Q4: Is DMIT suitable for all ages?</span>
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-                Learn at your own pace, move between multiple courses, or switch to a different course. Earn a
-                certificate for every
-                learning program that you complete at no additional cost.
+              Yes, DMIT is suitable for individuals of all ages, including children, teenagers, and adults. The insights gained from DMIT can be valuable at different stages of life, guiding personal and professional development.
+              </div>
+            </li>
+            <li>
+              <button type="button" class="accrodain-button">
+                <span>Q5: Is DMIT scientifically validated?</span>
+                <span class="icon-pm"></span>
+              </button>
+              <div class="content hidden">
+              Yes, DMIT is based on scientific principles and research. It draws from established theories such as Howard Gardner's Multiple Intelligence Theory and incorporates the study of dermatoglyphics, genetics, and neuroscience.
               </div>
             </li>
           </ul>
@@ -714,6 +717,9 @@
       </div>
     </div>
   </div>
+
+
+  
   <?php include 'partials/_footer.php'; ?>
 
   <div class="rt-mobile-menu-overlay"></div>

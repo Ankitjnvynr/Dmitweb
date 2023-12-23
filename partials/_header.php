@@ -213,6 +213,6 @@
         <label for="time" class="block text-sm font-medium text-gray-600 mb-1">Preferred Time:</label>
         <input type="time" id="time" name="time" class="w-full border border-gray-300 p-2 mb-4" required>
 
-        <input type="submit" value="Submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+        <input type="submit" value="Submit" class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
     </form>
 </div>
