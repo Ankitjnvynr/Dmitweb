@@ -659,7 +659,7 @@
           </div>
         </div>
         <div class="mb-3">
-          <a href="#" class=" btn btn-primary">Read All Blogs</a>
+          <a href="all-blogs.php" class=" btn btn-primary">Read All Blogs</a>
         </div>
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] pt-7">
