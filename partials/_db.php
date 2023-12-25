@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db = "dmit";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
+// $db = "dmit";
 
 $servername = "localhost";
 $username = "u133609271_dmit";

@@ -664,7 +664,7 @@
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] pt-7">
         <?php
-        require_once('partials\_db.php');
+        require_once('partials/_db.php');
         $sql = "SELECT * FROM `blogs` ORDER BY 'dt' DESC LIMIT 3";
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
