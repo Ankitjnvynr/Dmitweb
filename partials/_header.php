@@ -218,5 +218,5 @@
         
         <input type="submit" value="Submit" class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
     </form>
-    <div class="text-center text-secondary " id="msgbox" ></div>
+    <div class="text-center text-secondary pt-4" id="msgbox" ></div>
 </div>
