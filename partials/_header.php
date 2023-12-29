@@ -198,21 +198,25 @@
 <!-- Appointment Form -->
 <div style="z-index: 40; background:rgba(0, 0, 0, 0.5); " id="overlay" class=" backdrop-blur hidden fixed inset-0 opacity-10 z-50"></div>
 <div style="z-index: 50;" id="appointmentForm" class="rounded-lg hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 border border-gray-300 shadow-lg z-50 w-full max-w-md">
-    <span class="absolute top-0 right-0 cursor-pointer" onclick="closeAppointmentForm()">&times;</span>
+    <span style="right: 3%;" class="absolute top-0 right-0 cursor-pointer text-2xl" onclick="closeAppointmentForm()">x</span>
     <h2 class="text-2xl font-bold mb-4">Book Appointment</h2>
-    <form action="#" method="post">
+    <form action="#" id="AppointmentForm" method="post">
         <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Name:</label>
-        <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 mb-4" required>
+        <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 mb-4" >
+
+        <label for="age" class="block text-sm font-medium text-gray-600 mb-1">Age:</label>
+        <input type="number" id="age" name="age" class="w-full border border-gray-300 p-2 mb-4" >
+        
+        <label for="phone" class="block text-sm font-medium text-gray-600 mb-1">Phone:</label>
+        <input type="text" id="phone" name="phone" class="w-full border border-gray-300 p-2 mb-4" >
 
         <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email:</label>
-        <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 mb-4" required>
-
-        <label for="date" class="block text-sm font-medium text-gray-600 mb-1">Preferred Date:</label>
-        <input type="date" id="date" name="date" class="w-full border border-gray-300 p-2 mb-4" required>
-
-        <label for="time" class="block text-sm font-medium text-gray-600 mb-1">Preferred Time:</label>
-        <input type="time" id="time" name="time" class="w-full border border-gray-300 p-2 mb-4" required>
-
+        <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 mb-4" >
+        
+        <label for="prefDate" class="block text-sm font-medium text-gray-600 mb-1">Preferred Date:</label>
+        <input type="date" id="prefDate" name="prefDate" class="w-full border border-gray-300 p-2 mb-4" >
+        
         <input type="submit" value="Submit" class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
     </form>
+    <div class="text-center text-secondary " id="msgbox" ></div>
 </div>
