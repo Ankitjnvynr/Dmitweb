@@ -50,7 +50,7 @@
 
         </div>
     </div>
-    
+
     <div class="container">
         <section>
             <div class="grid grid-cols-12 gap-[30px] mt-4">
@@ -78,15 +78,71 @@
                     </ul>
                 </div>
                 <div class="mainsection lg:col-span-8 col-span-12 shadow rounded p-4 bg-white">
-                    <?php
-                        require_once("../partials/_db.php");
-                        $sql = "SELECT * FROM `appointment` ORDER BY sr DESC";
-                        $result = $conn->query($sql);
-                        
-                        while ($row = $conn->fetch_assoc($result)) {
-                            echo `hello`;
-                        }
-                    ?>
+                    <div class="relative overflow-x-auto">
+                        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                            <thead
+                                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        Sr.
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Name
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                       Phone
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Email
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        Age
+                                    </th>
+                                    <th scope="col"  class="whitespace-nowrap px-6 py-3">
+                                        Prefered Date
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $sr = 0;
+                                require_once("../partials/_db.php");
+                                $sql = "SELECT * FROM `appointment` ORDER BY `sr` DESC";
+                                $result = $conn->query($sql);
+                                $numrow = $result->num_rows;
+                                if ($numrow > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        $sr++;
+                                        echo '
+                                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                '.$sr.'
+                                            </th>
+                                            <td class="px-6 py-4">
+                                                '.$row['name'].'
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                '.$row['phone'].'
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                '.$row['email'].'
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                '.$row['age'].'
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                '.substr($row['prefdate'],0,10).'
+                                            </td>
+                                        </tr>
+                                        ';
+                                    }
+                                } else {
+                                    echo "no appointment yet";
+                                }
+                                ?>
+                            </tbody>
+                        </table>
+                    </div>  
                 </div>
             </div>
         </section>
