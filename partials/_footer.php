@@ -155,6 +155,9 @@
   function closeAppointmentForm() {
     document.getElementById('appointmentForm').classList.add('hidden');
     document.getElementById('overlay').classList.add('hidden');
+    document.getElementById('AppointmentForm').style.opacity='1';
+    document.getElementById('msgbox').innerHTML='';
+
   }
 
 $(document).ready(()=>{
@@ -175,6 +178,10 @@ $(document).ready(()=>{
       success:function(response){
         $('#msgbox').html(response)
         console.log(response)
+        document.getElementById('AppointmentForm').style.opacity='0.5';
+        setTimeout(() => {
+          closeAppointmentForm()
+        }, 3000);
       }
     })
   })

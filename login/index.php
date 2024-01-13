@@ -1,248 +1,114 @@
+<?php
+
+
+session_start();
+if (isset($_SESSION['loggedin'])) {
+    //	header('location : dashboard.php');
+    header("location: alluser.php");
+
+    exit;
+}
+include("../partials/_db.php");
+$msg = false;
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM user WHERE  username = '$username'";
+    $result = mysqli_query($conn, $sql);
+    $num = mysqli_num_rows($result);
+    if ($num == 1) {
+        while ($row = mysqli_fetch_assoc($result)) {
+            if (md5($password) == $row['password']) {
+                $logged = true;
+                session_start();
+                $_SESSION['loggedin'] = true;
+                $_SESSION['username'] = $username;
+                $_SESSION['intro'] = true;
+                header("location: my-appointments.php");
+                exit;
+            } else {
+                $msg = "Password not match";
+            }
+        }
+    } else {
+        $msg = "Wrong username";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>DMIT</title>
+
+    <title>GIEO Gita : Login</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="assets/images/logo/favicon.svg">
     <link rel="stylesheet" href="../assets/css/rt-plugins.css">
     <link rel="stylesheet" href="../assets/css/app.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <style>
-        .ck {
-            max-width: 100%;
-        }
+    <!--Stylesheet-->
 
-        .ck {
-            display: block;
-            width: 100%;
-            border-radius: 0.25rem;
-            border-style: none;
-            --tw-bg-opacity: 1;
-            background-color: rgb(248 248 248 / var(--tw-bg-opacity));
-            padding-left: 1.25rem;
-            padding-right: 1.25rem;
-            padding-top: 17px;
-            padding-bottom: 17px;
-            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
-            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
-            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-        }
 
-        .ck-editor__editable_inline {
-            background: transparent !important;
-            min-height: 200px;
-        }
+    <style media="screen">
 
-        .ck-powered-by {
-            display: none;
-        }
     </style>
 </head>
 
-<body class=" font-gilroy font-medium text-gray text-lg leading-[27px]">
-    <?php include '_header.php'; ?>
-    <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
-        <div class="container text-center">
-            <h2>Welcome Admin</h2>
-            
-        </div>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
     </div>
-    <?php
-    $status = null;
-    require_once("../partials/_db.php");
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $title = $_POST['title'];
-        $category = $_POST['category'];
+    <?php include '_header.php'; ?>
 
-        $desc = $_POST['desc'];
-        $desc = htmlspecialchars($desc, ENT_QUOTES, 'UTF-8');
 
-        $target_dir = "../assets/images/blogImgs/";
-        $target_file = $target_dir . basename($_FILES["featured-img"]["name"]);
-        $uploadOk = 1;
-        $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-        // Check if image file is a actual image or fake image
-        if (isset($_POST["submit"])) {
-            $check = getimagesize($_FILES["featured-img"]["tmp_name"]);
-            if ($check !== false) {
-                // echo "File is an image - " . $check["mime"] . ".";
-                $uploadOk = 1;
-                // $sql = "INSERT INTO `blogs`( `title`, `category`, `description`, `featured_img`) VALUES ('$title','$category','$desc','$fimgname')";
-                $newName = date("Ymds") . $_FILES["featured-img"]["name"];
-                // echo $newName;
-                $fimgname = $target_dir . $newName;
-                if (move_uploaded_file($_FILES["featured-img"]["tmp_name"], $fimgname)) {
-                    // echo "img done";
-                    // $fimg = $_FILES["featured-img"]["tmp_name"];
-                    $sql = "INSERT INTO `blogs`( `title`, `category`, `description`, `featured_img`,`dt`) VALUES ('$title','$category','$desc','$newName',NOW())";
+    <section class="bg-gray-50 dark:bg-gray-900">
+        <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
 
-                    $result = mysqli_query($conn, $sql);
-                    if ($result) {
-                        $status = "Blog uploaded Successfully!";
-                    } else {
-                        $status = "Error: " . mysqli_error($conn);
-                    }
-                } else {
-                    echo "not done";
-                }
-            } else {
-                echo "File is not an image.";
-                $uploadOk = 0;
-            }
-        }
-    }
-    ?>
-    <div class="container">
-        <section>
-            <div class="grid grid-cols-12 gap-[30px] mt-4" >
-                <div class="sidebar lg:col-span-4 col-span-12 shadow rounded p-4">
-                    <ul class=" list-item space-y-4">
-                        <li class=" block">
-                            <a href="index.php" class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all duration-150">
-                                <span>Blogs</span>
-                                <span class=" text-2xl">
-                                    <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
-                                </span>
-                            </a>
-                        </li>
-
-                        <li class=" block">
-                            <a href="my-appointments.php" class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all duration-150">
-                                <span>Appointments</span>
-                                <span class=" text-2xl">
-                                    <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="mainsection lg:col-span-8 col-span-12 shadow rounded p-4 bg-white">
-                    <div>
-                        <form class="form" name="enq" enctype="multipart/form-data" method="post" action="">
-                            <?php echo $status; ?>
-                            <div class="grid grid-1 gap-[20px] ">
-                                <div class="md:col-span-2 col-span-1">
-                                    <label for="title"> Title</label>
-                                    <input type="text" name="title" id="title" class=" from-control" placeholder="Enter your title here" required>
-                                </div>
-                                <div class="md:col-span-2 col-span-1">
-                                    <label for="category"> Category</label>
-                                    <input type="text" name="category" id="category" class=" from-control" placeholder=" Enter the category of your blog" required>
-                                </div>
-
-                                <div class="md:col-span-2 col-span-1">
-                                    <label for="fimg"> Featured Image</label>
-                                    <input type="file" name="featured-img" id="fimg" class=" from-control" required>
-                                </div>
-
-                                <div class="md:col-span-2 col-span-1">
-                                    <label for="desc"> Describe your blog</label>
-                                    <textarea class=" from-control" name="desc" id="desc" placeholder="" rows="5"></textarea>
-                                </div>
+            <div
+                class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+                <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                    <h1
+                        class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                        Sign in to your account
+                    </h1>
+                    <form class="space-y-4 md:space-y-6" action="#" method="post">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                email</label>
+                            <input type="email" id="username" name="username"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                placeholder="name@company.com" required="">
+                        </div>
+                        <div>
+                            <label for="password"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                            <input type="password" id="password" name="password" placeholder="••••••••"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                required="">
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="msg red">
+                                <?php echo $msg; ?>
                             </div>
-                            <button class="btn btn-primary mt-[30px]" type="submit" name="submit">
-                                Add blog
-                            </button>
-                        </form>
-                    </div>
+
+                        </div>
+                        <button type="submit" style="background:#db5858;"
+                            class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 btn btn-primary">Sign
+                            in</button>
+
+                    </form>
                 </div>
             </div>
-        </section>
-    </div>
-    <div class="container shadow-lg mt-20 mb-20">
-        <!-- all blogs start -->
-        <style>
-            th,
-            td {
-                min-width: 150px;
-                padding: 20px 5px;
-                text-align: center;
-            }
-        </style>
-        <section>
-            <table class="table-flexed my-10 ">
-                <thead>
-                    <tr>
-                        <th width="50px !important">sr</th>
-                        <th>Featured Image</th>
-                        <th>Title</th>
-                        <th>Desccription</th>
-                        <th>Catrgory</th>
-                        <th>Published Date</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    $sr = 0;
-                    $sql = "SELECT * FROM `blogs` ORDER BY 'dt' DESC ";
-                    $result = mysqli_query($conn, $sql);
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        $sr++;
-                        $title = $row['title'];
-                        $category = $row['category'];
-                        $description = substr(htmlspecialchars_decode($row['description']), 0, 100);
-                        $dt = $row['dt'];
-                        $fimage = "../assets/images/blogImgs/" . $row['featured_img'];
-                        echo '
-                        <tr>
-                            <td width="50px !important" >' . $sr . '</td>
-                            <td>
-                                <img width="150px" src="' . $fimage . '" alt="jshk">
-                            </td>
-                            <td>' . $title . '</td>
-                            <td>' . $description . '</td>
-                            <td>' . $category . '</td>
-                            <td>' . $dt . '</td>
-                            <td>
-                                <button class="btn">Update</button>
-                                <button class="btn">Delete</button>
-                            </td>
-                            
-                        </tr>
-                        ';
-                    }
-                    ?>
+        </div>
+    </section>
+</body>
 
-
-                </tbody>
-            </table>
-        </section>
-        <!-- all blogs end -->
-    </div>
-
-
-
-    <script src="editor\build\ckeditor.js"></script>
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#desc'), {
-                // toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote','picture'],
-                heading: {
-                    options: [{
-                            model: 'paragraph',
-                            title: 'Paragraph',
-                            class: 'ck-heading_paragraph'
-                        },
-                        {
-                            model: 'heading1',
-                            view: 'h1',
-                            title: 'Heading 1',
-                            class: 'ck-heading_heading1'
-                        },
-                        {
-                            model: 'heading2',
-                            view: 'h2',
-                            title: 'Heading 2',
-                            class: 'ck-heading_heading2'
-                        }
-                    ]
-                }
-            })
-            .catch(error => {
-                console.log(error);
-            });
-    </script>
+</html>

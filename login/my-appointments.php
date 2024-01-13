@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
+    header("location: index.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,7 +53,7 @@
     <?php include '_header.php'; ?>
     <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
         <div class="container text-center">
-            <h2>Welcome Admin</h2>
+            <h2 style="display:flex; align-items:center; justify-content:center;" >Welcome Admin - <a href="logout.php" class="btn btn-primary">Logout</a></h2>
 
         </div>
     </div>
@@ -57,7 +64,7 @@
                 <div class="sidebar lg:col-span-4 col-span-12 shadow rounded p-4">
                     <ul class=" list-item space-y-4">
                         <li class=" block">
-                            <a href="index.php"
+                            <a href="blogs.php"
                                 class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all duration-150">
                                 <span>Blogs</span>
                                 <span class=" text-2xl">
@@ -137,7 +144,7 @@
                                         ';
                                     }
                                 } else {
-                                    echo "no appointment yet";
+                                    echo "<tr><td>no appointments yet  </td></tr>";
                                 }
                                 ?>
                             </tbody>
