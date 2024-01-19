@@ -1,7 +1,7 @@
 <?php
 $blog = $_GET['blog'];
 // echo $blog;
-require_once('partials\_db.php');
+require_once('partials/_db.php');
 $sql = "SELECT * FROM `blogs` WHERE `blog_id` = '$blog'";
 $result = mysqli_query($conn, $sql);
 $row = mysqli_fetch_assoc($result);
