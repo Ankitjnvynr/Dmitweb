@@ -3,59 +3,18 @@
     <div class="container">
       <div class=" flex items-center justify-between">
         <a href="index.php" class="brand-logo flex-none lg:mr-10 md:w-auto max-w-[120px] ">
-          <img src="assets/images/logo/logo.svg" alt=""></a>
+          <img class="w-[150px]" src="assets/images/logo/logo.png" alt=""></a>
         <div class="flex items-center flex-1">
           <div class="flex-1 main-menu relative mr-[74px]">
             <ul class="menu-active-classes flex ">
               <li class=" menu-item">
                 <a href="index.php">Home</a>
               </li>
-              <!-- <li class="menu-item-has-children">
-                  <a href="#">Pages</a>
-                  <ul class="sub-menu">
-                    <li>
-                      <a href="about.html">About 1</a>
-                    </li>
-                    <li>
-                      <a href="about2.html">About 2</a>
-                    </li>
-                    <li>
-                      <a href="instructor.html">instructor 1</a>
-                    </li>
-                    <li>
-                      <a href="instructor2.html">instructor 2</a>
-                    </li>
-                    <li>
-                      <a href="instructor-details.html">instructor Single</a>
-                    </li>
-                    <li>
-                      <a href="event.html">Event</a>
-                    </li>
-                    <li>
-                      <a href="event-single.html">Event single</a>
-                    </li>
-                    <li>
-                      <a href="404.html">404</a>
-                    </li>
-                  </ul>
-                </li> -->
+              
               <li class=" menu-item">
                 <a href="about.php">About Us</a>
               </li>
-              <!-- <li class="menu-item-has-children">
-                  <a href="#">Courses</a>
-                  <ul class="sub-menu">
-                    <li>
-                      <a href="courses.html">courses</a>
-                    </li>
-                    <li>
-                      <a href="courses-sidebar.html">courses Sidebar</a>
-                    </li>
-                    <li>
-                      <a href="single-course.html">Single-course</a>
-                    </li>
-                  </ul>
-                </li> -->
+              
               <li class="menu-item-has-children">
                 <a href="nlp.php">Therapies</a>
                 <ul class="sub-menu">
@@ -78,20 +37,7 @@
               </li>
               <li class="menu-item">
                 <a href="dmit.php">DMIT ?</a>
-                <!-- <ul class="sub-menu">
-                    <li>
-                      <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                      <a href="blog-full.html">Full Width</a>
-                    </li>
-                    <li>
-                      <a href="blog-standard.html">Blog Standard</a>
-                    </li>
-                    <li>
-                      <a href="blog-single.html">Single Blog</a>
-                    </li>
-                  </ul> -->
+                
               </li>
               <li>
                 <a href="contact.php">Contact Us</a>

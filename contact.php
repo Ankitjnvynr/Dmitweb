@@ -44,7 +44,7 @@
               Today</span>
           </h4>
           <div>
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+          Unlock your unique potential! Contact us now for a transformative journey of self-discovery through DMIT analysis. Your future begins today!"
           </div>
           <ul class=" list-item space-y-6 pt-8">
             <li class="flex">
@@ -55,7 +55,7 @@
               </div>
               <div class="flex-1">
                 <h4 class=" lg:text-xl text-lg mb-1">Email-Us :</h4>
-                <div>Contactyourmail@gmail.com</div>
+                <div>info@bigbyteworld.com</div>
               </div>
             </li>
             <li class="flex">
@@ -66,7 +66,7 @@
               </div>
               <div class="flex-1">
                 <h4 class=" lg:text-xl text-lg mb-1">Call Us:</h4>
-                <div>+88012 2910 1781, +88019 6128 1689</div>
+                <div>+91 88608 39172</div>
               </div>
             </li>
             <li class="flex">
@@ -77,7 +77,7 @@
               </div>
               <div class="flex-1">
                 <h4 class="lg:text-xl text-lg mb-1">Office :</h4>
-                <div>Mountain Green Road 2389, NY, USA</div>
+                <div>Sec-2, Kurukshetra, Haryana - 136118</div>
               </div>
             </li>
           </ul>
