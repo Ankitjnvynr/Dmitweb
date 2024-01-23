@@ -253,3 +253,4 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                 console.log(error);
             });
     </script>
+      <?php include '_footer.php'; ?>

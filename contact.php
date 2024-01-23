@@ -80,7 +80,7 @@
         </div>
         <div class="xl:col-span-7 lg:col-span-6 col-span-12">
           <div class="bg-white shadow-box7 p-8 rounded-md">
-            <form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
+            <form class="form" name="enq" method="post" action="contact.php" onsubmit="contactUsSubmit()">
               <div class=" md:grid-cols-2 grid grid-cols-1 gap-[30px] mt-6 ">
                 <div>
                   <input type="text" name="name" class=" from-control" placeholder="Name*">
@@ -117,6 +117,13 @@
   <script src="https://unpkg.com/phosphor-icons"></script>
   <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
   <script src="assets/js/app.js"></script>
+
+  <script>
+    const contactUsSubmit =(e)=>{
+      e.preventDefault();
+      console.log("this is submited")
+    }
+  </script>
 </body>
 
 </html>

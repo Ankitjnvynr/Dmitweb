@@ -144,7 +144,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                         ';
                                     }
                                 } else {
-                                    echo "<tr><td>no appointments yet  </td></tr>";
+                                    echo "<tr><td>no appointments yet</td></tr>";
                                 }
                                 ?>
                             </tbody>
@@ -154,3 +154,4 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             </div>
         </section>
     </div>
+    <?php include '_footer.php'; ?>
