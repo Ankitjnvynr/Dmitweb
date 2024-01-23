@@ -5,18 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <title>Edumim Html Template</title>
+  <title>Contact</title>
   <link rel="icon" type="image/png" href="assets/images/logo/favicon.svg">
   <link rel="stylesheet" href="assets/css/rt-plugins.css">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
 <body class=" font-gilroy font-medium text-gray text-lg leading-[27px]">
-  <!-- [if IE]> <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-    </p> <![endif] -->
+ 
 
   <?php include 'partials/_header.php'; ?>
 
@@ -25,7 +21,7 @@
       <h2>Contact Us</h2>
       <nav>
         <ol class="flex items-center justify-center space-x-3">
-          <li class="breadcrumb-item"><a href="index.html">Pages </a></li>
+          <li class="breadcrumb-item">Pages</li>
           <li class="breadcrumb-item">-</li>
           <li class="text-primary">Contact</li>
         </ol>

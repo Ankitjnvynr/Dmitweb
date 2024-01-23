@@ -46,8 +46,16 @@
           </div>
           <div class="flex-none flex space-x-[18px]">
             <div class=" hidden lg:block">
-              <a href="javascript:void(0)" onclick="openAppointmentForm()" class="btn btn-primary py-[15px] px-8">Book
-                an Appointment</a>
+            <?php
+                session_start();
+
+                // Check if 'loggedin' key is set in the $_SESSION array
+                $isLoggedIn = isset($_SESSION['loggedin']) ? $_SESSION['loggedin'] : false;
+
+                echo $isLoggedIn ?
+                    '<a href="login/my-appointments.php" class="btn btn-primary py-[15px] m-4">Dashboard</a>' :
+                    '<a href="javascript:void(0)" onclick="openAppointmentForm()" class="btn btn-primary py-[15px] m-4">Book Appointment</a>';
+            ?>
             </div>
             <div class=" block   lg:hidden">
               <button type="button" class=" text-3xl md:w-[56px] h-10 w-10 md:h-[56px] rounded bg-[#F8F8F8] flex flex-col items-center justify-center
@@ -108,8 +116,18 @@
         <a href="contact.php">Contact Us</a>
       </li>
       <li class="menu-item">
-        <a href="javascript:void(0)" onclick="openAppointmentForm()" class="btn btn-primary py-[15px] m-4">Book an
-          Appointment</a>
+        
+        <?php
+          session_start();
+          $_SESSION['loggedin']?
+          '
+          <a href="login/index.php"  class="btn btn-primary py-[15px] m-4">Dashboard</a>
+          '
+          :
+           '
+          <a href="javascript:void(0)" onclick="openAppointmentForm()" class="btn btn-primary py-[15px] m-4">Book Appointment </a>
+          ';
+        ?>
       </li>
     </ul>
   </div>

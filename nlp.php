@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <title>EduMim Html Template</title>
+  <title>NLP</title>
   <link rel="icon" type="image/png" href="assets/images/logo/favicon.svg">
   <link rel="stylesheet" href="assets/css/rt-plugins.css">
   <link rel="stylesheet" href="assets/css/app.css">
@@ -25,7 +25,7 @@
       <h2>Neuro-Linguistic Programming (NLP) </h2>
       <nav>
         <ol class="flex items-center justify-center space-x-3">
-          <li class="breadcrumb-item"><a href="Therapy.php">Therapy </a></li>
+          <li class="breadcrumb-item">Therapy </li>
           <li class="breadcrumb-item">-</li>
           <li class="text-primary">Details</li>
         </ol>
