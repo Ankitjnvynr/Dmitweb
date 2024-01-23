@@ -10,11 +10,11 @@
               <li class=" menu-item">
                 <a href="index.php">Home</a>
               </li>
-              
+
               <li class=" menu-item">
                 <a href="about.php">About Us</a>
               </li>
-              
+
               <li class="menu-item-has-children">
                 <a href="nlp.php">Therapies</a>
                 <ul class="sub-menu">
@@ -37,7 +37,7 @@
               </li>
               <li class="menu-item">
                 <a href="dmit.php">DMIT ?</a>
-                
+
               </li>
               <li>
                 <a href="contact.php">Contact Us</a>
@@ -145,7 +145,7 @@
 
 <!-- Appointment Form -->
 <style>
-  #msgbox{
+  #msgbox {
     top: 50%;
     left: 50%;
     transform: translatex(-50%);
@@ -155,7 +155,8 @@
 <div style="z-index: 40; background:rgba(0, 0, 0, 0.5); " id="overlay"
   class=" backdrop-blur hidden fixed inset-0 opacity-10 z-50">
 </div>
-<div style="z-index: 50;" id="appointmentForm" class="rounded-lg hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 border border-gray-300 shadow-lg z-50 w-full max-w-md">
+<div style="z-index: 50;" id="appointmentForm"
+  class="rounded-lg hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-6 border border-gray-300 shadow-lg z-50 w-full max-w-md">
   <span style="right: 3%;" class="absolute top-0 right-0 cursor-pointer text-2xl"
     onclick="closeAppointmentForm()">x</span>
   <h2 class="text-2xl font-bold mb-4">Book Appointment</h2>

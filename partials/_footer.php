@@ -152,7 +152,7 @@
     </div>
 
     <div class="container border-t border-[#E9D4D0] py-8 text-center text-base">
-      &copy; Copyright 2022 | Edumim Template | All Rights
+      &copy; Copyright 2024 | Big Byte Innovations Pvt. Ltd. | All Rights
       Reserved
     </div>
   </div>
@@ -196,6 +196,31 @@
           setTimeout(() => {
             closeAppointmentForm()
           }, 3000);
+        }
+      })
+    })
+    $('#AppointmentForm2').on("submit", (e) => {
+      e.preventDefault()
+      // console.log(e.target)
+      FormData = {
+        name: $('#name').val(),
+        age: $('#age').val(),
+        phone: $('#phone').val(),
+        email: $('#email').val(),
+        prefDate: $('#prefDate').val(),
+      }
+      $.ajax({
+        type: 'POST',
+        data: FormData,
+        url: 'partials/appointment-form.php',
+        success: function (response) {
+          $('#msgbox2').html(response)
+          console.log(response)
+          document.getElementById('AppointmentForm2').reset();
+          setTimeout(() => {
+            $('#msgbox2').html("")
+          }, 3000);
+          
         }
       })
     })

@@ -21,7 +21,8 @@
   <?php include 'partials/_header.php'; ?>
 
 
-  <section class=" xl:min-h-screen bg-[url('../images/banner/1.png')] bg-cover bg-no-repeat bg-center overflow-hidden a-flex">
+  <section
+    class=" xl:min-h-screen bg-[url('../images/banner/1.png')] bg-cover bg-no-repeat bg-center overflow-hidden a-flex">
     <div class="container relative hro-sec">
       <div class="max-w-[570px] xl:pt-[297px] md:pt-20 md:pb-20 pt-28 pb-14 xl:pb-40 space-y-8">
 
@@ -36,7 +37,8 @@
           The tools we have adopted can be defined as a process for documenting the intelligence, skill sets, attitudes
           and beliefs of an individual.
         </div>
-        <div class="bg-white md:flex  rounded-md shadow-e1 items-center py-[10px] relative lg:pr-[10px] lg:pl-[38px] pl-4 pr-4">
+        <div
+          class="bg-white md:flex  rounded-md shadow-e1 items-center py-[10px] relative lg:pr-[10px] lg:pl-[38px] pl-4 pr-4">
           <div class="flex-1 flex items-center lg:mb-0 mb-2">
             <div class="flex-none">
               <span class=" ">
@@ -79,7 +81,8 @@
             <li class="flex">
               <div class="flex-none mr-6">
                 <div class="h-[72px] w-[72px] rounded-full">
-                  <img src="assets/images/svg/light.svg" alt="" class=" w-full h-full object-cover rounded-full block" />
+                  <img src="assets/images/svg/light.svg" alt=""
+                    class=" w-full h-full object-cover rounded-full block" />
                 </div>
               </div>
               <div class="flex-1">
@@ -91,7 +94,8 @@
             <li class="flex">
               <div class="flex-none mr-6">
                 <div class="h-[72px] w-[72px] rounded-full">
-                  <img src="assets/images/svg/target.svg" alt="" class=" w-full h-full object-cover rounded-full block" />
+                  <img src="assets/images/svg/target.svg" alt=""
+                    class=" w-full h-full object-cover rounded-full block" />
                 </div>
               </div>
               <div class="flex-1">
@@ -103,7 +107,8 @@
             <li class="flex">
               <div class="flex-none mr-6">
                 <div class="h-[72px] w-[72px] rounded-full">
-                  <img src="assets/images/svg/target.svg" alt="" class=" w-full h-full object-cover rounded-full block" />
+                  <img src="assets/images/svg/target.svg" alt=""
+                    class=" w-full h-full object-cover rounded-full block" />
                 </div>
               </div>
               <div class="flex-1">
@@ -115,7 +120,8 @@
             <li class="flex">
               <div class="flex-none mr-6">
                 <div class="h-[72px] w-[72px] rounded-full">
-                  <img src="assets/images/svg/target.svg" alt="" class=" w-full h-full object-cover rounded-full block" />
+                  <img src="assets/images/svg/target.svg" alt=""
+                    class=" w-full h-full object-cover rounded-full block" />
                 </div>
               </div>
               <div class="flex-1">
@@ -170,7 +176,8 @@
     </div>
   </div> -->
   <!-- Feture section start -->
-  <div class="feature-area bg-[url('../images/all-img/section-bg-1.png')] bg-cover bg-no-repeat bg-center section-padding">
+  <div
+    class="feature-area bg-[url('../images/all-img/section-bg-1.png')] bg-cover bg-no-repeat bg-center section-padding">
     <div class="container">
       <div class="text-center">
         <div class="mini-title">Core Features</div>
@@ -183,8 +190,10 @@
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 pt-10">
 
 
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="codicon:globe"></iconify-icon>
           </div>
@@ -195,8 +204,10 @@
             individual potential.</div>
         </div>
 
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="healthicons:i-training-class-outline"></iconify-icon>
           </div>
@@ -207,8 +218,10 @@
             areas for improvement.</div>
         </div>
 
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
           </div>
@@ -217,8 +230,10 @@
           <div class="transition duration-150 group-hover:text-white">DMIT excels at spotting innate talents from an
             early age, enabling effective nurturing for a fulfilling life journey.</div>
         </div>
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
           </div>
@@ -230,8 +245,10 @@
 
           </div>
         </div>
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
           </div>
@@ -240,8 +257,10 @@
           <div class="transition duration-150 group-hover:text-white">DMIT is a valuable tool for career guidance,
             helping individuals make informed decisions based on natural abilities and inclinations.</div>
         </div>
-        <div class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
-          <div class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
+        <div
+          class="bg-white shadow-box rounded-[8px]  p-10 group hover:bg-primary  transition duration-150 hover:-translate-y-1">
+          <div
+            class="h-[72px] w-[72px] rounded-full flex flex-col items-center justify-center text-secondary bg-green-paste mb-8
                 text-5xl group-hover:bg-black group-hover:bg-opacity-[0.1] group-hover:text-white transition duration-150">
             <iconify-icon icon="fluent:handshake-32-regular"></iconify-icon>
           </div>
@@ -301,7 +320,8 @@
 
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
-            <img src="assets\images\all-img\college students.jpg" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+            <img src="assets\images\all-img\college students.jpg" alt=""
+              class=" w-full h-full object-cover rounded-t-[8px]">
             <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age
               group 16 years and above</span>
           </div>
@@ -316,7 +336,8 @@
 
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
-            <img src="assets\images\all-img\carrer finding.jpg" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+            <img src="assets\images\all-img\carrer finding.jpg" alt=""
+              class=" w-full h-full object-cover rounded-t-[8px]">
             <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Age 25
               years and above</span>
           </div>
@@ -331,8 +352,10 @@
 
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
-            <img src="assets\images\all-img\employees dmit test.webp" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
-            <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Corporates
+            <img src="assets\images\all-img\employees dmit test.webp" alt=""
+              class=" w-full h-full object-cover rounded-t-[8px]">
+            <span
+              class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">Corporates
               Human Resource</span>
           </div>
           <div class="course-content p-8">
@@ -346,7 +369,8 @@
 
         <a class=" bg-white shadow-box2 rounded-[8px] transition duration-100 hover:shadow-sm" href="#">
           <div class="course-thumb h-[248px] rounded-t-[8px]  relative">
-            <img src="assets\images\all-img\dmit traning.webp" alt="" class=" w-full h-full object-cover rounded-t-[8px]">
+            <img src="assets\images\all-img\dmit traning.webp" alt=""
+              class=" w-full h-full object-cover rounded-t-[8px]">
             <span class="bg-secondary py-1 px-3 text-lg font-semibold rounded text-white absolute left-6 top-6">School,
               College and Institutions</span>
           </div>
@@ -376,42 +400,37 @@
 
       <div class="lg:grid grid-cols-12 gap-[30px]">
         <div class="xl:col-span-5 lg:col-span-6 col-span-12">
-          <p class="text-center  mb-2">Fill the detail below to get an Appointment</p>
+          
           <div class="form">
-            <form class="w-full max-w-lg">
-              <div class="flex flex-wrap -mx-3 mb-6">
-                <div class="w-full md:w-1/2 px-3 mb-8 md:mb-0">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Full Name">
+           
+            <form action="#" id="AppointmentForm2" method="post">
+              <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Name:</label>
+              <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 mb-4">
 
-                </div>
-                <div class="w-full md:w-1/2 px-3 mt-4">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" placeholder="Email">
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-4">
-                <div class="w-full px-3">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" placeholder="Phone Number">
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-4">
-                <div class="w-full px-3">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-date" type="date" placeholder="Preferred Date">
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-3 mb-2">
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Address">
-                </div>
-                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                  <input class="btn btn-primary mt-4 " id="grid-zip" type="submit" placeholder="90210">
-                </div>
-              </div>
+              <label for="age" class="block text-sm font-medium text-gray-600 mb-1">Age:</label>
+              <input type="number" id="age" name="age" class="w-full border border-gray-300 p-2 mb-4">
+
+              <label for="phone" class="block text-sm font-medium text-gray-600 mb-1">Phone:</label>
+              <input type="text" id="phone" name="phone" class="w-full border border-gray-300 p-2 mb-4">
+
+              <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email:</label>
+              <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 mb-4">
+
+              <label for="prefDate" class="block text-sm font-medium text-gray-600 mb-1">Preferred Date:</label>
+              <input type="date" id="prefDate" name="prefDate" class="w-full border border-gray-300 p-2 mb-4">
+
+              <input type="submit" value="Submit"
+                class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
             </form>
+            <div class="text-center text-secondary absolute pt-4" id="msgbox2"></div>
+
           </div>
 
         </div>
         <div class="xl:col-span-7 lg:col-span-6 col-span-12 lg:pt-0 md:pt-10 pt-6">
-          <img style="mix-blend-mode: multiply;" src="assets\images\all-img\Dmit-Software_GIF_DMIT-Report-Genration-Software-2.webp" alt="" class=" mx-auto block w-full" />
+          <img style="mix-blend-mode: multiply;"
+            src="assets\images\all-img\Dmit-Software_GIF_DMIT-Report-Genration-Software-2.webp" alt=""
+            class=" mx-auto block w-full" />
         </div>
       </div>
     </div>
@@ -436,7 +455,8 @@
               <span class=" absolute left-0 top-1/2 -translate-y-1/2 ">
                 <img src="assets/images/icon/mail-white.svg" alt="">
               </span>
-              <input type="text" placeholder="Enter your mail address" class=" border-b border-t-0 border-l-0 border-r-0 border-[#B2E2DF] ring-0 focus:ring-0 bg-transparent text-white
+              <input type="text" placeholder="Enter your mail address"
+                class=" border-b border-t-0 border-l-0 border-r-0 border-[#B2E2DF] ring-0 focus:ring-0 bg-transparent text-white
                                 placeholder:text-[#B2E2DF] focus:outline-0 focus:border-[#B2E2DF] transition pl-8 text-lg">
             </div>
             <div class="flex-none">
@@ -463,7 +483,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
             <img src="assets/images/icon/t1.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -475,7 +496,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-green-paste  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-green-paste">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-green-paste">
             <img src="assets/images/icon/t2.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -487,7 +509,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E8F5FF]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
             <img src="assets/images/icon/t3.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -499,7 +522,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E3F9F6]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E3F9F6]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E3F9F6]">
             <img src="assets/images/icon/t4.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -511,7 +535,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#EEE8FF]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#EEE8FF]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#EEE8FF]">
             <img src="assets/images/icon/t5.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -523,7 +548,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFF6EB]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFF6EB]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFF6EB]">
             <img src="assets/images/icon/t6.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -535,7 +561,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E8FFEA]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8FFEA]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8FFEA]">
             <img src="assets/images/icon/t7.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -547,7 +574,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
             <img src="assets/images/icon/t8.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -558,7 +586,8 @@
         </a>
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#FFE8E8]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#FFE8E8]">
             <img src="assets/images/icon/t1.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -570,7 +599,8 @@
 
         <a class=" rounded-[8px] transition duration-100 hover:shadow-box hover:bg-white group bg-[#E8F5FF]  text-center px-6
             py-[65px] hover:-translate-y-2" href="#">
-          <div class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
+          <div
+            class="w-[72px] h-[72px] rounded-full bg-white relative mx-auto flex flex-col justify-center items-center mb-8 group-hover:bg-[#E8F5FF]">
             <img src="assets/images/icon/t3.svg" alt="" class=" w-[32px] h-[32px] object-cover ">
           </div>
           <div class="course-content">
@@ -652,7 +682,7 @@
     <div class="container">
       <div class="lg:flex justify-between items-center ">
         <div class="mb-3">
-          <div class="mini-title">Team Member</div>
+          <div class="mini-title">Blogs</div>
           <div class="column-title ">
             Our Latest
             <span class="shape-bg">Blogs</span>
@@ -707,7 +737,7 @@
   </div>
   <!-- blog section end -->
   <!-- team start -->
-  <div class=" section-padding">
+  <!-- <div class=" section-padding">
     <div class="container">
       <div class="text-center">
         <div class="mini-title">Team Member</div>
@@ -845,10 +875,11 @@
 
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- our expret end -->
   <!-- accrodain start -->
-  <div class="section-padding  bg-white bg-[url('../images/all-img/section-bg-15.png')] bg-bottom  bg-cover bg-no-repeat">
+  <div
+    class="section-padding  bg-white bg-[url('../images/all-img/section-bg-15.png')] bg-bottom  bg-cover bg-no-repeat">
     <div class="container">
       <div class="grid lg:grid-cols-2 grid-cols-1 gap-[30px]">
         <div>
@@ -864,7 +895,9 @@
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-              Dermatoglyphics Multiple Intelligence Test (DMIT) is a scientific analysis that examines fingerprint patterns to provide insights into an individual's unique intelligence, talents, and potential. It combines principles from genetics, embryology, dermatoglyphics, psychology, and neuroscience.
+                Dermatoglyphics Multiple Intelligence Test (DMIT) is a scientific analysis that examines fingerprint
+                patterns to provide insights into an individual's unique intelligence, talents, and potential. It
+                combines principles from genetics, embryology, dermatoglyphics, psychology, and neuroscience.
 
 
               </div>
@@ -876,7 +909,10 @@
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-              DMIT analyzes the ridge patterns on the skin's surface, especially on fingers, palms, toes, and soles. These patterns are formed during fetal development and remain unchanged throughout life. By correlating specific fingerprint patterns with different types of intelligence, DMIT offers a comprehensive understanding of an individual's cognitive strengths.
+                DMIT analyzes the ridge patterns on the skin's surface, especially on fingers, palms, toes, and soles.
+                These patterns are formed during fetal development and remain unchanged throughout life. By correlating
+                specific fingerprint patterns with different types of intelligence, DMIT offers a comprehensive
+                understanding of an individual's cognitive strengths.
               </div>
             </li>
             <li>
@@ -886,7 +922,9 @@
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-              DMIT reveals information about an individual's dominant intelligence types, learning styles, and inherent strengths. It provides guidance on personal development, education, and career choices based on these insights.
+                DMIT reveals information about an individual's dominant intelligence types, learning styles, and
+                inherent strengths. It provides guidance on personal development, education, and career choices based on
+                these insights.
               </div>
             </li>
             <li>
@@ -895,7 +933,9 @@
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-              Yes, DMIT is suitable for individuals of all ages, including children, teenagers, and adults. The insights gained from DMIT can be valuable at different stages of life, guiding personal and professional development.
+                Yes, DMIT is suitable for individuals of all ages, including children, teenagers, and adults. The
+                insights gained from DMIT can be valuable at different stages of life, guiding personal and professional
+                development.
               </div>
             </li>
             <li>
@@ -904,7 +944,9 @@
                 <span class="icon-pm"></span>
               </button>
               <div class="content hidden">
-              Yes, DMIT is based on scientific principles and research. It draws from established theories such as Howard Gardner's Multiple Intelligence Theory and incorporates the study of dermatoglyphics, genetics, and neuroscience.
+                Yes, DMIT is based on scientific principles and research. It draws from established theories such as
+                Howard Gardner's Multiple Intelligence Theory and incorporates the study of dermatoglyphics, genetics,
+                and neuroscience.
               </div>
             </li>
           </ul>
