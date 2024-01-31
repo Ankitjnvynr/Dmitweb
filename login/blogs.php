@@ -124,6 +124,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                 </span>
                             </a>
                         </li>
+                        <li class=" block">
+                            <a href="contactForm.php"
+                                class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all duration-150">
+                                <span>Contact Form</span>
+                                <span class=" text-2xl">
+                                    <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
+                                </span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="mainsection lg:col-span-8 col-span-12 shadow rounded p-4 bg-white">

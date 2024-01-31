@@ -83,19 +83,19 @@
             <form class="form" name="enq" method="post" action="contact.php" id="contactForm">
               <div class=" md:grid-cols-2 grid grid-cols-1 gap-[30px] mt-6 ">
                 <div>
-                  <input type="text" name="name" id="name" class=" from-control" placeholder="Name*">
+                  <input type="text" name="name" required id="name" class=" from-control" placeholder="Name*">
                 </div>
                 <div>
-                  <input type="email" name="email" id="email" class=" from-control" placeholder="Email*">
+                  <input type="email" name="email" required id="email" class=" from-control" placeholder="Email*">
                 </div>
                 <div>
-                  <input type="text" name="subject" id="subject" class=" from-control" placeholder="Subject *">
+                  <input type="text" name="subject" required id="subject" class=" from-control" placeholder="Subject *">
                 </div>
                 <div>
-                  <input type="text" name="phone" id="phone" class=" from-control" placeholder="Phone Number">
+                  <input type="text" name="phone" required id="phone" class=" from-control" placeholder="Phone Number">
                 </div>
                 <div class="md:col-span-2 col-span-1">
-                  <textarea class=" from-control" name="message" id="message" placeholder="Your Message*" rows="5"></textarea>
+                  <textarea class=" from-control" name="message" required id="message" placeholder="Your Message*" rows="5"></textarea>
                 </div>
                 <p><span id="msg"></span></p>
               </div>

@@ -106,16 +106,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                         Name
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                       Phone
+                                       Email
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Email
+                                        Subject
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        Age
+                                        phone 
                                     </th>
                                     <th scope="col"  class="whitespace-nowrap px-6 py-3">
-                                        Prefered Date
+                                        Message
                                     </th>
                                 </tr>
                             </thead>
@@ -123,7 +123,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                 <?php
                                 $sr = 0;
                                 require_once("../partials/_db.php");
-                                $sql = "SELECT * FROM `appointment` ORDER BY `sr` DESC";
+                                $sql = "SELECT * FROM `contactpage` ORDER BY `sr` DESC";
                                 $result = $conn->query($sql);
                                 $numrow = $result->num_rows;
                                 if ($numrow > 0) {
@@ -138,16 +138,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                                 '.$row['name'].'
                                             </td>
                                             <td class="px-6 py-4">
-                                                '.$row['phone'].'
-                                            </td>
-                                            <td class="px-6 py-4">
                                                 '.$row['email'].'
                                             </td>
                                             <td class="px-6 py-4">
-                                                '.$row['age'].'
+                                                '.$row['subject'].'
                                             </td>
                                             <td class="px-6 py-4">
-                                                '.substr($row['prefdate'],0,10).'
+                                                '.$row['phone'].'
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                '.$row['message'].'
                                             </td>
                                         </tr>
                                         ';
