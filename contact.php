@@ -80,23 +80,24 @@
         </div>
         <div class="xl:col-span-7 lg:col-span-6 col-span-12">
           <div class="bg-white shadow-box7 p-8 rounded-md">
-            <form class="form" name="enq" method="post" action="contact.php" onsubmit="contactUsSubmit()">
+            <form class="form" name="enq" method="post" action="contact.php" id="contactForm">
               <div class=" md:grid-cols-2 grid grid-cols-1 gap-[30px] mt-6 ">
                 <div>
-                  <input type="text" name="name" class=" from-control" placeholder="Name*">
+                  <input type="text" name="name" id="name" class=" from-control" placeholder="Name*">
                 </div>
                 <div>
-                  <input type="email" name="email" class=" from-control" placeholder="Email*">
+                  <input type="email" name="email" id="email" class=" from-control" placeholder="Email*">
                 </div>
                 <div>
-                  <input type="text" name="subject" class=" from-control" placeholder="Subject *">
+                  <input type="text" name="subject" id="subject" class=" from-control" placeholder="Subject *">
                 </div>
                 <div>
-                  <input type="text" name="phone" class=" from-control" placeholder="Phone Number">
+                  <input type="text" name="phone" id="phone" class=" from-control" placeholder="Phone Number">
                 </div>
                 <div class="md:col-span-2 col-span-1">
-                  <textarea class=" from-control" name="message" placeholder="Your Message*" rows="5"></textarea>
+                  <textarea class=" from-control" name="message" id="message" placeholder="Your Message*" rows="5"></textarea>
                 </div>
+                <p><span id="msg"></span></p>
               </div>
               <button class="btn btn-primary mt-[30px]" type="submit" name="submit">
                 Send Message
@@ -119,10 +120,27 @@
   <script src="assets/js/app.js"></script>
 
   <script>
-    const contactUsSubmit =(e)=>{
+    let nameInput = document.getElementById('name')
+
+    $('#contactForm').submit((e)=>{
       e.preventDefault();
-      console.log("this is submited")
-    }
+        var formDataArray = $(e.target).serializeArray();
+        
+
+        $.ajax({
+                type: 'POST',
+                url: 'partials/_contactPageForm.php',  
+                data: formDataArray,
+                success: function (response) {
+                  $('#msg').html(response)
+                    console.log('Form submitted successfully:', response);
+                },
+                error: function (error) {
+                    console.error('Error submitting form:', error);
+                }
+              })
+      
+    })
   </script>
 </body>
 
