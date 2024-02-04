@@ -189,10 +189,14 @@
         type: 'POST',
         data: FormData,
         url: 'partials/appointment-form.php',
-        success: function (response) {
-          $('#msgbox').html(response)
-          console.log(response)
+        processData:()=>{
           document.getElementById('AppointmentForm').style.opacity = '0.5';
+          $('#msgbox').html('Please Wait!..........')
+        },
+        success: function (response) {
+          $('#msgbox').html('Form Sent Successfully!')
+          console.log(response)
+          
           setTimeout(() => {
             closeAppointmentForm()
           }, 3000);
@@ -214,7 +218,7 @@
         data: FormData,
         url: 'partials/appointment-form.php',
         success: function (response) {
-          $('#msgbox2').html(response)
+          $('#msgbox2').html('Form Sent Successfully!')
           console.log(response)
           document.getElementById('AppointmentForm2').reset();
           setTimeout(() => {
