@@ -114,7 +114,7 @@
   </div>
   <div class=" flex-none pb-4">
     <div class=" text-center text-black font-semibold mb-2">Follow Us</div>
-    <ul class="flex space-x-4 justify-center ">
+    <!-- <ul class="flex space-x-4 justify-center ">
       <li>
         <a href="/#" class="flex h-10 w-10">
           <img src="assets/images/icon/fb.svg" alt="">
@@ -136,7 +136,7 @@
         </a>
       </li>
 
-    </ul>
+    </ul> -->
   </div>
 </div>
 <!-- mobile menu end -->

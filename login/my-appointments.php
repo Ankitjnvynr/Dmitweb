@@ -53,7 +53,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     <?php include '_header.php'; ?>
     <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
         <div class="container text-center">
-            <h2 style="display:flex; align-items:center; justify-content:center;" >Welcome Admin - <a href="logout.php" class="btn btn-primary">Logout</a></h2>
+            <h2 style="display:flex; align-items:center; justify-content:center;">Welcome Admin - <a href="logout.php"
+                    class="btn btn-primary">Logout</a></h2>
 
         </div>
     </div>
@@ -106,7 +107,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                         Name
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                       Phone
+                                        Phone
                                     </th>
                                     <th scope="col" class="px-6 py-3">
                                         Email
@@ -114,7 +115,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                     <th scope="col" class="px-6 py-3">
                                         Age
                                     </th>
-                                    <th scope="col"  class="whitespace-nowrap px-6 py-3">
+                                    <th scope="col" class="whitespace-nowrap px-6 py-3">
                                         Prefered Date
                                     </th>
                                 </tr>
@@ -132,22 +133,22 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                         echo '
                                         <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                                             <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                                '.$sr.'
+                                                ' . $sr . '
                                             </th>
                                             <td class="px-6 py-4">
-                                                '.$row['name'].'
+                                                ' . $row['name'] . '
                                             </td>
                                             <td class="px-6 py-4">
-                                                '.$row['phone'].'
+                                                ' . $row['phone'] . '
                                             </td>
                                             <td class="px-6 py-4">
-                                                '.$row['email'].'
+                                                ' . $row['email'] . '
                                             </td>
                                             <td class="px-6 py-4">
-                                                '.$row['age'].'
+                                                ' . $row['age'] . '
                                             </td>
                                             <td class="px-6 py-4">
-                                                '.substr($row['prefdate'],0,10).'
+                                                ' . substr($row['prefdate'], 0, 10) . '
                                             </td>
                                         </tr>
                                         ';
@@ -158,9 +159,65 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                 ?>
                             </tbody>
                         </table>
-                    </div>  
+                    </div>
                 </div>
             </div>
         </section>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../assets/js/push.min.js"></script>
+    <script src="../assets/js/serviceWorker.min.js"></script>
+    <script>
+        let notification = () => {
+            console.log("hello world")
+            $.ajax({
+                url: '_notify.php', // Change to the actual PHP file path
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    // Handle the data received from the server
+                    console.table(data);
+                    data.map((item) => {
+                        console.log(item.sr)
+                        console.log(item.notify)
+                        console.log(item.name)
+
+
+                        Push.create("New Appointment", {
+                            body: `${item.name}`,
+                            icon: '/icon.png',
+                            timeout: 4000,
+                            onClick: function () {
+                                window.focus('my-appointments.php');
+                                this.close();
+                            }
+                        });
+
+
+
+                        $.ajax({
+                            url: '_notifyUpdate.php',
+                            type: 'post',
+                            data: { 'id': item.sr },
+                            success: function (data) {
+                                console.log(data)
+                            },
+                            error: function (error) {
+                                console.error('Error fetching data:', error);
+                            }
+                        });
+                    })
+                },
+                error: function (error) {
+                    console.error('Error fetching data:', error);
+                }
+            });
+        }
+        $(document).ready(function () {
+            setInterval(() => {
+                notification();
+            }, 1000);
+        });
+
+    </script>
     <?php include '_footer.php'; ?>

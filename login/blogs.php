@@ -214,14 +214,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                             <td>' . $category . '</td>
                             <td>' . $dt . '</td>
                             <td>
-                                <button class="btn">Update</button>
-                                <button class="btn">Delete</button>
+                                <button onclick="editPost(this)" class="btn"><img width="30px" class="w-2" src="https://www.svgrepo.com/show/73131/edit-button.svg" alt=""></button>
+                                <button class="btn"><img style="color:red;" width="30px" class="w-2" src="https://www.svgrepo.com/show/21045/delete-button.svg" alt=""></button>
                             </td>
                             
                         </tr>
                         ';
                     }
                     ?>
+                    
 
 
                 </tbody>
@@ -261,5 +262,9 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             .catch(error => {
                 console.log(error);
             });
+
+            let editPost = (e)=>{
+                console.log(e.parentElement.parentElement)
+            }
     </script>
       <?php include '_footer.php'; ?>

@@ -14,22 +14,22 @@
             <ul class="flex space-x-4 pt-8">
               <li>
                 <a href="#" class="flex h-10 w-10">
-                  <img src="assets/images/icon/fb.svg" alt="" />
+                  <!-- <img src="assets/images/icon/fb.svg" alt="" /> -->
                 </a>
               </li>
               <li>
                 <a href="#" class="flex h-10 w-10">
-                  <img src="assets/images/icon/tw.svg" alt="" />
+                  <!-- <img src="assets/images/icon/tw.svg" alt="" /> -->
                 </a>
               </li>
               <li>
                 <a href="#" class="flex h-10 w-10">
-                  <img src="assets/images/icon/pn.svg" alt="" />
+                  <!-- <img src="assets/images/icon/pn.svg" alt="" /> -->
                 </a>
               </li>
               <li>
                 <a href="#" class="flex h-10 w-10">
-                  <img src="assets/images/icon/ins.svg" alt="" />
+                  <!-- <img src="assets/images/icon/ins.svg" alt="" /> -->
                 </a>
               </li>
             </ul>
@@ -68,7 +68,7 @@
 
             <div>
               <a href="#" class="group relative block h-20 w-full rounded">
-                <img src="assets/images/all-img/ins-1.png" alt="" class="block h-full w-full rounded object-cover" />
+                <!-- <img src="assets/images/all-img/ins-1.png" alt="" class="block h-full w-full rounded object-cover" /> -->
                 <div
                   class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40 text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                   <span class="scale-0 transition-all duration-150 group-hover:scale-100"><iconify-icon
@@ -79,7 +79,7 @@
 
             <div>
               <a href="#" class="group relative block h-20 w-full rounded">
-                <img src="assets/images/all-img/ins-2.png" alt="" class="block h-full w-full rounded object-cover" />
+                <!-- <img src="assets/images/all-img/ins-2.png" alt="" class="block h-full w-full rounded object-cover" /> -->
                 <div
                   class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40 text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                   <span class="scale-0 transition-all duration-150 group-hover:scale-100"><iconify-icon
@@ -90,7 +90,7 @@
 
             <div>
               <a href="#" class="group relative block h-20 w-full rounded">
-                <img src="assets/images/all-img/ins-3.png" alt="" class="block h-full w-full rounded object-cover" />
+                <!-- <img src="assets/images/all-img/ins-3.png" alt="" class="block h-full w-full rounded object-cover" /> -->
                 <div
                   class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40 text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                   <span class="scale-0 transition-all duration-150 group-hover:scale-100"><iconify-icon
@@ -101,7 +101,7 @@
 
             <div>
               <a href="#" class="group relative block h-20 w-full rounded">
-                <img src="assets/images/all-img/ins-4.png" alt="" class="block h-full w-full rounded object-cover" />
+                <!-- <img src="assets/images/all-img/ins-4.png" alt="" class="block h-full w-full rounded object-cover" /> -->
                 <div
                   class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40 text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                   <span class="scale-0 transition-all duration-150 group-hover:scale-100"><iconify-icon
@@ -112,7 +112,7 @@
 
             <div>
               <a href="#" class="group relative block h-20 w-full rounded">
-                <img src="assets/images/all-img/ins-5.png" alt="" class="block h-full w-full rounded object-cover" />
+                <!-- <img src="assets/images/all-img/ins-5.png" alt="" class="block h-full w-full rounded object-cover" /> -->
                 <div
                   class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40 text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                   <span class="scale-0 transition-all duration-150 group-hover:scale-100"><iconify-icon
@@ -123,7 +123,7 @@
 
             <div>
               <a href="#" class="group relative block h-20 w-full rounded">
-                <img src="assets/images/all-img/ins-6.png" alt="" class="block h-full w-full rounded object-cover" />
+                <!-- <img src="assets/images/all-img/ins-6.png" alt="" class="block h-full w-full rounded object-cover" /> -->
                 <div
                   class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40 text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                   <span class="scale-0 transition-all duration-150 group-hover:scale-100"><iconify-icon

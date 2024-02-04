@@ -153,7 +153,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                         ';
                                     }
                                 } else {
-                                    echo "<tr><td>no appointments yet</td></tr>";
+                                    echo "<tr><td colspan='4' >no appointments yet</td></tr>";
                                 }
                                 ?>
                             </tbody>
