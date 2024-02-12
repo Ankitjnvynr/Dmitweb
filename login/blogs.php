@@ -60,7 +60,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     <?php
     $status = null;
     require_once("../partials/_db.php");
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' ) {
         $title = $_POST['title'];
         $category = $_POST['category'];
 
@@ -214,8 +214,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                             <td>' . $category . '</td>
                             <td>' . $dt . '</td>
                             <td>
-                                <button onclick="editPost(this)" class="btn"><img width="30px" class="w-2" src="https://www.svgrepo.com/show/73131/edit-button.svg" alt=""></button>
-                                <button class="btn"><img style="color:red;" width="30px" class="w-2" src="https://www.svgrepo.com/show/21045/delete-button.svg" alt=""></button>
+                                <a href="updateblog.php?blog='.$row['blog_id'].'" class="btn"><img width="30px" class="w-2" src="https://www.svgrepo.com/show/73131/edit-button.svg" alt=""></a>
+                                <a  class="btn"><img style="color:red;" width="30px" class="w-2" src="https://www.svgrepo.com/show/21045/delete-button.svg" alt=""></a>
                             </td>
                             
                         </tr>
