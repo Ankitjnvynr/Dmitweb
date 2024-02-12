@@ -189,15 +189,19 @@
         type: 'POST',
         data: FormData,
         url: 'partials/appointment-form.php',
-        processData:()=>{
-          document.getElementById('AppointmentForm').style.opacity = '0.5';
-          $('#msgbox').html('Please Wait!..........')
+        beforeSend: function() {
+            $('#AppointmentForm').css("opacity", "0.3");
+            $('#formLoading1').css("display", "block");
         },
         success: function (response) {
           $('#msgbox').html('Form Sent Successfully!')
           console.log(response)
           
+          $('#formLoading1').css("display", "none");
+          
           setTimeout(() => {
+            $('#AppointmentForm').css("opacity", "1");
+            document.getElementById('AppointmentForm').reset();
             closeAppointmentForm()
           }, 3000);
         }
@@ -207,20 +211,27 @@
       e.preventDefault()
       // console.log(e.target)
       FormData = {
-        name: $('#name').val(),
-        age: $('#age').val(),
-        phone: $('#phone').val(),
-        email: $('#email').val(),
-        prefDate: $('#prefDate').val(),
+        name: $('#name2').val(),
+        age: $('#age2').val(),
+        phone: $('#phone2').val(),
+        email: $('#email2').val(),
+        prefDate: $('#prefDate2').val(),
       }
       $.ajax({
         type: 'POST',
         data: FormData,
         url: 'partials/appointment-form.php',
+        beforeSend: function() {
+            
+            $('#AppointmentForm2').css("opacity", "0.5");
+            $('#formLoading').css("display", "block");
+        },
         success: function (response) {
           $('#msgbox2').html('Form Sent Successfully!')
           console.log(response)
           document.getElementById('AppointmentForm2').reset();
+          $('#AppointmentForm2').css("opacity", "1");
+          $('#formLoading').css("display", "none");
           setTimeout(() => {
             $('#msgbox2').html("")
           }, 3000);

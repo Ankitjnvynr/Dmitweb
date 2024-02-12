@@ -400,27 +400,32 @@
 
       <div class="lg:grid grid-cols-12 gap-[30px]">
         <div class="xl:col-span-5 lg:col-span-6 col-span-12">
-          
+
           <div class="form">
-           
-            <form action="#" id="AppointmentForm2" method="post">
+
+            <form class="relative" action="#" id="AppointmentForm2" method="post">
               <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Name:</label>
-              <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 mb-4">
+              <input required type="text" id="name2" name="name" class="w-full border border-gray-300 p-2 mb-4">
 
               <label for="age" class="block text-sm font-medium text-gray-600 mb-1">Age:</label>
-              <input type="number" id="age" name="age" class="w-full border border-gray-300 p-2 mb-4">
+              <input required type="number" id="age2" name="age" class="w-full border border-gray-300 p-2 mb-4">
 
               <label for="phone" class="block text-sm font-medium text-gray-600 mb-1">Phone:</label>
-              <input type="text" id="phone" name="phone" class="w-full border border-gray-300 p-2 mb-4">
+              <input required type="text" id="phone2" name="phone" class="w-full border border-gray-300 p-2 mb-4">
 
               <label for="email" class="block text-sm font-medium text-gray-600 mb-1">Email:</label>
-              <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 mb-4">
+              <input required type="email" id="email2" name="email" class="w-full border border-gray-300 p-2 mb-4">
 
               <label for="prefDate" class="block text-sm font-medium text-gray-600 mb-1">Preferred Date:</label>
-              <input type="date" id="prefDate" name="prefDate" class="w-full border border-gray-300 p-2 mb-4">
+              <input required type="date" id="prefDate2" name="prefDate" class="w-full border border-gray-300 p-2 mb-4">
 
               <input type="submit" value="Submit"
                 class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+
+              <div id="formLoading" class="absolute position-absolute top-0 start-0 translate-middle">
+                <img src="assets/images/pleaseWait.gif" alt="loading.....">
+              </div>
+
             </form>
             <div class="text-center text-secondary absolute pt-4" id="msgbox2"></div>
 

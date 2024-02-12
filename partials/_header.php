@@ -46,16 +46,16 @@
           </div>
           <div class="flex-none flex space-x-[18px]">
             <div class=" hidden lg:block">
-            <?php
-                session_start();
+              <?php
+              session_start();
 
-                // Check if 'loggedin' key is set in the $_SESSION array
-                $isLoggedIn = isset($_SESSION['loggedin']) ? $_SESSION['loggedin'] : false;
+              // Check if 'loggedin' key is set in the $_SESSION array
+              $isLoggedIn = isset($_SESSION['loggedin']) ? $_SESSION['loggedin'] : false;
 
-                echo $isLoggedIn ?
-                    '<a href="login/my-appointments.php" class="btn btn-primary py-[15px] m-4">Dashboard</a>' :
-                    '<a href="javascript:void(0)" onclick="openAppointmentForm()" class="btn btn-primary py-[15px] m-4">Book Appointment</a>';
-            ?>
+              echo $isLoggedIn ?
+                '<a href="login/my-appointments.php" class="btn btn-primary py-[15px] m-4">Dashboard</a>' :
+                '<a href="javascript:void(0)" onclick="openAppointmentForm()" class="btn btn-primary py-[15px] m-4">Book Appointment</a>';
+              ?>
             </div>
             <div class=" block   lg:hidden">
               <button type="button" class=" text-3xl md:w-[56px] h-10 w-10 md:h-[56px] rounded bg-[#F8F8F8] flex flex-col items-center justify-center
@@ -116,15 +116,15 @@
         <a href="contact.php">Contact Us</a>
       </li>
       <li class="menu-item">
-        
+
         <?php
-          session_start();
-          $_SESSION['loggedin']?
+        session_start();
+        $_SESSION['loggedin'] ?
           '
           <a href="login/index.php"  class="btn btn-primary py-[15px] m-4">Dashboard</a>
           '
           :
-           '
+          '
           <a href="javascript:void(0)" onclick="openAppointmentForm()" class="btn btn-primary py-[15px] m-4">Book Appointment </a>
           ';
         ?>
@@ -178,7 +178,7 @@
   <span style="right: 3%;" class="absolute top-0 right-0 cursor-pointer text-2xl"
     onclick="closeAppointmentForm()">x</span>
   <h2 class="text-2xl font-bold mb-4">Book Appointment</h2>
-  <form action="#" id="AppointmentForm" method="post">
+  <form action="#" id="AppointmentForm" method="post" class="relative">
     <label for="name" class="block text-sm font-medium text-gray-600 mb-1">Name:</label>
     <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 mb-4">
 
@@ -196,6 +196,10 @@
 
     <input type="submit" value="Submit"
       class="btn btn-primary bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
+
+    <div id="formLoading1" class="absolute position-absolute top-0 start-0 translate-middle">
+      <img src="./assets/images/pleaseWait.gif" alt="loading.....">
+    </div>
   </form>
   <div class="text-center text-secondary absolute pt-4" id="msgbox"></div>
 

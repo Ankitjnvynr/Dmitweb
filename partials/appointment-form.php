@@ -29,13 +29,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $mail->Port	 = 587; 
         
             $mail->setFrom('ankitbkana@outlook.com', 'BigByte');		 
-            $mail->addAddress('ankitbkana@outlook.com');
-            $mail->addAddress('ankitbkana@gmail.com', 'Ankit');
+            
+            $mail->addAddress('ankitbkana@gmail.com', $name);
             
             $mail->isHTML(true);								 
-            $mail->Subject = 'Subject';
-            $mail->Body = 'HTML message body in <b>bold</b> ';
-            $mail->AltBody = 'Body in plain text for non-HTML mail clients';
+            $mail->Subject = 'Appointment for DMIT Test';
+            $mail->Body = 'New Appointment:- <br>
+                        Name: '.$name.'<br>
+                        Age: '.$age.'<br>
+                        Phone: '.$phone.'<br>
+                        Email: '.$email.'<br>
+                        Prefferd Date: '.$prefDate.'<br>
+                ';
+            $mail->AltBody = 'My name is '.$name.'
+            Age: '.$age.'  
+            Phone: '.$phone.'  
+            Email: '.$email.'  
+            Prefferd Date: '.$prefDate.'  
+            ';
             $mail->send();
             echo "Form Sent Successfully!";
         } catch (Exception $e) {

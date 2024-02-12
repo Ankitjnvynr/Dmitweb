@@ -1,15 +1,23 @@
-
 /* .a-flex{
     display: flex;
     justify-content: space-between;
 } */
-.hro-sec{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.hro-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.imge-box{
-    border-radius: 50px 5px 50px 5px;
-    overflow: hidden;
-    margin-left:50px ;
+.imge-box {
+  border-radius: 50px 5px 50px 5px;
+  overflow: hidden;
+  margin-left: 50px;
+}
+
+#formLoading,
+#formLoading1 {
+  position: absolute;
+  top: 30%;
+  right: 50%;
+  translate: 50%;
+  display: none;
 }
