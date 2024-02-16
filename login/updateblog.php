@@ -60,7 +60,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     <?php
     require_once("../partials/_db.php");
     $blog_id = $_GET['blog'];
-    echo $blog_id;
+
     $blogsql = "SELECT * FROM `blogs` WHERE `blog_id` = $blog_id";
     $blogresult = mysqli_query($conn, $blogsql);
     $upblog = mysqli_fetch_assoc($blogresult);
@@ -83,20 +83,39 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
         $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
         // Check if image file is a actual image or fake image
         if (isset($_POST["submit"])) {
-            $check = getimagesize($_FILES["featured-img"]["tmp_name"]);
-            if ($check !== false) {
+            // $check = getimagesize($_FILES["featured-img"]["tmp_name"]);
+            if (isset($_POST['featured-img'])) {
+
                 $uploadOk = 1;
                 $newName = date("Ymds") . $_FILES["featured-img"]["name"];
                 // echo $newName;
                 $fimgname = $target_dir . $newName;
                 if (move_uploaded_file($_FILES["featured-img"]["tmp_name"], $fimgname)) {
-                    // echo "img done";
-                    // $fimg = $_FILES["featured-img"]["tmp_name"];
-                    $sql = "INSERT INTO `blogs`( `title`, `category`, `description`, `featured_img`,`dt`) VALUES ('$title','$category','$desc','$newName',NOW())";
+                    $query = "SELECT `featured_img` FROM `blogs` WHERE `id` = $blog_id";
+                    $result = mysqli_query($connection, $query);
+                    if ($result && mysqli_num_rows($result) > 0) {
+                        $row = mysqli_fetch_assoc($result);
+                        $imageName = $row['featured_img'];
+                        $imageFolder = '../assets/images/blogImgs/';
+                        $imagePath = $imageFolder . $imageName;
+                        if (file_exists($imagePath)) {
+                            if (unlink($imagePath)) {
+                                echo "Image deleted successfully.";
+                            } else {
+                                echo "Failed to delete the image.";
+                            }
+                        } else {
+                            echo "Image does not exist.";
+                        }
+                    } else {
+                        echo "No image found for the specified blog ID.";
+                    }
+                    $sql = "UPDATE `blogs` SET `title` = '$title', `category` = '$category', `description` = '$desc', `featured_img` = '$newName' WHERE `blog_id` = $blog_id";
+
 
                     $result = mysqli_query($conn, $sql);
                     if ($result) {
-                        $status = "Blog uploaded Successfully!";
+                        $status = "Blog updated Successfully!";
                     } else {
                         $status = "Error: " . mysqli_error($conn);
                     }
@@ -104,7 +123,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                     echo "not done";
                 }
             } else {
-                echo "File is not an image.";
+                $sql = "UPDATE `blogs` SET `title` = '$title', `category` = '$category', `description` = '$desc' WHERE `blog_id` = $blog_id";
+
+
+                    $result = mysqli_query($conn, $sql);
+                    if ($result) {
+                        $status = "Blog uploaded Successfully!";
+                    } else {
+                        $status = "Error: " . mysqli_error($conn);
+                    }
+                
                 $uploadOk = 0;
             }
         }
@@ -114,7 +142,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
         <section>
             <div class="grid grid-cols-12 gap-[30px] mt-4 m-auto">
                 <div class="sidebar lg:col-span-4 col-span-12 shadow rounded p-4">
-                    <img src="../assets/images/blogImgs/<?php echo $upblog['featured_img'] ?>" alt="<?php echo $upblog['featured_img'] ?>">
+                    <img src="../assets/images/blogImgs/<?php echo $upblog['featured_img'] ?>"
+                        alt="<?php echo $upblog['featured_img'] ?>">
                 </div>
                 <div class="mainsection lg:col-span-8 col-span-12 shadow rounded p-4 bg-white">
                     <div class="">
@@ -135,7 +164,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
                                 <div class="md:col-span-2 col-span-1">
                                     <label for="fimg"> Featured Image</label>
-                                    <input type="file" name="featured-img" id="fimg" class=" from-control" required>
+                                    <input type="file" name="featured-img" id="fimg" class=" from-control">
                                 </div>
 
                                 <div class="md:col-span-2 col-span-1">
@@ -144,7 +173,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                                         rows="5"> <?php echo $upblog['description'] ?></textarea>
                                 </div>
                             </div>
-                            <button class="btn btn-primary mt-[30px]" type="submit" name="addsubmit">
+                            <button class="btn btn-primary mt-[30px]" type="submit" name="submit">
                                 Update blog
                             </button>
                         </form>

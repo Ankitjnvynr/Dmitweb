@@ -23,7 +23,9 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <title>Blog : <?php echo $title ?></title>
+    <title>Blog :
+        <?php echo $title ?>
+    </title>
     <link rel="icon" type="image/png" href="assets/images/logo/favicon.svg">
     <link rel="stylesheet" href="assets/css/rt-plugins.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -65,11 +67,15 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                             <div class="flex  flex-wrap  xl:space-x-10 space-x-5 mt-6 mb-6">
                                 <a class=" flex items-center space-x-2" href="#">
                                     <img src="assets/images/svg/user3.svg" alt="">
-                                    <span><?php echo $author ?></span>
+                                    <span>
+                                        <?php echo $author ?>
+                                    </span>
                                 </a>
                                 <a class=" flex items-center space-x-2" href="#">
                                     <img src="assets/images/svg/calender.svg" alt="">
-                                    <span><?php echo substr($dt, 0, 10) ?></span>
+                                    <span>
+                                        <?php echo substr($dt, 0, 10) ?>
+                                    </span>
                                 </a>
                                 <a class=" flex items-center space-x-2" href="#">
                                     <img src="assets/images/icon/clock.svg" alt="">
@@ -86,7 +92,8 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
 
 
-                            <?php echo htmlspecialchars_decode($desc); ?></title>
+                            <?php echo htmlspecialchars_decode($desc); ?>
+                            </title>
 
 
                             <div class="grid xl:grid-cols-2 grid-cols-1  gap-5 md:mt-14 mt-8 ">
@@ -125,10 +132,10 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                 $result = mysqli_query($conn, $sql);
                                 $row = mysqli_fetch_assoc($result);
                                 $num_rows = mysqli_num_rows($result);
-                                
+
                                 if ($num_rows > 0) {
                                     echo '
-                                    <a class=" flex space-x-4 shadow-box7 rounded p-5 bg-white" href="blog.php?blog='.$row['blog_id'].'">
+                                    <a class=" flex space-x-4 shadow-box7 rounded p-5 bg-white" href="blog.php?blog=' . $row['blog_id'] . '">
                                     <div class="flex-none ">
                                         <div class="h-20 w-20  rounded">
                                             <img src="assets\images\icon\blogicon.png" alt="" class=" w-full h-full object-cover rounded">
@@ -165,16 +172,16 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
                                 <!-- end single -->
                                 <?php
-                                $blog = $_GET['blog']+1;
+                                $blog = $_GET['blog'] + 1;
                                 // echo $blog;
                                 require_once('partials/_db.php');
                                 $sql = "SELECT * FROM `blogs` WHERE `blog_id` = '$blog'";
                                 $result = mysqli_query($conn, $sql);
                                 $row = mysqli_fetch_assoc($result);
                                 $num_rows = mysqli_num_rows($result);
-                                if ($num_rows>0) {
+                                if ($num_rows > 0) {
                                     echo '
-                                        <a class=" flex  flex-row-reverse shadow-box7 bg-white rounded p-5" href="blog.php?blog='.$row['blog_id'].'">
+                                        <a class=" flex  flex-row-reverse shadow-box7 bg-white rounded p-5" href="blog.php?blog=' . $row['blog_id'] . '">
                                         <div class="flex-none ">
                                             <div class="h-20 w-20  rounded ml-4">
                                                 <img  src="assets\images\icon\blogicon.png" alt="blog" class=" w-full h-full object-cover rounded">
@@ -188,7 +195,7 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                         </div>
                                         </a>
                                         ';
-                                }else{
+                                } else {
                                     echo '
                                         <span class=" flex  flex-row-reverse shadow-box7 bg-white rounded p-5" href="#">
                                         <div class="flex-none ">
@@ -220,7 +227,8 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                 <div class="flex">
                                     <div class="flex-none">
                                         <div class="h-[72px] w-[72px] rounded-full mr-6">
-                                            <img src="/assets/images/all-img/ins-1.png" alt="" class="w-full block h-full object-contain rounded-full" />
+                                            <img src="/assets/images/all-img/ins-1.png" alt=""
+                                                class="w-full block h-full object-contain rounded-full" />
                                         </div>
                                     </div>
                                     <div class="flex-1">
@@ -239,7 +247,8 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                             </a>
                                         </div>
                                         <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+                                            There are many variations of passages of Lorem Ipsum available, but the
+                                            majority have suffered alteration in some form
                                         </p>
                                     </div>
                                 </div>
@@ -248,26 +257,31 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                         <div class="flex">
                                             <div class="flex-none">
                                                 <div class="h-[72px] w-[72px] rounded-full mr-6">
-                                                    <img src="/assets/images/all-img/ins-3.png" alt="" class="w-full block h-full object-contain rounded-full" />
+                                                    <img src="/assets/images/all-img/ins-3.png" alt=""
+                                                        class="w-full block h-full object-contain rounded-full" />
                                                 </div>
                                             </div>
                                             <div class="flex-1">
                                                 <div class="flex flex-wrap justify-between mb-2">
                                                     <div>
-                                                        <span class="text-xl  font-semibold text-black block mb-1">Ferira Watson
+                                                        <span
+                                                            class="text-xl  font-semibold text-black block mb-1">Ferira
+                                                            Watson
                                                         </span>
                                                         <span class=" block">Oct 09, 2021</span>
                                                     </div>
                                                     <a href="#" class=" inline-flex px-3 py-1 rounded text-secondary bg-[#E3F9F6] hover:text-white hover:bg-secondary h-[35px]
                                     items-center space-x-2 leading-[1]">
                                                         <span class=" text-xl leading-[1] top-[3px] relative">
-                                                            <iconify-icon icon="charm:forward" rotate="180deg"></iconify-icon>
+                                                            <iconify-icon icon="charm:forward"
+                                                                rotate="180deg"></iconify-icon>
                                                         </span>
                                                         <span class=" leading-[1]">Reply</span>
                                                     </a>
                                                 </div>
                                                 <p>
-                                                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+                                                    There are many variations of passages of Lorem Ipsum available, but
+                                                    the majority have suffered alteration in some form
                                                 </p>
                                             </div>
                                         </div>
@@ -278,7 +292,8 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                 <div class="flex">
                                     <div class="flex-none">
                                         <div class="h-[72px] w-[72px] rounded-full mr-6">
-                                            <img src="/assets/images/all-img/ins-2.png" alt="" class="w-full block h-full object-contain rounded-full" />
+                                            <img src="/assets/images/all-img/ins-2.png" alt=""
+                                                class="w-full block h-full object-contain rounded-full" />
                                         </div>
                                     </div>
                                     <div class="flex-1">
@@ -297,7 +312,8 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                             </a>
                                         </div>
                                         <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form
+                                            There are many variations of passages of Lorem Ipsum available, but the
+                                            majority have suffered alteration in some form
                                         </p>
                                     </div>
                                 </div>
@@ -312,23 +328,26 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                         <div>
                             Your email address will not be published. Requires fields are marked*
                         </div>
-                        <div class=" md:grid-cols-2 grid grid-cols-1 gap-[30px] mt-6 ">
-                            <div>
-                                <input type="text" class=" from-control" placeholder="Name*">
+                        <form action="" method="POST">
+                            <div class=" md:grid-cols-2 grid grid-cols-1 gap-[30px] mt-6 ">
+                                <div>
+                                    <input type="text" class=" from-control" placeholder="Name*" required>
+                                </div>
+                                <div>
+                                    <input type="email" class=" from-control" placeholder="Email*" required>
+                                </div>
+                                <div class="md:col-span-2 col-span-1">
+                                    <input type="url" class=" from-control" placeholder="Website Address">
+                                </div>
+                                <div class="md:col-span-2 col-span-1">
+                                    <textarea class=" from-control" placeholder="Your Message*" rows="5"
+                                        required></textarea>
+                                </div>
                             </div>
-                            <div>
-                                <input type="email" class=" from-control" placeholder="Email*">
-                            </div>
-                            <div class="md:col-span-2 col-span-1">
-                                <input type="url" class=" from-control" placeholder="Website Address">
-                            </div>
-                            <div class="md:col-span-2 col-span-1">
-                                <textarea class=" from-control" placeholder="Your Message*" rows="5"></textarea>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary mt-[30px]">
-                            Post Comment
-                        </button>
+                            <button class="btn btn-primary mt-[30px]" type="submit">
+                                Post Comment
+                            </button>
+                        </form>
                     </div>
                 </div>
                 <div class="lg:col-span-4 col-span-12">
@@ -338,7 +357,8 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                         <div class="wdiget widget_search">
                             <div class="bg-[#F8F8F8] flex  rounded-md shadow-e1 items-center  py-[4px] pl-3  relative">
                                 <div class="flex-1">
-                                    <input type="text" placeholder="Search keyword..." class="border-none focus:ring-0 bg-transparent">
+                                    <input type="text" placeholder="Search keyword..."
+                                        class="border-none focus:ring-0 bg-transparent">
                                 </div>
                                 <div class="flex-none">
                                     <button class="btn btn-primary">
@@ -416,10 +436,12 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                         <div class="wdiget widget-recent-post">
                             <h4 class=" widget-title">Related Courses</h4>
                             <ul class="list">
-                                <li class=" flex space-x-4 border-[#ECECEC] pb-6 mb-6 last:pb-0 last:mb-0 last:border-0 border-b">
+                                <li
+                                    class=" flex space-x-4 border-[#ECECEC] pb-6 mb-6 last:pb-0 last:mb-0 last:border-0 border-b">
                                     <div class="flex-none ">
                                         <div class="h-20 w-20  rounded">
-                                            <img src="assets/images/all-img/rc-1.png" alt="" class=" w-full h-full object-cover rounded">
+                                            <img src="assets/images/all-img/rc-1.png" alt=""
+                                                class=" w-full h-full object-cover rounded">
                                         </div>
                                     </div>
                                     <div class="flex-1 ">
@@ -429,10 +451,12 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                         <a class=" text-secondary font-semibold" href="#">Read More</a>
                                     </div>
                                 </li>
-                                <li class=" flex space-x-4 border-[#ECECEC] pb-6 mb-6 last:pb-0 last:mb-0 last:border-0 border-b">
+                                <li
+                                    class=" flex space-x-4 border-[#ECECEC] pb-6 mb-6 last:pb-0 last:mb-0 last:border-0 border-b">
                                     <div class="flex-none ">
                                         <div class="h-20 w-20  rounded">
-                                            <img src="assets/images/all-img/rc-2.png" alt="" class=" w-full h-full object-cover rounded">
+                                            <img src="assets/images/all-img/rc-2.png" alt=""
+                                                class=" w-full h-full object-cover rounded">
                                         </div>
                                     </div>
                                     <div class="flex-1 ">
@@ -442,10 +466,12 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                         <a class=" text-secondary font-semibold" href="#">Read More</a>
                                     </div>
                                 </li>
-                                <li class=" flex space-x-4 border-[#ECECEC] pb-6 mb-6 last:pb-0 last:mb-0 last:border-0 border-b">
+                                <li
+                                    class=" flex space-x-4 border-[#ECECEC] pb-6 mb-6 last:pb-0 last:mb-0 last:border-0 border-b">
                                     <div class="flex-none ">
                                         <div class="h-20 w-20  rounded">
-                                            <img src="assets/images/all-img/rc-3.png" alt="" class=" w-full h-full object-cover rounded">
+                                            <img src="assets/images/all-img/rc-3.png" alt=""
+                                                class=" w-full h-full object-cover rounded">
                                         </div>
                                     </div>
                                     <div class="flex-1 ">
@@ -462,55 +488,64 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                             <ul class="flex flex-wrap">
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         Business
                                     </a>
                                 </li>
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         Education
                                     </a>
                                 </li>
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         Design
                                     </a>
                                 </li>
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         Students
                                     </a>
                                 </li>
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         Teachers
                                     </a>
                                 </li>
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         Classroom
                                     </a>
                                 </li>
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         Online
                                     </a>
                                 </li>
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         e-Learning
                                     </a>
                                 </li>
 
                                 <li class="mr-2 mb-2">
-                                    <a href="#" class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
+                                    <a href="#"
+                                        class="bg-[#F8F8F8] px-3 py-1 rounded text-base  transition-all  duration-150 hover:bg-primary hover:text-white">
                                         Book
                                     </a>
                                 </li>
@@ -523,8 +558,10 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
                                 <div>
                                     <a href="#" class="group relative block h-20 w-full rounded">
-                                        <img src="assets/images/all-img/ins-1.png" alt="" class="block h-full w-full rounded object-cover" />
-                                        <div class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
+                                        <img src="assets/images/all-img/ins-1.png" alt=""
+                                            class="block h-full w-full rounded object-cover" />
+                                        <div
+                                            class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
                                                     text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                                             <span class="scale-0 transition-all duration-150 group-hover:scale-100">
                                                 <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
@@ -535,8 +572,10 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
                                 <div>
                                     <a href="#" class="group relative block h-20 w-full rounded">
-                                        <img src="assets/images/all-img/ins-2.png" alt="" class="block h-full w-full rounded object-cover" />
-                                        <div class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
+                                        <img src="assets/images/all-img/ins-2.png" alt=""
+                                            class="block h-full w-full rounded object-cover" />
+                                        <div
+                                            class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
                                                     text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                                             <span class="scale-0 transition-all duration-150 group-hover:scale-100">
                                                 <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
@@ -547,8 +586,10 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
                                 <div>
                                     <a href="#" class="group relative block h-20 w-full rounded">
-                                        <img src="assets/images/all-img/ins-3.png" alt="" class="block h-full w-full rounded object-cover" />
-                                        <div class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
+                                        <img src="assets/images/all-img/ins-3.png" alt=""
+                                            class="block h-full w-full rounded object-cover" />
+                                        <div
+                                            class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
                                                     text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                                             <span class="scale-0 transition-all duration-150 group-hover:scale-100">
                                                 <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
@@ -559,8 +600,10 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
                                 <div>
                                     <a href="#" class="group relative block h-20 w-full rounded">
-                                        <img src="assets/images/all-img/ins-4.png" alt="" class="block h-full w-full rounded object-cover" />
-                                        <div class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
+                                        <img src="assets/images/all-img/ins-4.png" alt=""
+                                            class="block h-full w-full rounded object-cover" />
+                                        <div
+                                            class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
                                                     text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                                             <span class="scale-0 transition-all duration-150 group-hover:scale-100">
                                                 <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
@@ -571,8 +614,10 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
                                 <div>
                                     <a href="#" class="group relative block h-20 w-full rounded">
-                                        <img src="assets/images/all-img/ins-5.png" alt="" class="block h-full w-full rounded object-cover" />
-                                        <div class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
+                                        <img src="assets/images/all-img/ins-5.png" alt=""
+                                            class="block h-full w-full rounded object-cover" />
+                                        <div
+                                            class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
                                                     text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                                             <span class="scale-0 transition-all duration-150 group-hover:scale-100">
                                                 <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
@@ -583,8 +628,10 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
                                 <div>
                                     <a href="#" class="group relative block h-20 w-full rounded">
-                                        <img src="assets/images/all-img/ins-6.png" alt="" class="block h-full w-full rounded object-cover" />
-                                        <div class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
+                                        <img src="assets/images/all-img/ins-6.png" alt=""
+                                            class="block h-full w-full rounded object-cover" />
+                                        <div
+                                            class="absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center rounded bg-black bg-opacity-40
                                                     text-3xl text-white opacity-0 transition-all duration-150 group-hover:opacity-100">
                                             <span class="scale-0 transition-all duration-150 group-hover:scale-100">
                                                 <iconify-icon icon="akar-icons:instagram-fill"></iconify-icon>
