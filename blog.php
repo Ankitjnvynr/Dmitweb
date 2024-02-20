@@ -219,105 +219,12 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                     </div>
                     <!-- comments start -->
                     <div class=" mt-14">
-                        <h3 class=" mb-6">
-                            3 Comments
+                        <h3 id="commentcount" class=" mb-6">
+                            zz
                         </h3>
-                        <ul class="comments space-y-4">
-                            <li class="block border-b border-[#ECECEC] pb-6 mt-6 last:border-0 last:pb-0">
-                                <div class="flex">
-                                    <div class="flex-none">
-                                        <div class="h-[72px] w-[72px] rounded-full mr-6">
-                                            <img src="/assets/images/all-img/ins-1.png" alt=""
-                                                class="w-full block h-full object-contain rounded-full" />
-                                        </div>
-                                    </div>
-                                    <div class="flex-1">
-                                        <div class="flex flex-wrap justify-between mb-2">
-                                            <div>
-                                                <span class="text-xl  font-semibold text-black block mb-1">Ferira Watson
-                                                </span>
-                                                <span class=" block">Oct 09, 2021</span>
-                                            </div>
-                                            <a href="#" class=" inline-flex px-3 py-1 rounded text-secondary bg-[#E3F9F6] hover:text-white hover:bg-secondary h-[35px]
-                            items-center space-x-2 leading-[1]">
-                                                <span class=" text-xl leading-[1] top-[3px] relative">
-                                                    <iconify-icon icon="charm:forward" rotate="180deg"></iconify-icon>
-                                                </span>
-                                                <span class=" leading-[1]">Reply</span>
-                                            </a>
-                                        </div>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the
-                                            majority have suffered alteration in some form
-                                        </p>
-                                    </div>
-                                </div>
-                                <ul class="comments mt-6 space-y-4 ml-14 border-t border-[#ECECEC]">
-                                    <li class="block border-b border-[#ECECEC] pb-6 mt-6 last:border-0 last:pb-0">
-                                        <div class="flex">
-                                            <div class="flex-none">
-                                                <div class="h-[72px] w-[72px] rounded-full mr-6">
-                                                    <img src="/assets/images/all-img/ins-3.png" alt=""
-                                                        class="w-full block h-full object-contain rounded-full" />
-                                                </div>
-                                            </div>
-                                            <div class="flex-1">
-                                                <div class="flex flex-wrap justify-between mb-2">
-                                                    <div>
-                                                        <span
-                                                            class="text-xl  font-semibold text-black block mb-1">Ferira
-                                                            Watson
-                                                        </span>
-                                                        <span class=" block">Oct 09, 2021</span>
-                                                    </div>
-                                                    <a href="#" class=" inline-flex px-3 py-1 rounded text-secondary bg-[#E3F9F6] hover:text-white hover:bg-secondary h-[35px]
-                                    items-center space-x-2 leading-[1]">
-                                                        <span class=" text-xl leading-[1] top-[3px] relative">
-                                                            <iconify-icon icon="charm:forward"
-                                                                rotate="180deg"></iconify-icon>
-                                                        </span>
-                                                        <span class=" leading-[1]">Reply</span>
-                                                    </a>
-                                                </div>
-                                                <p>
-                                                    There are many variations of passages of Lorem Ipsum available, but
-                                                    the majority have suffered alteration in some form
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="block">
-                                <div class="flex">
-                                    <div class="flex-none">
-                                        <div class="h-[72px] w-[72px] rounded-full mr-6">
-                                            <img src="/assets/images/all-img/ins-2.png" alt=""
-                                                class="w-full block h-full object-contain rounded-full" />
-                                        </div>
-                                    </div>
-                                    <div class="flex-1">
-                                        <div class="flex flex-wrap justify-between mb-2">
-                                            <div>
-                                                <span class="text-xl  font-semibold text-black block mb-1">Ferira Watson
-                                                </span>
-                                                <span class=" block">Oct 09, 2021</span>
-                                            </div>
-                                            <a href="#" class=" inline-flex px-3 py-1 rounded text-secondary bg-[#E3F9F6] hover:text-white hover:bg-secondary h-[35px]
-                            items-center space-x-2 leading-[1]">
-                                                <span class=" text-xl leading-[1] top-[3px] relative">
-                                                    <iconify-icon icon="charm:forward" rotate="180deg"></iconify-icon>
-                                                </span>
-                                                <span class=" leading-[1]">Reply</span>
-                                            </a>
-                                        </div>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum available, but the
-                                            majority have suffered alteration in some form
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
+                        <ul id="commentList" class="comments space-y-4">
+
+
                         </ul>
                     </div>
                     <!-- Reply start -->
@@ -328,19 +235,21 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                         <div>
                             Your email address will not be published. Requires fields are marked*
                         </div>
-                        <form action="" method="POST">
+                        <form id="commentForm" action="" method="POST">
                             <div class=" md:grid-cols-2 grid grid-cols-1 gap-[30px] mt-6 ">
                                 <div>
-                                    <input type="text" class=" from-control" placeholder="Name*" required>
+                                    <input type="hidden" id="blgid" value="<?php echo $_GET['blog'] ?>"
+                                        class=" from-control" placeholder="Name*" required>
+                                    <input type="text" id="commentorname" class=" from-control" placeholder="Name*"
+                                        required>
                                 </div>
                                 <div>
-                                    <input type="email" class=" from-control" placeholder="Email*" required>
+                                    <input type="email" id="commentoremail" class=" from-control" placeholder="Email*"
+                                        required>
                                 </div>
+
                                 <div class="md:col-span-2 col-span-1">
-                                    <input type="url" class=" from-control" placeholder="Website Address">
-                                </div>
-                                <div class="md:col-span-2 col-span-1">
-                                    <textarea class=" from-control" placeholder="Your Message*" rows="5"
+                                    <textarea id="message" class=" from-control" placeholder="Your Message*" rows="5"
                                         required></textarea>
                                 </div>
                             </div>
@@ -657,6 +566,62 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
     <script src="https://unpkg.com/phosphor-icons"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
     <script src="assets/js/app.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('#commentForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var formData = {
+                    blogid: '<?php echo $_GET['blog'] ?>',
+                    name: $('#commentorname').val(),
+                    email: $('#commentoremail').val(),
+                    message: $('#message').val(),
+                };
+
+
+                $.ajax({
+                    url: 'partials/_commentSubmit.php',
+                    data: formData,
+                    type: "POST",
+                    success: function (data) {
+                        console.log(data);
+                        loadcomment()
+                        commentcount()
+                    }
+                })
+            });
+
+            
+            loadcomment = ()=>{
+                $.ajax({
+                    url: 'partials/_loadcomments.php',
+                    data: {
+                        blogid: '<?php echo $_GET['blog'] ?>',
+                    },
+                    type: "POST",
+                    success: function (data) {
+                            $('#commentList').html(data," Comments")
+                    }
+                })
+            }
+            commentcount = ()=>{
+                $.ajax({
+                    url: 'partials/_commentCount.php',
+                    data: {
+                        blogid: '<?php echo $_GET['blog'] ?>',
+                    },
+                    type: "POST",
+                    success: function (data) {
+                        $('#commentcount').html(data)
+                    }
+                })
+            }
+            loadcomment()
+            commentcount()
+        });
+    </script>
+
 </body>
 
 </html>
