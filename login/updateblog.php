@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     header("location: index.php");
@@ -141,6 +142,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             }
         }
     }
+    ob_end_flush();
     ?>
     <div class="container">
         <section>

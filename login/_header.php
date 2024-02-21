@@ -1,4 +1,4 @@
-<header class="site-header  home-one-header top-0 w-full z-[999] rt-sticky pr-1">
+<div class="site-header  home-one-header top-0 w-full z-[999] rt-sticky pr-1">
   <div class="main-header py-6">
     <div class="container">
       <div class=" flex items-center justify-between">
@@ -60,7 +60,7 @@
       </div>
     </div>
   </div>
-</header>
+</div>
 <!-- mobile menu start-->
 
 <div class="openmobile-menu fixed top-0 h-screen pt-10 pb-6 bg-white shadow-box2 w-[320px] overflow-y-auto flex flex-col
