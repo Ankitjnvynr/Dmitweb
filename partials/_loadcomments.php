@@ -1,15 +1,18 @@
 <?php
 require_once '_db.php';
 $blog = $_POST['blogid'];
-$sql = "SELECT * FROM `comments` WHERE `blog_id` = '$blog'";
+$sql = "SELECT * FROM `comments` WHERE `blog_id` = '$blog' ORDER BY sr DESC";
 $result = $conn->query($sql);
 $num_rows = mysqli_num_rows($result);
+$sr = 0;
 
 
 if ($num_rows>0) {
     while ($row = $result->fetch_assoc()) {
+        $sr++;
+        $hidden = ($sr>5) ? "hidden": "" ;
         echo '
-            <li class="block border-b border-[#ECECEC] pb-6 mt-6 last:border-0 last:pb-0">
+            <li class="block border-b border-[#ECECEC] pb-6 mt-6 last:border-0 last:pb-0 '.$hidden.'">
                 <div class="flex">
                     <div class="flex-none">
                         <div class="h-[72px] w-[72px] rounded-full mr-6">

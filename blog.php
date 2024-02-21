@@ -33,6 +33,30 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
         h2 {
             font-size: 1.5rem;
         }
+
+        .commentmsg {
+            color: green;
+            opacity: 0;
+            animation: op 4s ease-in-out;
+        }
+
+        #commentList .hidden {
+            display: none;
+        }
+
+        @keyframes op {
+            0% {
+                opacity: 1
+            }
+
+            80% {
+                opacity: 1
+            }
+
+            100% {
+                opacity: 0
+            }
+        }
     </style>
 </head>
 
@@ -226,6 +250,7 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
 
 
                         </ul>
+                        <button id="showMoreBtn" class="shadow-xl" style="display:none;">Show More</button>
                     </div>
                     <!-- Reply start -->
                     <div class=" mt-14">
@@ -253,6 +278,7 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                                         required></textarea>
                                 </div>
                             </div>
+                            <div id="messageOnComment"></div>
                             <button class="btn btn-primary mt-[30px]" type="submit">
                                 Post Comment
                             </button>
@@ -579,21 +605,22 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                     message: $('#message').val(),
                 };
 
-
                 $.ajax({
                     url: 'partials/_commentSubmit.php',
                     data: formData,
                     type: "POST",
                     success: function (data) {
                         console.log(data);
+                        $("#commentForm")[0].reset();
+                        $("#messageOnComment").html('<span class="commentmsg" > Thanks for comment, your comment added!</span>')
                         loadcomment()
                         commentcount()
                     }
                 })
             });
 
-            
-            loadcomment = ()=>{
+
+            loadcomment = () => {
                 $.ajax({
                     url: 'partials/_loadcomments.php',
                     data: {
@@ -601,11 +628,11 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                     },
                     type: "POST",
                     success: function (data) {
-                            $('#commentList').html(data," Comments")
+                        $('#commentList').html(data, " Comments")
                     }
                 })
             }
-            commentcount = ()=>{
+            commentcount = () => {
                 $.ajax({
                     url: 'partials/_commentCount.php',
                     data: {
@@ -617,8 +644,37 @@ $fimage = "assets/images/blogImgs/" . $row['featured_img'];
                     }
                 })
             }
+
+            showmore = () => {
+                $(document).ready(function () {
+                    console.log($("#commentList li").length)
+                    // Check if there are more than 5 comments
+                    if ($("#commentList li").length > 5) {
+                        $("#showMoreBtn").show();
+                    }
+
+                    // Initially hide all but the first 5 li items
+                    $("#commentList li:gt(4)").addClass('hidden');
+
+                    // Show More button click event
+                    $("#showMoreBtn").click(function () {
+                        // Toggle visibility of hidden li items
+                        $("#commentList li.hidden").toggle();
+
+                        // Change button text based on visibility
+                        if ($("#commentList li.hidden").length > 0) {
+                            $(this).text('Show More');
+                        } else {
+                            $(this).text('Show Less');
+                        }
+                    });
+                });
+            }
             loadcomment()
             commentcount()
+            setTimeout(() => {
+                showmore()
+            }, 200);
         });
     </script>
 

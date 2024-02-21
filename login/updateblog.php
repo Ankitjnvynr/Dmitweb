@@ -116,6 +116,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                     $result = mysqli_query($conn, $sql);
                     if ($result) {
                         $status = "Blog updated Successfully!";
+                        header("Location: blogs.php");
+                        exit;
                     } else {
                         $status = "Error: " . mysqli_error($conn);
                     }
@@ -126,13 +128,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                 $sql = "UPDATE `blogs` SET `title` = '$title', `category` = '$category', `description` = '$desc' WHERE `blog_id` = $blog_id";
 
 
-                    $result = mysqli_query($conn, $sql);
-                    if ($result) {
-                        $status = "Blog uploaded Successfully!";
-                    } else {
-                        $status = "Error: " . mysqli_error($conn);
-                    }
-                
+                $result = mysqli_query($conn, $sql);
+                if ($result) {
+                    $status = "Blog uploaded Successfully!";
+                    header("Location: blogs.php");
+                    exit;
+                } else {
+                    $status = "Error: " . mysqli_error($conn);
+                }
+
                 $uploadOk = 0;
             }
         }
