@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-  <title>EduMim Html Template</title>
+  <title>DMIT : All Blogs</title>
   <link rel="icon" type="image/png" href="assets/images/logo/favicon.svg">
   <link rel="stylesheet" href="assets/css/rt-plugins.css">
   <link rel="stylesheet" href="assets/css/app.css">
@@ -42,8 +42,8 @@
       </div>
       <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] pt-7">
         <?php
-        require_once('partials\_db.php');
-        $sql = "SELECT * FROM `blogs` ORDER BY 'dt' DESC LIMIT 3";
+        require_once('partials/_db.php');
+        $sql = "SELECT * FROM `blogs` ORDER BY 'dt' DESC ";
         $result = mysqli_query($conn, $sql);
         while ($row = mysqli_fetch_assoc($result)) {
           $category = $row['category'];

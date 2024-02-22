@@ -46,21 +46,43 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
         .ck-powered-by {
             display: none;
         }
+
+        #popup {
+            backdrop-filter: blur(5px);
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            scale: 0;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+        }
     </style>
 </head>
 
 <body class=" font-gilroy font-medium text-gray text-lg leading-[27px]">
+
+    <div id="popup" class="confirmpopup h-full w-full fixed flex items-center justify-center top-0">
+        <div class="bg-white p-10 shadow-lg rounded text-center">
+            <p class="mb-4">Are You Sure to delete the blog</p>
+            <button id="delblog" onclick="deleteblog()"
+                class="bg-primary text-white px-5 rounded shadow-lg border">OK</button>
+            <button onclick="closepopup()" class="bg px-2 rounded shadow border">Cancel</button>
+        </div>
+    </div>
+
+
+
     <?php include '_header.php'; ?>
     <div class="breadcrumbs section-padding bg-[url('../images/all-img/bred.png')] bg-cover bg-center bg-no-repeat">
         <div class="container text-center">
             <h2>Welcome Admin <a href="logout.php" class="btn btn-primary">Logout</a></h2>
-            
+
         </div>
     </div>
     <?php
     $status = null;
     require_once("../partials/_db.php");
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' ) {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $title = $_POST['title'];
         $category = $_POST['category'];
 
@@ -104,11 +126,12 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
     ?>
     <div class="container">
         <section>
-            <div class="grid grid-cols-12 gap-[30px] mt-4" >
+            <div class="grid grid-cols-12 gap-[30px] mt-4">
                 <div class="sidebar lg:col-span-4 col-span-12 shadow rounded p-4">
                     <ul class=" list-item space-y-4">
                         <li class=" block">
-                            <a href="blogs.php" class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all duration-150">
+                            <a href="blogs.php"
+                                class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all duration-150">
                                 <span>Blogs</span>
                                 <span class=" text-2xl">
                                     <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
@@ -117,7 +140,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                         </li>
 
                         <li class=" block">
-                            <a href="my-appointments.php" class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all duration-150">
+                            <a href="my-appointments.php"
+                                class=" flex justify-between bg-[#F8F8F8] py-[17px] px-5 rounded hover:bg-primary hover:text-white transition-all duration-150">
                                 <span>Appointments</span>
                                 <span class=" text-2xl">
                                     <iconify-icon icon="heroicons:chevron-right-20-solid"></iconify-icon>
@@ -142,11 +166,13 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                             <div class="grid grid-1 gap-[20px] ">
                                 <div class="md:col-span-2 col-span-1">
                                     <label for="title"> Title</label>
-                                    <input type="text" name="title" id="title" class=" from-control" placeholder="Enter your title here" required>
+                                    <input type="text" name="title" id="title" class=" from-control"
+                                        placeholder="Enter your title here" required>
                                 </div>
                                 <div class="md:col-span-2 col-span-1">
                                     <label for="category"> Category</label>
-                                    <input type="text" name="category" id="category" class=" from-control" placeholder=" Enter the category of your blog" required>
+                                    <input type="text" name="category" id="category" class=" from-control"
+                                        placeholder=" Enter the category of your blog" required>
                                 </div>
 
                                 <div class="md:col-span-2 col-span-1">
@@ -156,7 +182,8 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
                                 <div class="md:col-span-2 col-span-1">
                                     <label for="desc"> Describe your blog</label>
-                                    <textarea class=" from-control" name="desc" id="desc" placeholder="" rows="5"></textarea>
+                                    <textarea class=" from-control" name="desc" id="desc" placeholder=""
+                                        rows="5"></textarea>
                                 </div>
                             </div>
                             <button class="btn btn-primary mt-[30px]" type="submit" name="submit">
@@ -214,15 +241,15 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                             <td>' . $category . '</td>
                             <td>' . $dt . '</td>
                             <td>
-                                <a href="updateblog.php?blog='.$row['blog_id'].'" class="btn"><img width="30px" class="w-2" src="https://www.svgrepo.com/show/73131/edit-button.svg" alt=""></a>
-                                <a  class="btn"><img style="color:red;" width="30px" class="w-2" src="https://www.svgrepo.com/show/21045/delete-button.svg" alt=""></a>
+                                <a href="updateblog.php?blog=' . $row['blog_id'] . '" class="btn"><img width="30px" class="w-2" src="https://www.svgrepo.com/show/73131/edit-button.svg" alt=""></a>
+                                <a href="javascript:void(0)" onclick="confirmpopup(this,' . $row['blog_id'] . ')"  class="btn"><img style="color:red;" width="30px" class="w-2" src="https://www.svgrepo.com/show/21045/delete-button.svg" alt=""></a>
                             </td>
                             
                         </tr>
                         ';
                     }
                     ?>
-                    
+
 
 
                 </tbody>
@@ -240,22 +267,22 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                 // toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote','picture'],
                 heading: {
                     options: [{
-                            model: 'paragraph',
-                            title: 'Paragraph',
-                            class: 'ck-heading_paragraph'
-                        },
-                        {
-                            model: 'heading1',
-                            view: 'h1',
-                            title: 'Heading 1',
-                            class: 'ck-heading_heading1'
-                        },
-                        {
-                            model: 'heading2',
-                            view: 'h2',
-                            title: 'Heading 2',
-                            class: 'ck-heading_heading2'
-                        }
+                        model: 'paragraph',
+                        title: 'Paragraph',
+                        class: 'ck-heading_paragraph'
+                    },
+                    {
+                        model: 'heading1',
+                        view: 'h1',
+                        title: 'Heading 1',
+                        class: 'ck-heading_heading1'
+                    },
+                    {
+                        model: 'heading2',
+                        view: 'h2',
+                        title: 'Heading 2',
+                        class: 'ck-heading_heading2'
+                    }
                     ]
                 }
             })
@@ -263,8 +290,41 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                 console.log(error);
             });
 
-            let editPost = (e)=>{
-                console.log(e.parentElement.parentElement)
-            }
+        let editPost = (e) => {
+            console.log(e.parentElement.parentElement)
+        }
+
+        let currentBlog;
+        delblog = document.getElementById('delblog')
+        confirmpopup = (e,id) => {
+            let popup = document.getElementById('popup')
+            $(popup).css("scale", "1");
+            $("body").css("overflow", "hidden");
+            delblog.id = (delblog.id) + id;
+            console.log(delblog.id)
+            let currentBlog = e.parentNode.parentNode;
+        }
+        closepopup = (id) => {
+            let popup = document.getElementById('popup')
+            $(popup).css("scale", "0");
+            $("body").css("overflow", "scroll");
+            delblog.id = "delblog";
+        }
+        deleteblog = () =>{
+            let blog = delblog.id.substr(7)
+            $.ajax({
+                url:'_deleteblog.php',
+                type:'POST',
+                data:{
+                    blog:blog
+                },
+                success:function(data){
+                    console.log("current",currentBlog)
+                    $(currentBlog).css("display", "none");
+                    closepopup()
+                    window.location.reload();
+                }
+            })
+        }
     </script>
-      <?php include '_footer.php'; ?>
+    <?php include '_footer.php'; ?>

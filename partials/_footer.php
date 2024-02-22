@@ -222,7 +222,6 @@
         data: FormData,
         url: 'partials/appointment-form.php',
         beforeSend: function() {
-            
             $('#AppointmentForm2').css("opacity", "0.5");
             $('#formLoading').css("display", "block");
         },

@@ -168,6 +168,9 @@
     left: 50%;
     transform: translatex(-50%);
   }
+  #formLoading1{
+    display: none;
+  }
 </style>
 
 <div style="z-index: 40; background:rgba(0, 0, 0, 0.5); " id="overlay"
