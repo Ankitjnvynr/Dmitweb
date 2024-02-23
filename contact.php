@@ -125,8 +125,6 @@
     $('#contactForm').submit((e)=>{
       e.preventDefault();
         var formDataArray = $(e.target).serializeArray();
-        
-
         $.ajax({
                 type: 'POST',
                 url: 'partials/_contactPageForm.php',  
@@ -134,6 +132,9 @@
                 success: function (response) {
                   $('#msg').html(response)
                     console.log('Form submitted successfully:', response);
+                    setTimeout(() => {
+                      $('#contactForm')[0].reset();
+                    }, 1000);
                 },
                 error: function (error) {
                     console.error('Error submitting form:', error);
