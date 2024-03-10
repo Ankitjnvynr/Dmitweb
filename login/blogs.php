@@ -111,6 +111,22 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
                     $result = mysqli_query($conn, $sql);
                     if ($result) {
                         $status = "Blog uploaded Successfully!";
+                        $sql2 = "SELECT email FROM subscribers";
+                        $result2 = mysqli_query($conn, $sql2);
+
+                        if (mysqli_num_rows($result2) > 0) {
+                            // Email subject and content
+                            $subject = "New Blog Published";
+                            $message = "A new blog has been published on our website. Check it out now!";
+
+                            // Loop through each subscriber and send email
+                            while ($row = mysqli_fetch_assoc($result2)) {
+                                $to = $row['email'];
+                                $headers = "From: your_email@example.com"; // Replace with your email address
+                                // Send email
+                                mail($to, $subject, $message, $headers);
+                            }
+                        }
                     } else {
                         $status = "Error: " . mysqli_error($conn);
                     }
@@ -296,7 +312,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
 
         let currentBlog;
         delblog = document.getElementById('delblog')
-        confirmpopup = (e,id) => {
+        confirmpopup = (e, id) => {
             let popup = document.getElementById('popup')
             $(popup).css("scale", "1");
             $("body").css("overflow", "hidden");
@@ -310,16 +326,16 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] != true) {
             $("body").css("overflow", "scroll");
             delblog.id = "delblog";
         }
-        deleteblog = () =>{
+        deleteblog = () => {
             let blog = delblog.id.substr(7)
             $.ajax({
-                url:'_deleteblog.php',
-                type:'POST',
-                data:{
-                    blog:blog
+                url: '_deleteblog.php',
+                type: 'POST',
+                data: {
+                    blog: blog
                 },
-                success:function(data){
-                    console.log("current",currentBlog)
+                success: function (data) {
+                    console.log("current", currentBlog)
                     $(currentBlog).css("display", "none");
                     closepopup()
                     window.location.reload();
