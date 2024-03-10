@@ -7,7 +7,7 @@
         <div class="flex items-center flex-1">
           <div class="flex-1 main-menu relative mr-[74px]">
             <ul class="menu-active-classes flex ">
-              <li class=" menu-item">
+              <li class="menu-item">
                 <a href="index.php">Home</a>
               </li>
 
@@ -75,7 +75,7 @@
         z-30">
   <div class="flex justify-between px-6 flex-none">
     <a href="index.php" class="brand-logo flex-none mr-10 ">
-      <img src="assets/images/logo/logo.svg" alt="">
+      <img src="assets/images/logo/logo.png" alt="bigbyte dmit logo">
     </a>
     <span class=" text-3xl text-black cursor-pointer rt-mobile-menu-close">
       <iconify-icon icon="fe:close"></iconify-icon>
